@@ -71,6 +71,10 @@ public class MapComponent_CerebrexLattice : MapComponent
     public bool BiomeFlipped => flipped;
     public float Coverage => convertibleCount > 0 ? cellsConverted / (float)convertibleCount : 0f;
 
+    /// <summary>Steel already drawn from stockpiles and held as credit, waiting to be spent as
+    /// cells convert (see <see cref="DrawSteel"/>/<see cref="AdvanceOneTick"/>).</summary>
+    public float SteelLoaded => cellCredits;
+
     public void ToggleFeeding() => feeding = !feeding;
 
     /// <summary>

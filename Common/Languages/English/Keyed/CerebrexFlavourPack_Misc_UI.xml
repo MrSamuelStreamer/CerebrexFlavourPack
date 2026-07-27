@@ -29,6 +29,8 @@
 
     <CerebrexFlavourPack_Lattice_Gizmo_Label>Feed the lattice</CerebrexFlavourPack_Lattice_Gizmo_Label>
     <CerebrexFlavourPack_Lattice_Gizmo_Desc>Draws steel from your stockpiles to slowly spread mechanoid lattice terrain outward from the core. This will destroy plants and permanently sterilize the ground it covers - it cannot be reversed. If enough of the map is converted, the region's biome will change forever.</CerebrexFlavourPack_Lattice_Gizmo_Desc>
+    <CerebrexFlavourPack_Inspect_LatticeSteelLoaded>Lattice steel loaded: {0}</CerebrexFlavourPack_Inspect_LatticeSteelLoaded>
+    <CerebrexFlavourPack_Inspect_LatticeCoverage>Lattice coverage: {0}</CerebrexFlavourPack_Inspect_LatticeCoverage>
 
     <CerebrexFlavourPack_BiomeFlipped_LetterLabel>The land has changed</CerebrexFlavourPack_BiomeFlipped_LetterLabel>
     <CerebrexFlavourPack_BiomeFlipped_LetterText>The mechanoid lattice has consumed enough of {0} that the region itself has become a mechanoid intrusion biome.

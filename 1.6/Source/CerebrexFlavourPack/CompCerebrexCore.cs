@@ -50,6 +50,23 @@ public class CompCerebrexCore : ThingComp
         Current.Game?.GetComponent<GameComponent_CerebrexWatch>()?.Notify_CoreDestroyed(parent, mode, previousMap);
     }
 
+    public override string CompInspectStringExtra()
+    {
+        if (!CerebrexLatticeDefs.Active || parent.Map == null)
+        {
+            return null;
+        }
+
+        MapComponent_CerebrexLattice lattice = parent.Map.GetComponent<MapComponent_CerebrexLattice>();
+        if (lattice == null)
+        {
+            return null;
+        }
+
+        return "CerebrexFlavourPack_Inspect_LatticeSteelLoaded".Translate(Mathf.RoundToInt(lattice.SteelLoaded))
+            + "\n" + "CerebrexFlavourPack_Inspect_LatticeCoverage".Translate(lattice.Coverage.ToStringPercent());
+    }
+
     public override IEnumerable<Gizmo> CompGetGizmosExtra()
     {
         foreach (Gizmo gizmo in base.CompGetGizmosExtra())
