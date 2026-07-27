@@ -4,6 +4,7 @@
 		<li>Common</li>
 		<li>1.6</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
+		<li IfModActiveAll="rokk.playwright,RedMattis.SapientAnimals">Compatibility/rokk.playwright</li>
 		<li IfModActive="co.uk.epicguru.antimatterannihilation">co.uk.epicguru.antimatterannihilation</li>
 		<li IfModActive="aoba.usac.core">aoba.usac.core</li>
 		<li IfModActive="aoba.deadmanswitch.core">aoba.deadmanswitch.core</li>

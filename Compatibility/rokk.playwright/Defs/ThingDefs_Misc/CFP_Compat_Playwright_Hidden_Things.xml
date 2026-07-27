@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Delayed spawner used to add a sapient animal, with a hediff, after spawn; self-destructs. -->
+  <ThingDef>
+    <defName>CFP_DelayedSapientAnimalSpawnerWithHediff</defName>
+    <label>(internal)delayed sapient animal spawner with hediff</label>
+    <thingClass>CerebrexFlavourPack.Compat.Playwright.DelayedSapientAnimalSpawnerWithHediff</thingClass>
+
+    <!-- Should hopefully make this completely invisible and unselectable -->
+    <category>Ethereal</category>
+    <tickerType>Normal</tickerType>
+    <selectable>false</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useHitPoints>false</useHitPoints>
+    <drawerType>None</drawerType>
+
+  </ThingDef>
+</Defs>
