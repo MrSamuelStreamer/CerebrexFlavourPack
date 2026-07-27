@@ -9,4 +9,36 @@
     <CerebrexFlavourPack_Settings_RefurbishCostRate_Tooltip>Multiplies the plasteel and advanced component cost of the Refurbish gizmo on the cerebrex core, per point of hit points restored. Higher values make repairing the core more expensive; lower values make it cheaper.</CerebrexFlavourPack_Settings_RefurbishCostRate_Tooltip>
     <CerebrexFlavourPack_Settings_CoreRetreatHpFraction_Tooltip>The fraction of the cerebrex core's max hit points that must be destroyed before a core-focused raid gives up and retreats. Lower values make raiders retreat sooner; higher values let them press the attack longer, up to the point of destroying the core outright.</CerebrexFlavourPack_Settings_CoreRetreatHpFraction_Tooltip>
     <CerebrexFlavourPack_Settings_StrategySelectionWeight_Tooltip>Multiplies how often the storyteller picks a raid strategy that targets the cerebrex core (core strike, sappers, or siege) instead of an ordinary raid. Set to 0 to disable these raid types entirely.</CerebrexFlavourPack_Settings_StrategySelectionWeight_Tooltip>
+
+    <CerebrexFlavourPack_Settings_LatticeEnabled>Enable cerebrex lattice spread</CerebrexFlavourPack_Settings_LatticeEnabled>
+    <CerebrexFlavourPack_Settings_LatticeEnabled_Tooltip>Master switch for feeding the cerebrex core steel to spread mechanoid lattice terrain, and for the biome conversion and mood effects that follow from it. Requires Alpha Biomes; has no effect if that mod isn't loaded.</CerebrexFlavourPack_Settings_LatticeEnabled_Tooltip>
+    <CerebrexFlavourPack_Settings_LatticeSteelPerCell>Lattice steel cost: {0} per cell</CerebrexFlavourPack_Settings_LatticeSteelPerCell>
+    <CerebrexFlavourPack_Settings_LatticeSteelPerCell_Tooltip>How much steel is consumed to convert one map cell to lattice terrain. Higher values make the spread more expensive to sustain at the same pace.</CerebrexFlavourPack_Settings_LatticeSteelPerCell_Tooltip>
+    <CerebrexFlavourPack_Settings_LatticeSteelReserve>Lattice steel reserve: {0}</CerebrexFlavourPack_Settings_LatticeSteelReserve>
+    <CerebrexFlavourPack_Settings_LatticeSteelReserve_Tooltip>The lattice stops drawing steel once your stockpile would fall below this amount, and only resumes once it recovers comfortably above it. Protects a baseline reserve for construction and repairs.</CerebrexFlavourPack_Settings_LatticeSteelReserve_Tooltip>
+    <CerebrexFlavourPack_Settings_LatticeTargetDays>Lattice spread time: {0} days</CerebrexFlavourPack_Settings_LatticeTargetDays>
+    <CerebrexFlavourPack_Settings_LatticeTargetDays_Tooltip>How many in-game days a constant, uninterrupted steel stream takes to convert the entire map. Lower values make the spread faster; higher values make it slower.</CerebrexFlavourPack_Settings_LatticeTargetDays_Tooltip>
+    <CerebrexFlavourPack_Settings_LatticeDlaFraction>Lattice tendril fraction: {0}</CerebrexFlavourPack_Settings_LatticeDlaFraction>
+    <CerebrexFlavourPack_Settings_LatticeDlaFraction_Tooltip>Roughly how much of the spread is spent on branching tendrils versus filling in behind them. Higher values keep the spread stringier for longer; lower values thicken it faster.</CerebrexFlavourPack_Settings_LatticeDlaFraction_Tooltip>
+    <CerebrexFlavourPack_Settings_LatticeRunnerChance>Lattice runner chance: {0}</CerebrexFlavourPack_Settings_LatticeRunnerChance>
+    <CerebrexFlavourPack_Settings_LatticeRunnerChance_Tooltip>Chance that a tendril's growth point becomes a long-range runner, seeding an isolated island of lattice terrain ahead of the main spread. 0 disables runners entirely.</CerebrexFlavourPack_Settings_LatticeRunnerChance_Tooltip>
+    <CerebrexFlavourPack_Settings_BiomeFlipThreshold>Biome flip threshold: {0}</CerebrexFlavourPack_Settings_BiomeFlipThreshold>
+    <CerebrexFlavourPack_Settings_BiomeFlipThreshold_Tooltip>The fraction of convertible map cells that must be covered in lattice terrain before this world tile's biome permanently changes to mechanoid intrusion. This cannot be undone once it happens.</CerebrexFlavourPack_Settings_BiomeFlipThreshold_Tooltip>
+    <CerebrexFlavourPack_Settings_MoodBuffScale>Mechanoid affinity mood scale: {0}</CerebrexFlavourPack_Settings_MoodBuffScale>
+    <CerebrexFlavourPack_Settings_MoodBuffScale_Tooltip>Multiplies the mood bonus colonists get from living in or near the mechanoid lattice. Set to 0 to disable the mood effect entirely.</CerebrexFlavourPack_Settings_MoodBuffScale_Tooltip>
+
+    <CerebrexFlavourPack_Lattice_Gizmo_Label>Feed the lattice</CerebrexFlavourPack_Lattice_Gizmo_Label>
+    <CerebrexFlavourPack_Lattice_Gizmo_Desc>Draws steel from your stockpiles to slowly spread mechanoid lattice terrain outward from the core. This will destroy plants and permanently sterilize the ground it covers - it cannot be reversed. If enough of the map is converted, the region's biome will change forever.</CerebrexFlavourPack_Lattice_Gizmo_Desc>
+
+    <CerebrexFlavourPack_BiomeFlipped_LetterLabel>The land has changed</CerebrexFlavourPack_BiomeFlipped_LetterLabel>
+    <CerebrexFlavourPack_BiomeFlipped_LetterText>The mechanoid lattice has consumed enough of {0} that the region itself has become a mechanoid intrusion biome.
+
+This is permanent. The following are now gone:
+  - Hunting: wild animal density collapses to near-zero. Only rats and guinea pigs remain.
+  - Fishing: this region can no longer support fish. Existing fishing spots are dead.
+  - Caravan foraging: forageability drops to zero. Caravans leaving from here carry no foraged food.
+  - Wild flora: native plant species will not regrow. Only hardy grass and sessile mechanoid growths spread.
+  - Rainfall: rain becomes rare. Expect clear skies, fog, and dry thunderstorms.
+
+Caravans will also move more slowly across this tile.</CerebrexFlavourPack_BiomeFlipped_LetterText>
 </LanguageData>

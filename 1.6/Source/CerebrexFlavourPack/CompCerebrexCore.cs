@@ -34,6 +34,16 @@ public class CompCerebrexCore : ThingComp
     private int cachedPlasteelCount;
     private int cachedComponentsCount;
 
+    public override void PostSpawnSetup(bool respawningAfterLoad)
+    {
+        base.PostSpawnSetup(respawningAfterLoad);
+
+        if (!respawningAfterLoad && CerebrexLatticeDefs.Active)
+        {
+            parent.Map?.GetComponent<MapComponent_CerebrexLattice>()?.Notify_CoreSpawned(parent);
+        }
+    }
+
     public override void PostDestroy(DestroyMode mode, Map previousMap)
     {
         base.PostDestroy(mode, previousMap);
@@ -47,7 +57,17 @@ public class CompCerebrexCore : ThingComp
             yield return gizmo;
         }
 
-        if (!parent.Spawned || parent.Faction != Faction.OfPlayer || parent.HitPoints >= parent.MaxHitPoints)
+        if (!parent.Spawned || parent.Faction != Faction.OfPlayer)
+        {
+            yield break;
+        }
+
+        if (CerebrexLatticeDefs.Active)
+        {
+            yield return FeedLatticeGizmo();
+        }
+
+        if (parent.HitPoints >= parent.MaxHitPoints)
         {
             yield break;
         }
@@ -78,6 +98,21 @@ public class CompCerebrexCore : ThingComp
         }
 
         yield return command;
+    }
+
+    /// <summary>Off by default - feeding the lattice draws a substantial, sustained steel stream
+    /// (see the settings tooltip), and should never start ambushing a colony's steel unasked.</summary>
+    private Command_Toggle FeedLatticeGizmo()
+    {
+        MapComponent_CerebrexLattice lattice = parent.Map.GetComponent<MapComponent_CerebrexLattice>();
+        return new Command_Toggle
+        {
+            defaultLabel = "CerebrexFlavourPack_Lattice_Gizmo_Label".Translate(),
+            defaultDesc = "CerebrexFlavourPack_Lattice_Gizmo_Desc".Translate(),
+            icon = ContentFinder<Texture2D>.Get("UI/Commands/Install", reportFailure: false),
+            isActive = () => lattice.Feeding,
+            toggleAction = () => lattice.ToggleFeeding()
+        };
     }
 
     /// <summary>HP restored by one click: a fixed batch, clamped to whatever damage is actually outstanding.</summary>
@@ -135,8 +170,10 @@ public class CompCerebrexCore : ThingComp
     /// <summary>
     /// Stacks of <paramref name="def"/> sitting in a haul destination (stockpile zone or storage
     /// building). Counting and spending both go through this, so the two can never disagree.
+    /// Internal (not private): MapComponent_CerebrexLattice reuses this same stockpile-draw
+    /// pattern for its steel feed rather than duplicating it.
     /// </summary>
-    private static List<Thing> StoredStacksOf(Map map, ThingDef def)
+    internal static List<Thing> StoredStacksOf(Map map, ThingDef def)
     {
         // Collect first: destroying things while walking a SlotGroup's HeldThings mutates it.
         List<Thing> stacks = new();
@@ -168,7 +205,7 @@ public class CompCerebrexCore : ThingComp
     }
 
     /// <summary>Allocation-free total - unlike <see cref="StoredStacksOf"/>, doesn't materialise a list.</summary>
-    private static int SumStored(Map map, ThingDef def)
+    internal static int SumStored(Map map, ThingDef def)
     {
         int total = 0;
         foreach (SlotGroup slotGroup in map.haulDestinationManager.AllGroupsListForReading)
@@ -186,7 +223,7 @@ public class CompCerebrexCore : ThingComp
     }
 
     /// <summary>Spends up to <paramref name="count"/> and reports how much was actually removed.</summary>
-    private static int ConsumeFromStorage(Map map, ThingDef def, int count)
+    internal static int ConsumeFromStorage(Map map, ThingDef def, int count)
     {
         if (count <= 0)
         {

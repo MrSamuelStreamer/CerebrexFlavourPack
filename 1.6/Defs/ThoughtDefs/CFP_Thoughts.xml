@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--
+    Situational, not a memory: no durationDays, so IsSituational is driven purely by workerClass.
+    Requires Alpha Biomes (GU_MetalFloor1 / AB_MechanoidIntrusion) - the worker returns Inactive
+    entirely when that soft dependency is missing. Stage 4 is only reachable after the map's
+    biome has flipped, which is why it isn't degrading the earlier stages.
+  -->
+  <ThoughtDef>
+    <defName>CFP_MechanoidTerrainAffinity</defName>
+    <workerClass>CerebrexFlavourPack.ThoughtWorker_CerebrexLattice</workerClass>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>mechanoid ground</label>
+        <description>The metal underfoot hums faintly with the lattice's presence. It's oddly soothing.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>mechanoid ground (spreading)</label>
+        <description>The lattice has taken real root here. Being surrounded by it feels like being watched over.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>mechanoid ground (pervasive)</label>
+        <description>The lattice dominates everything nearby. There's a strange comfort in being this deep inside it.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>mechanoid ground (total)</label>
+        <description>Nothing natural remains close by. The lattice's presence is total, and total is somehow restful.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>one with the machine</label>
+        <description>The land itself belongs to the lattice now. Being at its heart feels less like living beside something vast, and more like being a part of it.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
