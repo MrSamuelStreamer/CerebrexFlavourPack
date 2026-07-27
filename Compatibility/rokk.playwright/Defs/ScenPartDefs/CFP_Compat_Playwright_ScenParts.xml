@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>CFP_StartingAnimalSapientHediff</defName>
+    <label>start with animal (sapient, with hediff)</label>
+    <scenPartClass>CerebrexFlavourPack.Compat.Playwright.ScenPart_StartingAnimalSapientHediff</scenPartClass>
+    <category>StartingImportant</category>
+    <selectionWeight>0.1</selectionWeight>
+    <summaryPriority>305</summaryPriority>
+  </ScenPartDef>
+
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <CFP_Compat_Playwright_StartingAnimalSapientHediff_Summary>{0} x{1} (sapient), afflicted with {2}</CFP_Compat_Playwright_StartingAnimalSapientHediff_Summary>
+  <CFP_Compat_Playwright_StartingAnimalSapientHediff_Help>Works exactly like Playwright's "start with animal(s) (sapient)", but also lets you add one or more hediffs (each with its own body part, side, and severity range) to the animal once it has been made sapient. If a hediff's body part doesn't exist on the resulting pawn, it's applied to the whole body instead, with a warning in the log.</CFP_Compat_Playwright_StartingAnimalSapientHediff_Help>
+  <CFP_Compat_Playwright_AddHediff>Add hediff</CFP_Compat_Playwright_AddHediff>
+  <CFP_Compat_Playwright_WholeBody>Whole body</CFP_Compat_Playwright_WholeBody>
+  <CFP_Compat_Playwright_Side_Left>Left</CFP_Compat_Playwright_Side_Left>
+  <CFP_Compat_Playwright_Side_Right>Right</CFP_Compat_Playwright_Side_Right>
+  <CFP_Compat_Playwright_Side_Random>Random</CFP_Compat_Playwright_Side_Random>
+
+</LanguageData>
