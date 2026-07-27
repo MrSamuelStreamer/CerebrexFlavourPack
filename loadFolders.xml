@@ -4,5 +4,10 @@
 		<li>Common</li>
 		<li>1.6</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
+		<li IfModActive="co.uk.epicguru.antimatterannihilation">co.uk.epicguru.antimatterannihilation</li>
+		<li IfModActive="aoba.usac.core">aoba.usac.core</li>
+		<li IfModActive="aoba.deadmanswitch.core">aoba.deadmanswitch.core</li>
+		<li IfModActive="aoba.deadmanswitch.ancientcorps">aoba.deadmanswitch.ancientcorps</li>
+		<li IfModActive="mlie.reinforcedmechanoid2">mlie.reinforcedmechanoid2</li>
 	</v1.6>
 </loadFolders>

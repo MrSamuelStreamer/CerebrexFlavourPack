@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="DMS_Army"]/label</xpath>
+        <value>
+            <label>Counter-Mechanoid Forces</label>
+        </value>
+    </Operation>
+</Patch>

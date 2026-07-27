@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="RM_Remnants"]/label</xpath>
+        <value>
+            <label>Feral Humans</label>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="UltratechEnemy_AA"]/label</xpath>
+        <value>
+            <label>Pre-War Survivors</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/FactionDef[defName="UltratechEnemy_AA"]/description</xpath>
+        <value>
+            <description>One of the few surviving divisions of the Ultratech conglomerate that existed before the great mechanoid war.\n\nThey are one of the few groups of humans that understand the secrets of antimatter production and manipulation, and have leveraged this technology in their desperate attempts at survival against the Mechanoids.\n\nNow forced into seclution, they will occasionally strike out at targets deemed either worth looting, or that pose a potential threat.</description>
+        </value>
+    </Operation>
+</Patch>
