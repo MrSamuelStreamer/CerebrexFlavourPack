@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--
+    Consciousness uses setMax 0.1 rather than 0 on purpose. Consciousness is lethalMechanoids, and
+    CapableOf() is "level > minForCapable" (0 for this capacity), so setMax 0 would kill the mech
+    outright. 0.1 keeps it alive but below the 0.3 CanBeAwake threshold - the swarm goes dark
+    instead of instantly evaporating.
+  -->
+  <HediffDef>
+    <defName>CFP_CerebrexShutdown</defName>
+    <label>cerebrex shutdown</label>
+    <labelNoun>a cerebrex shutdown</labelNoun>
+    <description>With the cerebrex core gone there is nothing left to issue orders. This mech is running on nothing but residual charge and will never take another command.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.75, 0.25, 0.25)</defaultLabelColor>
+    <isBad>true</isBad>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <setMax>0</setMax>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <setMax>0</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

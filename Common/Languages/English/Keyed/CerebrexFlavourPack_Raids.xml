@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- Refurbish gizmo -->
+    <CerebrexFlavourPack_Refurbish_Label>Refurbish core</CerebrexFlavourPack_Refurbish_Label>
+    <CerebrexFlavourPack_Refurbish_Desc>Restore {0} hit points to the cerebrex core, consuming {1} plasteel and {2} advanced components from your stockpiles.\n\nCurrent integrity: {3} / {4}</CerebrexFlavourPack_Refurbish_Desc>
+    <CerebrexFlavourPack_Refurbish_NotEnough>Not enough materials: needs {0} plasteel and {1} advanced components in a stockpile.</CerebrexFlavourPack_Refurbish_NotEnough>
+    <CerebrexFlavourPack_Refurbish_Done>Refurbished the cerebrex core for {0} hit points.</CerebrexFlavourPack_Refurbish_Done>
+
+    <!-- Damaged-core alert -->
+    <CerebrexFlavourPack_Alert_CoreDamaged>Cerebrex core damaged</CerebrexFlavourPack_Alert_CoreDamaged>
+    <CerebrexFlavourPack_Alert_CoreDamagedDesc>A cerebrex core has taken heavy damage. If it is destroyed, every mech in your swarm shuts down permanently.\n\nUse the core's refurbish command to restore its integrity.</CerebrexFlavourPack_Alert_CoreDamagedDesc>
+
+    <!-- Core destroyed / swarm shutdown -->
+    <CerebrexFlavourPack_CoreLost_LetterLabel>Cerebrex core destroyed</CerebrexFlavourPack_CoreLost_LetterLabel>
+    <CerebrexFlavourPack_CoreLost_LetterText>The cerebrex core is gone.\n\nAcross the map the swarm stops mid-stride. {0} mechs have gone dark and will not answer again.</CerebrexFlavourPack_CoreLost_LetterText>
+    <CerebrexFlavourPack_CoreLost_DialogTitle>The swarm goes dark</CerebrexFlavourPack_CoreLost_DialogTitle>
+    <CerebrexFlavourPack_CoreLost_DialogText>Your cerebrex core has been destroyed.\n\nWithout it, there is no command lattice left to hold the swarm together. What's left is cooling metal scattered across the ground where your mechs were standing.\n\nThis run is over.</CerebrexFlavourPack_CoreLost_DialogText>
+
+    <!-- Scenario part -->
+    <CerebrexFlavourPack_ScenPart_CoreSummary>Start with a cerebrex core on the home map. If it is ever destroyed, the entire mechanoid swarm shuts down and the game ends.</CerebrexFlavourPack_ScenPart_CoreSummary>
+
+    <!-- Settings -->
+    <CerebrexFlavourPack_Settings_RefurbishCostRate>Refurbish cost rate: {0}x</CerebrexFlavourPack_Settings_RefurbishCostRate>
+    <CerebrexFlavourPack_Settings_CoreRetreatHpFraction>Raider retreat threshold: core damaged to {0}</CerebrexFlavourPack_Settings_CoreRetreatHpFraction>
+    <CerebrexFlavourPack_Settings_StrategySelectionWeight>Core-strike raid frequency: {0}x</CerebrexFlavourPack_Settings_StrategySelectionWeight>
+
+</LanguageData>

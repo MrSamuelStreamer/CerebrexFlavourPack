@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenPartDef>
+    <defName>CFP_CerebrexCoreStart</defName>
+    <label>start with cerebrex core</label>
+    <category>StartingImportant</category>
+    <scenPartClass>CerebrexFlavourPack.ScenPart_CerebrexCore</scenPartClass>
+    <maxUses>1</maxUses>
+    <canBeRandomlyAdded>false</canBeRandomlyAdded>
+  </ScenPartDef>
+
+</Defs>

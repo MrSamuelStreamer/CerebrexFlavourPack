@@ -19,5 +19,8 @@ public static class CerebrexFlavourPackDefOf
 
     public static HediffDef CFP_CerebrexShutdown;
 
+    /// <summary>Permanent world condition that replaces the home system's star with a black hole.</summary>
+    public static GameConditionDef CFP_BlackHole;
+
     static CerebrexFlavourPackDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(CerebrexFlavourPackDefOf));
 }

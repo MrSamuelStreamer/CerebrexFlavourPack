@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Replace the vanilla single-colour star draw layer with our spectral variant. -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>//GlobalWorldDrawLayerDef[defName="Stars"]/worldDrawLayer</xpath>
+        <value>
+            <worldDrawLayer>CerebrexFlavourPack.GlobalDrawLayer_Stars_Spectral</worldDrawLayer>
+        </value>
+    </Operation>
+
+</Patch>

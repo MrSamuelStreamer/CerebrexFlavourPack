@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 786345099
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 2d08f9a4d59962e860bf9cb0ef081743
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b4f2efbdb85a500017afd875df75d980
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 2d08f9a4d59962e860bf9cb0ef081743
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/CerebrexFlavourPack/Textures/AccretionDisc.png
+- Assets/Data/CerebrexFlavourPack/Materials/BlackHoleRayMarch.shader
+Dependencies: []

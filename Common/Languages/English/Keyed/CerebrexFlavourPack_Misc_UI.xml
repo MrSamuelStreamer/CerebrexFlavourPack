@@ -2,4 +2,11 @@
 <LanguageData>
     <CerebrexFlavourPack_SettingsCategory>CerebrexFlavourPack</CerebrexFlavourPack_SettingsCategory>
     <CerebrexFlavourPack_Settings_SettingName>Some Setting</CerebrexFlavourPack_Settings_SettingName>
+    <CerebrexFlavourPack_Settings_BlackHoleSunEnabled>Replace the home system's star with a black hole</CerebrexFlavourPack_Settings_BlackHoleSunEnabled>
+    <CerebrexFlavourPack_Settings_BlackHoleSunEnabled_Tooltip>Permanently replaces the home system's star with a black hole, present from the start of the game. You can switch it on or off at any time, including mid-game, and the change applies immediately.</CerebrexFlavourPack_Settings_BlackHoleSunEnabled_Tooltip>
+    <CerebrexFlavourPack_Settings_BlackHoleLightCap>Black hole light limit: {0}</CerebrexFlavourPack_Settings_BlackHoleLightCap>
+    <CerebrexFlavourPack_Settings_BlackHoleLightCap_Tooltip>Fraction of normal sunlight the black hole lets through. Affects both map brightness and the sky's colour tint. 100% looks like an ordinary star; lower values are dimmer, with a colder, near-black cast. Has no effect while the black hole is switched off.</CerebrexFlavourPack_Settings_BlackHoleLightCap_Tooltip>
+    <CerebrexFlavourPack_Settings_RefurbishCostRate_Tooltip>Multiplies the plasteel and advanced component cost of the Refurbish gizmo on the cerebrex core, per point of hit points restored. Higher values make repairing the core more expensive; lower values make it cheaper.</CerebrexFlavourPack_Settings_RefurbishCostRate_Tooltip>
+    <CerebrexFlavourPack_Settings_CoreRetreatHpFraction_Tooltip>The fraction of the cerebrex core's max hit points that must be destroyed before a core-focused raid gives up and retreats. Lower values make raiders retreat sooner; higher values let them press the attack longer, up to the point of destroying the core outright.</CerebrexFlavourPack_Settings_CoreRetreatHpFraction_Tooltip>
+    <CerebrexFlavourPack_Settings_StrategySelectionWeight_Tooltip>Multiplies how often the storyteller picks a raid strategy that targets the cerebrex core (core strike, sappers, or siege) instead of an ordinary raid. Set to 0 to disable these raid types entirely.</CerebrexFlavourPack_Settings_StrategySelectionWeight_Tooltip>
 </LanguageData>

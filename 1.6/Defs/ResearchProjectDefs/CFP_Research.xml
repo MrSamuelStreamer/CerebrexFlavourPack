@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>CFP_CerebrexIntegration</defName>
+    <label>cerebrex integration</label>
+    <description>Reverse-engineer the command lattice of a cerebrex core well enough to build one from scratch. Lets you construct a replacement core if yours is ever lost, assuming your swarm survives long enough to finish the job.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Ultra</techLevel>
+    <prerequisites>
+      <li>Fabrication</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>18.00</researchViewX>
+    <researchViewY>0.50</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--
+    letterLabelEnemy / arrivalTextEnemy are [MustTranslate] fields: RimWorld resolves them through
+    DefInjected, NOT through Keyed. They must hold literal English here - a Keyed key would render
+    verbatim. Translators override them via Languages/<lang>/DefInjected/RaidStrategyDef/.
+  -->
+
+  <RaidStrategyDef>
+    <defName>CFP_CerebrexStrike</defName>
+    <workerClass>CerebrexFlavourPack.RaidStrategyWorker_CerebrexStrike</workerClass>
+    <arriveModes>
+      <li>EdgeWalkIn</li>
+      <li>EdgeDrop</li>
+      <li>EdgeWalkInGroups</li>
+      <li>EdgeDropGroups</li>
+      <li>CenterDrop</li>
+    </arriveModes>
+    <selectionWeightPerPointsCurve>
+      <points>
+        <li>(0, 0)</li>
+        <li>(300, 0.35)</li>
+        <li>(2000, 0.7)</li>
+      </points>
+    </selectionWeightPerPointsCurve>
+    <letterLabelEnemy>Core strike</letterLabelEnemy>
+    <arrivalTextEnemy>They are not here for your stockpiles. Every one of them is moving on the cerebrex core, and they will walk past anything that is not in the way.</arrivalTextEnemy>
+  </RaidStrategyDef>
+
+  <RaidStrategyDef>
+    <defName>CFP_CerebrexStrikeSappers</defName>
+    <workerClass>CerebrexFlavourPack.RaidStrategyWorker_CerebrexStrikeSappers</workerClass>
+    <minPawns>2</minPawns>
+    <arriveModes>
+      <li>EdgeWalkIn</li>
+      <li>EdgeDrop</li>
+      <li>EdgeWalkInGroups</li>
+      <li>EdgeDropGroups</li>
+    </arriveModes>
+    <selectionWeightPerPointsCurve>
+      <points>
+        <li>(0, 0)</li>
+        <li>(500, 0.3)</li>
+        <li>(2500, 0.6)</li>
+      </points>
+    </selectionWeightPerPointsCurve>
+    <letterLabelEnemy>Core strike (sappers)</letterLabelEnemy>
+    <arrivalTextEnemy>Breachers lead this one. They intend to cut a straight line through your walls to the cerebrex core rather than fight their way around your defences.</arrivalTextEnemy>
+  </RaidStrategyDef>
+
+  <RaidStrategyDef>
+    <defName>CFP_CerebrexSiege</defName>
+    <workerClass>CerebrexFlavourPack.RaidStrategyWorker_CerebrexSiege</workerClass>
+    <minPawns>4</minPawns>
+    <raidLootValueFactor>0</raidLootValueFactor>
+    <arriveModes>
+      <li>EdgeWalkIn</li>
+      <li>EdgeDrop</li>
+    </arriveModes>
+    <pointsFactorCurve>
+      <points>
+        <li>0, 0.80</li>
+        <li>5000, 0.65</li>
+      </points>
+    </pointsFactorCurve>
+    <selectionWeightPerPointsCurve>
+      <points>
+        <li>(700, 0)</li>
+        <li>(1200, 0.6)</li>
+      </points>
+    </selectionWeightPerPointsCurve>
+    <letterLabelEnemy>Core siege</letterLabelEnemy>
+    <arrivalTextEnemy>They are digging in within mortar range of the cerebrex core, planning to shell it flat from a distance unless you go out and stop them.</arrivalTextEnemy>
+    <layerWhitelist>
+      <li>Surface</li>
+    </layerWhitelist>
+  </RaidStrategyDef>
+
+</Defs>

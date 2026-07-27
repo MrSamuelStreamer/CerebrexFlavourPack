@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--
+    Standalone player-owned cerebrex core. This is deliberately NOT the vanilla Odyssey
+    "CerebrexCore" def - that one belongs to the mechhive quest and is left completely untouched.
+    Only art/sound asset paths are shared, which are plain string/def references.
+  -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>CFP_CerebrexCore</defName>
+    <label>cerebrex core</label>
+    <description>The thinking heart of your mechanoid swarm. Every mech under your command draws its orders from this lattice of persona-grade computation.\n\nIf the core is destroyed, the swarm goes dark for good. Enemies who understand what it is will walk past everything else to reach it.</description>
+    <thingClass>Building</thingClass>
+    <tickerType>Normal</tickerType>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/CerebrexCore/CerebrexCore_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,7)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Building/CerebrexCore/CerebrexCore_MenuIcon</uiIconPath>
+    <size>(7,7)</size>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>1.0</fillPercent>
+    <blockWind>true</blockWind>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <destroyable>true</destroyable>
+    <useHitPoints>true</useHitPoints>
+    <designationCategory>Misc</designationCategory>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>CFP_CerebrexIntegration</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <WorkToBuild>90000</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+    </statBases>
+    <costList>
+      <Steel>600</Steel>
+      <Plasteel>450</Plasteel>
+      <ComponentSpacer>20</ComponentSpacer>
+    </costList>
+    <building>
+      <isEdifice>true</isEdifice>
+      <deconstructible>false</deconstructible>
+      <claimable>true</claimable>
+      <isTargetable>true</isTargetable>
+      <!-- Deliberately false: the Refurbish gizmo on CompCerebrexCore is the only repair path,
+           so healing costs resources instead of free colonist labour. -->
+      <repairable>false</repairable>
+      <!-- Must be false, otherwise TrashUtility.ShouldTrashBuilding only rolls ~0.8% per pawn
+           per 3 in-game hours and ordinary raider AI effectively ignores the core. -->
+      <isInert>false</isInert>
+      <ai_neverTrashThis>false</ai_neverTrashThis>
+    </building>
+    <comps>
+      <li Class="CerebrexFlavourPack.CompProperties_CerebrexCore" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(255,120,120,0)</glowColor>
+      </li>
+      <li Class="CompProperties_AmbientSound">
+        <sound>CerebrexCore_Ambient</sound>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

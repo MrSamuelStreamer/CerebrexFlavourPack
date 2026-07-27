@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ── Black Hole GameCondition ──────────────────────────────────────────────
+       Dims in-map sunlight to 25% and replaces the world-map sun with a black
+       hole visual (event-horizon disc, photon ring, accretion glow).
+       Handled by GameCondition_BlackHole.
+
+       Unlike a normal storyteller-fired condition this one is permanent: it is
+       registered/ended directly by WorldComponent_CerebrexBlackHole based on
+       Settings.blackHoleSunEnabled (default on), not by an IncidentDef. There is
+       deliberately no startMessage - FinalizeInit re-syncs this condition on
+       every world load, and a message on every load would be spammy. endMessage
+       still fires if the player switches the setting off mid-game. -->
+
+  <GameConditionDef>
+    <defName>CFP_BlackHole</defName>
+    <conditionClass>CerebrexFlavourPack.GameCondition_BlackHole</conditionClass>
+    <label>black hole</label>
+    <description>The home system's star has collapsed into a black hole. Only the faint glow of infalling matter remains visible in the sky.</description>
+    <endMessage>The black hole has dissipated. The star's light slowly returns.</endMessage>
+    <canBePermanent>true</canBePermanent>
+    <exclusiveConditions>
+      <li>Eclipse</li>
+      <li>VolcanicWinter</li>
+    </exclusiveConditions>
+  </GameConditionDef>
+
+</Defs>
