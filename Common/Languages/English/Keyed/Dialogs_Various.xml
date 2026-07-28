@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <ResearchFinished>Node reestablished: {0}</ResearchFinished>
+  <ResearchScreen>Memory Banks</ResearchScreen>
+  <ResearchUnknownProjectRevealed>By researching {0} you have discovered the {1} research project.</ResearchUnknownProjectRevealed>
+</LanguageData>

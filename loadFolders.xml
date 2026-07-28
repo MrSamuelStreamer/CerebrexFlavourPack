@@ -10,5 +10,6 @@
 		<li IfModActive="aoba.deadmanswitch.core">aoba.deadmanswitch.core</li>
 		<li IfModActive="aoba.deadmanswitch.ancientcorps">aoba.deadmanswitch.ancientcorps</li>
 		<li IfModActive="mlie.reinforcedmechanoid2">mlie.reinforcedmechanoid2</li>
+		<li IfModActive="mlie.yayosendgame">mlie.yayosendgame</li>
 	</v1.6>
 </loadFolders>

@@ -11,7 +11,7 @@
     <label>cerebrex core</label>
     <description>The thinking heart of your mechanoid swarm. Every mech under your command draws its orders from this lattice of persona-grade computation.\n\nIf the core is destroyed, the swarm goes dark for good. Enemies who understand what it is will walk past everything else to reach it.</description>
     <thingClass>Building</thingClass>
-    <tickerType>Normal</tickerType>
+    <tickerType>Rare</tickerType>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
       <texPath>Things/Building/CerebrexCore/CerebrexCore_Base</texPath>
@@ -59,6 +59,15 @@
       <ai_neverTrashThis>false</ai_neverTrashThis>
     </building>
     <comps>
+      <li Class="MSSFP.Comps.CompProperties_TrueAICore">
+        <defaultPersonality>MSSFP_AICore_Mechanoid</defaultPersonality>
+        <artInputs>
+            <li>WoodLog</li>
+            <li>Steel</li>
+        </artInputs>
+        <artInputCount>30</artInputCount>
+        <artOutputDef>MSSFP_AICoreSculptureSmall</artOutputDef>
+      </li>
       <li Class="CerebrexFlavourPack.CompProperties_CerebrexCore" />
       <li Class="CompProperties_Glower">
         <glowRadius>12</glowRadius>

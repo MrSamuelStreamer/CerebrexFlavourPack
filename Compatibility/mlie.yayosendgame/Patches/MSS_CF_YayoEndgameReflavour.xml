@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Core made of all the data from various biomes -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="yy_planetCore"]/label</xpath>
+        <value>
+            <label>Planet Triangulation Data</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="yy_planetCore"]/description</xpath>
+        <value>
+            <description>A Mechanoid triangulation core, contains everything a mech hive would need to deploy a 'planet-cracker' weapon.\n\nCrafted from data nodes extracted from a Biome Triangulation Device.</description>
+        </value>
+    </Operation>
+    <!-- Scanner -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="yy_biomeExtractor"]/label</xpath>
+        <value>
+            <label>Mechanoid Offensive Operations Breach Scanner</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="yy_biomeExtractor"]/description</xpath>
+        <value>
+            <description>Scans the biome for weaknesses that can be exploited by Mechanoid orbital super weapons.\n\nProduces data nodes about the specific locale the breach scanner is constructed in, and will require data from a variety of biomes to correctly triangulate weaknesses in the planets crust.</description>
+        </value>
+    </Operation>
+    <!-- Endgame Device -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="yy_teleporter"]/label</xpath>
+        <value>
+            <label>Mechanoid Ultimate Fission Failsafe System</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="yy_teleporter"]/description</xpath>
+        <value>
+            <description>A planet-cracking ultratech Mechanoid device used in the most extreme of extermination strategies when total-war has failed and the target has survived all other Mechanoid incursion.\n\nRequires triangulation data gathered from several biomes of the planet in order to calculate optimal nuclear fission payload delivery into the crust of the planet.</description>
+        </value>
+    </Operation>
+</Patch>
