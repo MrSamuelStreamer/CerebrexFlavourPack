@@ -5,11 +5,11 @@
 		<li>1.6</li>
 		<li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
 		<li IfModActiveAll="rokk.playwright,RedMattis.SapientAnimals">Compatibility/rokk.playwright</li>
-		<li IfModActive="co.uk.epicguru.antimatterannihilation">co.uk.epicguru.antimatterannihilation</li>
-		<li IfModActive="aoba.usac.core">aoba.usac.core</li>
-		<li IfModActive="aoba.deadmanswitch.core">aoba.deadmanswitch.core</li>
-		<li IfModActive="aoba.deadmanswitch.ancientcorps">aoba.deadmanswitch.ancientcorps</li>
-		<li IfModActive="mlie.reinforcedmechanoid2">mlie.reinforcedmechanoid2</li>
-		<li IfModActive="mlie.yayosendgame">mlie.yayosendgame</li>
+		<li IfModActive="co.uk.epicguru.antimatterannihilation">Compatibility/co.uk.epicguru.antimatterannihilation</li>
+		<li IfModActive="aoba.usac.core">Compatibility/aoba.usac.core</li>
+		<li IfModActive="aoba.deadmanswitch.core">Compatibility/aoba.deadmanswitch.core</li>
+		<li IfModActive="aoba.deadmanswitch.ancientcorps">Compatibility/aoba.deadmanswitch.ancientcorps</li>
+		<li IfModActive="mlie.reinforcedmechanoid2">Compatibility/mlie.reinforcedmechanoid2</li>
+		<li IfModActive="mlie.yayosendgame">Compatibility/mlie.yayosendgame</li>
 	</v1.6>
 </loadFolders>

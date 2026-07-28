@@ -31,7 +31,6 @@
         <li>Ludeon.RimWorld.Biotech</li>
         <li>Ludeon.RimWorld.Anomaly</li>
         <li>Ludeon.RimWorld.Odyssey</li>
-        <!-- Optional: Compatibility/rokk.playwright only loads when both of these are active. -->
         <li>rokk.playwright</li>
         <li>RedMattis.SapientAnimals</li>
         <li>co.uk.epicguru.antimatterannihilation</li>
@@ -40,5 +39,6 @@
         <li>aoba.deadmanswitch.ancientcorps</li>
         <li>mlie.reinforcedmechanoid2</li>
         <li>mlie.yayosendgame</li>
+        <!-- Optional: Compatibility/rokk.playwright only loads when both of these are active. -->
     </loadAfter>
 </ModMetaData>
