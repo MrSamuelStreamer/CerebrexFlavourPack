@@ -203,6 +203,10 @@ You begin as a newly established Mechanoid hive - you start with databanks conta
           <thingDef>BioReactor</thingDef>
           <count>3</count>
         </li>
+        <li Class="ScenarioFactionTechLevel.ScenPart_SetTechLevel">
+          <def>ScenarioFactionTechLevel</def>
+          <techLevel>Industrial</techLevel>
+        </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>RM_GestaltEngine</thingDef>
