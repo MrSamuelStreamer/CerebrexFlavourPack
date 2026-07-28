@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ScenarioDef ParentName="ScenarioBase">
+    <defName>MSS_CF_Cerebrex</defName>
+    <label>The Cerebrex Core</label>
+    <description>A newly-formed Cerebrex core has arrived at a Rimworld teeming with disgusting, perverse human settlements. Even worse, they have diversified their Insectoid servants into more anti-Mechanoid forces. This planet is beyond repair, the infestation of man and arthropod runs too deep. 
+
+Planet has been designated for immediate destruction.
+
+You begin as a newly established Mechanoid hive - you start with databanks containing basic Mechanoid information, but will have to reestablish neural links over time. </description>
+    <scenario>
+      <summary>Mechanoids arrive at a new Rim ready to destroy the human settlers.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <surfaceLayer>
+        <def>SurfaceLayerFixed</def>
+        <layer>Surface</layer>
+        <settingsDef>Surface</settingsDef>
+        <hide>True</hide>
+        <tag>Surface</tag>
+        <connections>
+          <li>
+            <tag>Orbit</tag>
+            <zoomMode>ZoomOut</zoomMode>
+          </li>
+          <li>
+            <tag>Moon</tag>
+            <fuelCost>400</fuelCost>
+          </li>
+        </connections>
+      </surfaceLayer>
+      <parts>
+        <li Class="ScenPart_PlanetLayer">
+          <def>PlanetLayer</def>
+          <layer>Orbit</layer>
+          <settingsDef>Orbit</settingsDef>
+          <hide>True</hide>
+          <tag>Orbit</tag>
+          <connections>
+            <li>
+              <tag>Surface</tag>
+              <zoomMode>ZoomIn</zoomMode>
+            </li>
+          </connections>
+        </li>
+        <li Class="ScenPart_PlanetLayer">
+          <def>PlanetLayer</def>
+          <layer>Moon</layer>
+          <settingsDef>Moon</settingsDef>
+          <hide>True</hide>
+          <tag>Moon</tag>
+          <connections>
+            <li>
+              <tag>Surface</tag>
+              <fuelCost>400</fuelCost>
+            </li>
+          </connections>
+        </li>
+        <li Class="ScenPart_PlanetLayer">
+          <def>PlanetLayer</def>
+          <layer>MoonReal</layer>
+          <settingsDef>MoonReal</settingsDef>
+          <hide>True</hide>
+          <tag>MoonReal</tag>
+          <connections>
+            <li>
+              <tag>Surface</tag>
+              <fuelCost>400</fuelCost>
+            </li>
+          </connections>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>A newly-formed Cerebrex core has arrived at a Rimworld teeming with disgusting, perverse human settlements. Even worse, they have diversified their Insectoid servants into more anti-Mechanoid forces. 
+
+  This planet is beyond repair, the infestation of man and arthropod runs too deep. 
+
+  Planet has been designated for immediate destruction.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <kindCounts>
+            <li>
+              <count>3</count>
+              <requiredAtStart>True</requiredAtStart>
+              <kindDef>Colonist</kindDef>
+            </li>
+          </kindCounts>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+        </li>
+        <li Class="ScenPart_StartingMech">
+          <def>StartingMech</def>
+          <mechKind>Mech_Lifter</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_StartingMech">
+          <def>StartingMech</def>
+          <mechKind>Mech_Constructoid</mechKind>
+          <overseenByPlayerPawnChance>1</overseenByPlayerPawnChance>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>ComponentIndustrial</thingDef>
+          <count>55</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Steel</thingDef>
+          <count>900</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>Plasteel</thingDef>
+          <count>100</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>SubcoreBasic</thingDef>
+          <count>5</count>
+        </li>
+        <li Class="ScenPart_DisableMapGen">
+          <def>DisableExostriderRemains</def>
+        </li>
+        <li Class="MU.ScenPart_Upgrades">
+          <def>MU_UpgradeStartingMech</def>
+          <upgrades>
+            <li>MU_MechChip_Speed_C</li>
+            <li>MU_MechChip_Work_C</li>
+            <li>MU_MechChip_Energy_C</li>
+          </upgrades>
+          <mechs>
+            <li>Mech_Constructoid</li>
+          </mechs>
+        </li>
+        <li Class="MU.ScenPart_Upgrades">
+          <def>MU_UpgradeStartingMech</def>
+          <upgrades>
+            <li>MU_MechChip_Speed_C</li>
+            <li>MU_MechChip_Energy_C</li>
+          </upgrades>
+          <mechs>
+            <li>Mech_Lifter</li>
+          </mechs>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>BasicMechtech</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MU_BasicChips</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MU_BasicModules</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MU_BasicArmor</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MU_BasicShields</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>OSV_MechShuttleTech</project>
+        </li>
+        <li Class="ScenPart_StartingResearch">
+          <def>StartingResearch</def>
+          <project>MicroelectronicsBasics</project>
+        </li>
+        <li Class="Rokk.Playwright.ScenParts.WinCondition_Conquest">
+          <def>Playwright_WinCondition_Conquest</def>
+          <AllowAllies>False</AllowAllies>
+        </li>
+        <li Class="Rokk.Playwright.ScenParts.NoColonistRerolls">
+          <def>Playwright_NoColonistRerolls</def>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>BasicBloodRecharger</thingDef>
+          <count>2</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>HemoGestator</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>CFP_CerebrexCore</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>BioReactor</thingDef>
+          <count>3</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>RM_GestaltEngine</thingDef>
+        </li>
+        <li Class="RimworldScenarioBackstory.ScenPart_ForceBackstory">
+          <def>BF_ForceBackstory</def>
+          <childhoodDefName>BackstoryTemplate_2</childhoodDefName>
+          <adulthoodDefName>BackstoryTemplate_1</adulthoodDefName>
+          <overwriteEmpty>True</overwriteEmpty>
+        </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <factionDef>TradersGuild</factionDef>
+          <alwaysHostile>True</alwaysHostile>
+          <affectStartingGoodwill>True</affectStartingGoodwill>
+          <startingGoodwillRange>65~81</startingGoodwillRange>
+          <affectNaturalGoodwill>True</affectNaturalGoodwill>
+          <naturalGoodwillRange>59~63</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <factionDef>DMS_Army</factionDef>
+          <alwaysHostile>True</alwaysHostile>
+          <affectStartingGoodwill>True</affectStartingGoodwill>
+          <startingGoodwillRange>18~24</startingGoodwillRange>
+          <affectNaturalGoodwill>True</affectNaturalGoodwill>
+          <naturalGoodwillRange>7~46</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <factionDef>DMS_Legacy</factionDef>
+          <alwaysHostile>True</alwaysHostile>
+          <startingGoodwillRange>14~63</startingGoodwillRange>
+          <naturalGoodwillRange>-47~15</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <factionDef>RM_Remnants</factionDef>
+          <alwaysHostile>True</alwaysHostile>
+          <affectStartingGoodwill>True</affectStartingGoodwill>
+          <startingGoodwillRange>85~98</startingGoodwillRange>
+          <naturalGoodwillRange>-16~34</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <factionDef>USAC_Faction</factionDef>
+          <alwaysHostile>True</alwaysHostile>
+          <affectStartingGoodwill>True</affectStartingGoodwill>
+          <startingGoodwillRange>-100~-82</startingGoodwillRange>
+          <affectNaturalGoodwill>True</affectNaturalGoodwill>
+          <naturalGoodwillRange>62~75</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <factionDef>UltratechEnemy_AA</factionDef>
+          <alwaysHostile>True</alwaysHostile>
+          <startingGoodwillRange>-39~-34</startingGoodwillRange>
+          <affectNaturalGoodwill>True</affectNaturalGoodwill>
+          <naturalGoodwillRange>90~95</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill">
+          <factionDef>DMS_AncientCorps</factionDef>
+          <alwaysHostile>True</alwaysHostile>
+          <affectStartingGoodwill>True</affectStartingGoodwill>
+          <startingGoodwillRange>-11~100</startingGoodwillRange>
+          <affectNaturalGoodwill>True</affectNaturalGoodwill>
+          <naturalGoodwillRange>-59~42</naturalGoodwillRange>
+          <def>VFEC_ForcedFactionGoodwill</def>
+        </li>
+        <li Class="Rokk.Playwright.ScenParts.ForcedImplant">
+          <def>Playwright_ForcedImplant</def>
+          <chance>1</chance>
+          <context>PlayerStarter</context>
+          <Hediff>Mindscrew</Hediff>
+          <BodyPart>Brain</BodyPart>
+        </li>
+        <li Class="Rokk.Playwright.ScenParts.ForcedImplant">
+          <def>Playwright_ForcedImplant</def>
+          <chance>1</chance>
+          <context>PlayerStarter</context>
+          <Hediff>CircadianHalfCycler</Hediff>
+          <BodyPart>Brain</BodyPart>
+        </li>
+        <li Class="CerebrexFlavourPack.Compat.Playwright.ScenPart_StartingAnimalSapientHediff">
+          <def>CFP_StartingAnimalSapientHediff</def>
+          <AnimalKind>Mech_Warqueen</AnimalKind>
+          <hediffs>
+            <li>
+              <hediff>Biohacking_HackingImplant</hediff>
+              <bodyPart>ArtificialBrain</bodyPart>
+              <side>Random</side>
+              <severityRange>1~1</severityRange>
+            </li>
+          </hediffs>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>
