@@ -4,7 +4,7 @@
   <ScenarioDef ParentName="ScenarioBase">
     <defName>MSS_CF_Cerebrex</defName>
     <label>The Cerebrex Core</label>
-    <description>A newly-formed Cerebrex core has arrived at a Rimworld teeming with disgusting, perverse human settlements. Even worse, they have diversified their Insectoid servants into more anti-Mechanoid forces. This planet is beyond repair, the infestation of man and arthropod runs too deep. 
+    <description>A newly-formed Cerebrex core has arrived at a Rimworld teeming with disgusting, perverse human settlements. Even worse, they have diversified their Insectoid servants into more anti-Mechanoid forces. This planet is beyond repair, the infestation of man and arthropod runs too deep.
 
 Planet has been designated for immediate destruction.
 
@@ -74,9 +74,9 @@ You begin as a newly established Mechanoid hive - you start with databanks conta
         </li>
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
-          <text>A newly-formed Cerebrex core has arrived at a Rimworld teeming with disgusting, perverse human settlements. Even worse, they have diversified their Insectoid servants into more anti-Mechanoid forces. 
+          <text>A newly-formed Cerebrex core has arrived at a Rimworld teeming with disgusting, perverse human settlements. Even worse, they have diversified their Insectoid servants into more anti-Mechanoid forces.
 
-  This planet is beyond repair, the infestation of man and arthropod runs too deep. 
+  This planet is beyond repair, the infestation of man and arthropod runs too deep.
 
   Planet has been designated for immediate destruction.</text>
           <closeSound>GameStartSting</closeSound>
@@ -297,12 +297,12 @@ You begin as a newly established Mechanoid hive - you start with databanks conta
               <severityRange>1~1</severityRange>
             </li>
             <!-- Not functional, scenario fails to load -->
-            <!-- <li>
-              <hediff>Mechlink</hediff>
+            <li>
+              <hediff>MechlinkImplant</hediff>
               <bodyPart>ArtificialBrain</bodyPart>
               <side>Random</side>
               <severityRange>1~1</severityRange>
-            </li> -->
+            </li>
           </hediffs>
         </li>
       </parts>
