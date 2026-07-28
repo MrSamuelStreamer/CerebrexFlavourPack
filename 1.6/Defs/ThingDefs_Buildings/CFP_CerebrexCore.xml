@@ -67,6 +67,16 @@
       <li Class="CompProperties_AmbientSound">
         <sound>CerebrexCore_Ambient</sound>
       </li>
+      <li Class="CerebrexFlavourPack.CompProperties_SpawnItemGizmo">
+        <label>Spawn Cogni-Fi</label>
+        <description>Spawn a Cogni-Fi.</description>
+        <spawnItem>BS_Sapienator</spawnItem>
+        <count>1</count>
+        <iconPath>BS_Items/sapienator</iconPath>
+        <offsetX>0</offsetX>
+        <offsetY>-4</offsetY>
+        <cooldownTicks>600000</cooldownTicks>
+      </li>
     </comps>
   </ThingDef>
 
