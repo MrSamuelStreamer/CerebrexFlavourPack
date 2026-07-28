@@ -42,11 +42,11 @@ namespace CerebrexFlavourPack
             if (Props.spawnItem == null)
                 yield break;
 
-            if (Prefs.DevMode)
+            if (DebugSettings.godMode)
             {
                 yield return new Command_Action
                 {
-                    defaultLabel = "Reset cooldown",
+                    defaultLabel = "DEV: Reset itemspawn cooldown",
                     action = () => nextUseTick = -1
                 };
             }
