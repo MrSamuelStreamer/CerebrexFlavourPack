@@ -34,6 +34,22 @@ public class CompCerebrexCore : ThingComp
     private int cachedPlasteelCount;
     private int cachedComponentsCount;
 
+    // Vanilla CerebrexCore's floating brain (RimWorld.CompCerebrexCore.DrawAt), reproduced
+    // here since this comp intentionally doesn't derive from vanilla's quest-bound comp.
+    private const string BrainTexPath = "Things/Building/CerebrexCore/CerebrexCore_Brain";
+    private static readonly Vector3 BrainDrawSize = new(7f, 7f, 7f);
+    private const float BrainZOffset = 2f;
+    private const float BrainBobHeight = 0.35f;
+    private const int BrainBobPeriodTicks = 300;
+
+    // Not saved: rebuilt on demand after load. Resolving it here rather than in
+    // PostSpawnSetup keeps texture lookup off the load path.
+    [Unsaved(false)]
+    private Graphic cachedBrainGraphic;
+
+    private Graphic BrainGraphic => cachedBrainGraphic ??= GraphicDatabase.Get<Graphic_Multi>(
+        BrainTexPath, ShaderDatabase.Cutout, BrainDrawSize, Color.white);
+
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {
         base.PostSpawnSetup(respawningAfterLoad);
@@ -48,6 +64,17 @@ public class CompCerebrexCore : ThingComp
     {
         base.PostDestroy(mode, previousMap);
         Current.Game?.GetComponent<GameComponent_CerebrexWatch>()?.Notify_CoreDestroyed(parent, mode, previousMap);
+    }
+
+    public override void DrawAt(Vector3 drawLoc, bool flip = false)
+    {
+        float z = BrainZOffset
+            + 0.5f * (1f + Mathf.Sin(Mathf.PI * 2f * GenTicks.TicksGame / BrainBobPeriodTicks))
+            * BrainBobHeight;
+        Matrix4x4 matrix = Matrix4x4.TRS(
+            drawLoc + new Vector3(0f, 0.35f, z), Quaternion.AngleAxis(0f, Vector3.up), Vector3.one);
+        GenDraw.DrawMeshNowOrLater(
+            BrainGraphic.MeshAt(Rot4.South), matrix, BrainGraphic.MatSouth, drawNow: false);
     }
 
     public override string CompInspectStringExtra()
