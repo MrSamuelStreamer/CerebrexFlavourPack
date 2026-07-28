@@ -25,7 +25,7 @@ public class ScenPart_StartingAnimalSapientHediff : StartingAnimalSapient
 
     private static IEnumerable<HediffDef> PossibleHediffs()
     {
-        return DefDatabase<HediffDef>.AllDefsListForReading.Where(h => h.scenarioCanAdd);
+        return DefDatabase<HediffDef>.AllDefsListForReading;
     }
 
     // Rows: animal picker, count label, count field, "add hediff" button, skip, help button,
