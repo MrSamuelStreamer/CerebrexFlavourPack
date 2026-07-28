@@ -148,7 +148,7 @@ public class GameCondition_BlackHole : GameCondition
     // larger than the planet disc (~4°), so the glowing disc halo is always visible.
     internal const float SphereWorldRadius = 150f;
 
-    private static void ActivateBlackHole()
+    internal static void ActivateBlackHole()
     {
         if (RayMarchShader == null)
         {

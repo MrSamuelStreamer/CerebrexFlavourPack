@@ -51,6 +51,11 @@ public class WorldComponent_CerebrexBlackHole : WorldComponent
             world.GameConditionManager.RegisterCondition(condition);
             ModLog.Log("[WorldComponent_CerebrexBlackHole] Black hole enabled (permanent, via setting).");
         }
+        else if (shouldBeActive && active != null && !GameCondition_BlackHole.IsActive)
+        {
+            GameCondition_BlackHole.ActivateBlackHole();
+            ModLog.Log("[WorldComponent_CerebrexBlackHole] Re-attached render helper for save-loaded black hole condition.");
+        }
         else if (!shouldBeActive && active != null)
         {
             active.End();
