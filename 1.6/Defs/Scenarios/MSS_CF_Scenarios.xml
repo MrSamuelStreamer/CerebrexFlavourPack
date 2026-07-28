@@ -296,6 +296,13 @@ You begin as a newly established Mechanoid hive - you start with databanks conta
               <side>Random</side>
               <severityRange>1~1</severityRange>
             </li>
+            <!-- Not functional, scenario fails to load -->
+            <!-- <li>
+              <hediff>Mechlink</hediff>
+              <bodyPart>ArtificialBrain</bodyPart>
+              <side>Random</side>
+              <severityRange>1~1</severityRange>
+            </li> -->
           </hediffs>
         </li>
       </parts>
