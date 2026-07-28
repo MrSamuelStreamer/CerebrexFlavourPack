@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -51,20 +52,12 @@ namespace CerebrexFlavourPack
             }
 
             int ticksLeft = Mathf.Max(0, nextUseTick - Find.TickManager.TicksGame);
-            List<string> parts = new();
-            int days = ticksLeft / 60000;
-            int hours = (ticksLeft % 60000) / 2500;
-            int minutes = (ticksLeft % 2500) / 100;
-
-            if (days > 0) parts.Add($"{days}d");
-            if (hours > 0) parts.Add($"{hours}h");
-            if (minutes > 0 || parts.Count == 0) parts.Add($"{minutes}m");
 
             Command_Action command = new Command_Action
             {
                 defaultLabel = Props.label,
                 defaultDesc = IsOnCooldown() && Find.TickManager != null
-                    ? $"{Props.description}\nCooldown: {string.Join(" ", parts)} remaining"
+                    ? $"{Props.description}\nCooldown: {ticksLeft.ToStringTicksToPeriod()} remaining"
                     : Props.description,
                 icon = ContentFinder<Texture2D>.Get(Props.iconPath, true),
                 action = SpawnItem
