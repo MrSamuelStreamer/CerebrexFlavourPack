@@ -61,6 +61,10 @@ public class GlobalDrawLayer_Stars_Spectral : WorldDrawLayerBase
             // sun-proximity shrinkage can be toggled without a manual dirty flag.
             if (GameCondition_BlackHole.IsActive != calculatedForBlackHoleActive)
                 return true;
+            // Regenerate as the black hole grows, so the lensing angles keep tracking
+            // its size. Bucketed to ~5% relative steps — see GrowthBucket.
+            if (GameCondition_BlackHole.IsActive && GrowthBucket != calculatedForGrowthBucket)
+                return true;
             if (!base.ShouldRegenerate &&
                 (Find.GameInitData == null ||
                  !(Find.GameInitData.startingTile != calculatedForStartingTile)))
@@ -124,16 +128,37 @@ public class GlobalDrawLayer_Stars_Spectral : WorldDrawLayerBase
     // All angles are in radians, measured in mesh-local space where Vector3.forward
     // points toward the black hole (i.e., the sun direction after mesh rotation).
     //
-    // These constants track BHDiscScale (= 0.25) in BHRenderHelper:
-    //   Horizon viewport radius: sunVpRadius × 0.22 × 0.25 = 0.018
-    //   tan(θ_h) = 0.018 × 2 × tan(30°) = 0.018 × 1.155 ≈ 0.021 rad ≈ 1.2°
+    // These derive from BHRenderHelper's disc geometry rather than duplicating fixed
+    // numbers, so the lensing zone tracks the disc as GameCondition_BlackHole.GrowthFactor
+    // grows it over time instead of desyncing:
+    //   Horizon viewport radius: sunVpRadius × 0.22 × discScale
+    //   tan(θ_h) = horizonVpRadius × 2 × tan(30°)
+    // At base scale (discScale = BHDiscScaleBase, growth = 1x) this reproduces the
+    // original fixed values: horizonTheta ≈ 0.021 rad, shadowTheta ≈ 0.018 rad.
     //
     // LensStrength is unchanged; the 1/θ formula still produces an Einstein ring
-    // just outside the new (smaller) disc outer edge.
-    private const float LensHorizonTheta = 0.021f;  // mesh-space angle ≈ event horizon (tracks BHDiscScale)
-    private const float LensShadowTheta  = 0.018f;  // skip stars fully behind the shadow
-    private const float LensRadius       = 0.20f;   // ~11.5° outer radius of lensing zone
-    private const float LensStrength     = 2.8f;    // bending multiplier (tunable)
+    // just outside the disc outer edge at any size.
+    private const float VpRadiusToTheta = 1.1547f;  // = 2 × tan(30°), the skybox camera's fixed 60° FOV
+    private const float SunVpRadius     = 0.3248f;  // 7.5 / (2 × 20 × tan 30°), mirrors BHRenderHelper.OnPostRender
+    private const float LensRadiusBase  = 0.20f;    // ~11.5° outer radius of lensing zone, at base scale
+    private const float LensStrength    = 2.8f;     // bending multiplier (tunable)
+
+    // Growth beyond this multiple of the base disc scale no longer enlarges the lensing
+    // zone. Unlike the disc's own on-screen size (capped only by blackHoleGrowthMax, which
+    // can be 8x or more), a proportionally-growing shadowTheta/lensRadius quickly exceeds
+    // the camera's 60° FOV — at 8x growth the old uncapped formula gave a ~57° lensing
+    // radius, nearly twice the visible sky, reading as a big patch of missing stars rather
+    // than a halo. Capping the zone's own effective scale keeps it modest (~17° radius at
+    // the cap) regardless of how large the disc visually grows.
+    private const float LensGrowthCap = 1.5f;
+
+    // Log-scale bucket of the current growth factor, so ShouldRegenerate only fires on
+    // ~5% relative growth steps instead of every frame — and stops entirely once growth
+    // is clamped at Settings.blackHoleGrowthMax.
+    private static int GrowthBucket =>
+        Mathf.RoundToInt(Mathf.Log(GameCondition_BlackHole.GrowthFactor) / Mathf.Log(1.05f));
+
+    private int calculatedForGrowthBucket = -1;
 
     // ── Regenerate ───────────────────────────────────────────────────────
 
@@ -143,6 +168,17 @@ public class GlobalDrawLayer_Stars_Spectral : WorldDrawLayerBase
         foreach (object o in base.Regenerate()) yield return o;
 
         var mats = GetOrBuildSpectralMats();
+
+        // Derive the lensing geometry from the black hole's current growth, so the Einstein
+        // ring and shadow keep tracking the disc as it grows. At base scale (growthFactor
+        // == 1) this reproduces the original fixed constants. The lensing-only scale is
+        // separately capped at LensGrowthCap — see its comment — so the lensing zone stops
+        // growing well before the disc's own on-screen size reaches blackHoleGrowthMax.
+        float growthFactor  = GameCondition_BlackHole.GrowthFactor;
+        float lensDiscScale = BHRenderHelper.BHDiscScaleBase * Mathf.Min(growthFactor, LensGrowthCap);
+        float horizonTheta  = SunVpRadius * lensDiscScale * 0.22f * VpRadiusToTheta;
+        float shadowTheta   = horizonTheta * 0.87f;  // preserves the original 0.018 / 0.021 ratio
+        float lensRadius    = LensRadiusBase * (lensDiscScale / BHRenderHelper.BHDiscScaleBase);
 
         Rand.PushState();
         Rand.Seed = Find.World.info.Seed;
@@ -185,14 +221,14 @@ public class GlobalDrawLayer_Stars_Spectral : WorldDrawLayerBase
                 float sinTh = Mathf.Sqrt(Mathf.Max(0f, 1f - dot * dot));
                 float theta = Mathf.Atan2(sinTh, dot);               // angular separation [0, π]
 
-                if (theta < LensShadowTheta)
+                if (theta < shadowTheta)
                     continue; // fully behind the event horizon — BH shader draws black here
 
-                if (theta < LensRadius && sinTh > 1e-4f)
+                if (theta < lensRadius && sinTh > 1e-4f)
                 {
-                    // 1/θ bending, smoothly fading to zero at LensRadius.
-                    float raw   = LensStrength * (LensHorizonTheta * LensHorizonTheta) / theta;
-                    float fade  = Mathf.SmoothStep(LensRadius, LensRadius * 0.25f, theta);
+                    // 1/θ bending, smoothly fading to zero at lensRadius.
+                    float raw   = LensStrength * (horizonTheta * horizonTheta) / theta;
+                    float fade  = Mathf.SmoothStep(lensRadius, lensRadius * 0.25f, theta);
                     float delta = Mathf.Min(raw * fade, Mathf.PI * 0.3f);
 
                     // New position: decompose unitVector into (forward, perp) basis and
@@ -204,7 +240,7 @@ public class GlobalDrawLayer_Stars_Spectral : WorldDrawLayerBase
 
                     // Lensing magnification: stars deflected from near the horizon
                     // appear larger, brightening the Einstein ring band.
-                    float magFrac = Mathf.Clamp01(1f - theta / (LensHorizonTheta * 4f));
+                    float magFrac = Mathf.Clamp01(1f - theta / (horizonTheta * 4f));
                     size *= 1f + magFrac * 1.5f;
                 }
             }
@@ -218,6 +254,7 @@ public class GlobalDrawLayer_Stars_Spectral : WorldDrawLayerBase
         calculatedForStartingTile   = Find.GameInitData?.startingTile ?? PlanetTile.Invalid;
         calculatedForStaticRotation = UseStaticRotation;
         calculatedForBlackHoleActive = GameCondition_BlackHole.IsActive;
+        calculatedForGrowthBucket   = GrowthBucket;
 
         Rand.PopState();
         FinalizeMesh(MeshParts.All);

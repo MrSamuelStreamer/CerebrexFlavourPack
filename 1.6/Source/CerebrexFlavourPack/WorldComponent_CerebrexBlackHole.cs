@@ -53,7 +53,7 @@ public class WorldComponent_CerebrexBlackHole : WorldComponent
         }
         else if (shouldBeActive && active != null && !GameCondition_BlackHole.IsActive)
         {
-            GameCondition_BlackHole.ActivateBlackHole();
+            GameCondition_BlackHole.ActivateBlackHole(active.startTick);
             ModLog.Log("[WorldComponent_CerebrexBlackHole] Re-attached render helper for save-loaded black hole condition.");
         }
         else if (!shouldBeActive && active != null)

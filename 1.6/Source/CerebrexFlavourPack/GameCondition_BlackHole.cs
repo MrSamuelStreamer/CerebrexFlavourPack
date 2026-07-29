@@ -106,6 +106,31 @@ public class GameCondition_BlackHole : GameCondition
     /// </summary>
     internal const float WorldLightFactor = 0.5f;
 
+    // ── Growth ─────────────────────────────────────────────────────────────
+
+    // Tick this black hole began, captured on activation. Comes from the GameCondition's
+    // own (already-scribed) startTick, so growth needs no new save data of its own.
+    private static int bhStartTick;
+
+    /// <summary>
+    /// Radius multiplier applied to every black hole dimension, derived from the
+    /// condition's age. <see cref="Settings.blackHoleGrowthRate"/> is in *area* doublings
+    /// per in-game year, and doubling an area means multiplying the radius by sqrt(2) —
+    /// hence the 0.5 exponent. Clamped to <see cref="Settings.blackHoleGrowthMax"/> so a
+    /// long-lived colony never ends up with an all-black world map.
+    /// </summary>
+    internal static float GrowthFactor
+    {
+        get
+        {
+            Settings s = CerebrexFlavourPackMod.settings;
+            if (!s.blackHoleGrowthEnabled || Find.TickManager == null) return 1f;
+            float years = (Find.TickManager.TicksGame - bhStartTick) / (float)GenDate.TicksPerYear;
+            if (years <= 0f) return 1f;
+            return Mathf.Min(Mathf.Pow(2f, 0.5f * years * s.blackHoleGrowthRate), s.blackHoleGrowthMax);
+        }
+    }
+
     // ── SkyTarget ────────────────────────────────────────────────────────────
 
     public override SkyTarget? SkyTarget(Map map)
@@ -129,7 +154,7 @@ public class GameCondition_BlackHole : GameCondition
     public override void Init()
     {
         base.Init();
-        ActivateBlackHole();
+        ActivateBlackHole(startTick);
     }
 
     public override void End()
@@ -148,8 +173,10 @@ public class GameCondition_BlackHole : GameCondition
     // larger than the planet disc (~4°), so the glowing disc halo is always visible.
     internal const float SphereWorldRadius = 150f;
 
-    internal static void ActivateBlackHole()
+    internal static void ActivateBlackHole(int startTick)
     {
+        bhStartTick = startTick;
+
         if (RayMarchShader == null)
         {
             ModLog.Warn("GameCondition_BlackHole: shader not loaded — black hole inactive.");
@@ -242,10 +269,12 @@ internal sealed class BHRenderHelper : MonoBehaviour
 {
     internal Material Mat;
 
-    // Overall disc size relative to the vanilla sun viewport formula.
-    // Increase toward 0.40 for a more prominent disc; decrease toward 0.15 for subtler.
-    // At 0.25: disc outer ≈ the planet's angular diameter — visible but genuinely distant.
-    private const float BHDiscScale = 0.25f;
+    // Overall disc size relative to the vanilla sun viewport formula, at year 0 (before
+    // any growth is applied). Increase toward 0.40 for a more prominent disc; decrease
+    // toward 0.15 for subtler. At 0.25: disc outer ≈ the planet's angular diameter —
+    // visible but genuinely distant. Internal so GlobalDrawLayer_Stars_Spectral can derive
+    // its lensing angles from the same base instead of duplicating it.
+    internal const float BHDiscScaleBase = 0.25f;
 
     private int _frameCount;
 
@@ -294,15 +323,26 @@ internal sealed class BHRenderHelper : MonoBehaviour
         // the vanilla sun (a world-space mesh that gets this correction automatically).
         //   vp.z = dot(sunDir × 1000, cam.forward) = 1000 × cos(α)
         //   max on-screen: α = 30° (FOV edge) → sec²(30°) ≈ 1.33 — mild, continuous.
-        float cosAlpha   = Mathf.Max(vp.z / 1000f, 0.5f);   // clamp guards /0; not active in FOV
-        float perspScale = 1f / (cosAlpha * cosAlpha);
+        float cosAlpha      = Mathf.Max(vp.z / 1000f, 0.5f);   // clamp guards /0; not active in FOV
+        float rawPerspScale = 1f / (cosAlpha * cosAlpha);
 
-        // BHDiscScale reduces the overall disc to ~1.5× the planet's angular radius so the
-        // BH reads as a distant stellar object rather than something nearby.
+        // The ratio above is constant regardless of disc size, so it reads as a few
+        // invisible pixels at the small base scale but a jarring "looming closer near
+        // screen edges" swing once GrowthFactor makes the disc screen-filling. Dampen the
+        // correction toward a no-op (1x) as the disc grows, so it stays exactly the
+        // original behaviour at year 0 (dampen = 1) while a fully-grown disc holds a
+        // near-constant apparent size across the screen instead of ballooning at the edges.
+        float dampen     = 1f / GameCondition_BlackHole.GrowthFactor;
+        float perspScale = Mathf.Lerp(1f, rawPerspScale, dampen);
+
+        // BHDiscScaleBase reduces the overall disc to ~1.5× the planet's angular radius at
+        // year 0 so the BH reads as a distant stellar object rather than something nearby.
+        // GrowthFactor scales that up over time (1x at year 0, capped at blackHoleGrowthMax).
         // perspScale corrects for perspective distortion off screen centre.
-        float scaledRadius  = sunVpRadius * BHDiscScale * perspScale;
-        float horizonRadius = scaledRadius * 0.22f;   // ≈ 0.025 at centre
-        float discOuter     = scaledRadius * 0.77f;   // ≈ 0.088 at centre
+        float discScale     = BHDiscScaleBase * GameCondition_BlackHole.GrowthFactor;
+        float scaledRadius  = sunVpRadius * discScale * perspScale;
+        float horizonRadius = scaledRadius * 0.22f;   // ≈ 0.025 at centre, at base scale
+        float discOuter     = scaledRadius * 0.77f;   // ≈ 0.088 at centre, at base scale
 
         // ── Disc orientation ─────────────────────────────────────────────
         // The disc lies in the stellar equatorial plane (normal ≈ worldUp projected

@@ -20,6 +20,15 @@ public class Settings : ModSettings
     /// <summary>Fraction of normal sunlight the black hole lets through on the map (SkyTarget glow cap).</summary>
     public float blackHoleLightCap = 0.25f;
 
+    /// <summary>Whether the black hole's apparent size grows as it ages.</summary>
+    public bool blackHoleGrowthEnabled = true;
+
+    /// <summary>On-screen area doublings per in-game year. 1.0 = area doubles annually.</summary>
+    public float blackHoleGrowthRate = 1f;
+
+    /// <summary>Ceiling on the radius growth multiplier, so the disc never fills the world map.</summary>
+    public float blackHoleGrowthMax = 16f;
+
     /// <summary>Master switch for the cerebrex lattice spread/biome-flip/mood feature (requires Alpha Biomes).</summary>
     public bool latticeEnabled = true;
 
@@ -62,6 +71,26 @@ public class Settings : ModSettings
             blackHoleLightCap, 0.05f, 1f,
             tooltip: "CerebrexFlavourPack_Settings_BlackHoleLightCap_Tooltip".Translate());
         options.Gap();
+
+        options.CheckboxLabeled(
+            "CerebrexFlavourPack_Settings_BlackHoleGrowthEnabled".Translate(), ref blackHoleGrowthEnabled,
+            "CerebrexFlavourPack_Settings_BlackHoleGrowthEnabled_Tooltip".Translate());
+        options.Gap();
+
+        if (blackHoleGrowthEnabled)
+        {
+            blackHoleGrowthRate = options.SliderLabeled(
+                "CerebrexFlavourPack_Settings_BlackHoleGrowthRate".Translate(blackHoleGrowthRate.ToString("0.##")),
+                blackHoleGrowthRate, 0f, 5f,
+                tooltip: "CerebrexFlavourPack_Settings_BlackHoleGrowthRate_Tooltip".Translate());
+            options.Gap();
+
+            blackHoleGrowthMax = options.SliderLabeled(
+                "CerebrexFlavourPack_Settings_BlackHoleGrowthMax".Translate(blackHoleGrowthMax.ToString("0.#")),
+                blackHoleGrowthMax, 1f, 32f,
+                tooltip: "CerebrexFlavourPack_Settings_BlackHoleGrowthMax_Tooltip".Translate());
+            options.Gap();
+        }
 
         refurbishCostRate = options.SliderLabeled(
             "CerebrexFlavourPack_Settings_RefurbishCostRate".Translate(refurbishCostRate.ToString("0.##")),
@@ -141,6 +170,9 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref strategySelectionWeight, "strategySelectionWeight", 1f);
         Scribe_Values.Look(ref blackHoleSunEnabled, "blackHoleSunEnabled", true);
         Scribe_Values.Look(ref blackHoleLightCap, "blackHoleLightCap", 0.75f);
+        Scribe_Values.Look(ref blackHoleGrowthEnabled, "blackHoleGrowthEnabled", true);
+        Scribe_Values.Look(ref blackHoleGrowthRate, "blackHoleGrowthRate", 1f);
+        Scribe_Values.Look(ref blackHoleGrowthMax, "blackHoleGrowthMax", 16f);
         Scribe_Values.Look(ref latticeEnabled, "latticeEnabled", true);
         Scribe_Values.Look(ref latticeSteelPerCell, "latticeSteelPerCell", 1f);
         Scribe_Values.Look(ref latticeSteelReserve, "latticeSteelReserve", 200f);
