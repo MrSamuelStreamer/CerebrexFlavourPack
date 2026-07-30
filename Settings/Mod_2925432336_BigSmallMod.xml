@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="BigAndSmall.BSSettings">
+		<preventUndead>True</preventUndead>
+		<sapientMechanoids>True</sapientMechanoids>
+		<sapientMechanoidsMinAge>18</sapientMechanoidsMinAge>
+		<sapientAnimalsCanRomanceAnySapientAnimals>True</sapientAnimalsCanRomanceAnySapientAnimals>
+		<animalsNoSkillPenalty>True</animalsNoSkillPenalty>
+		<enableDraftedJobs>True</enableDraftedJobs>
+		<autoCombatResets>True</autoCombatResets>
+		<autoCombatResetsLongCharge>True</autoCombatResetsLongCharge>
+		<showAutoUseAllAbilitiesBtn>False</showAutoUseAllAbilitiesBtn>
+		<useSciFiNames>True</useSciFiNames>
+	</ModSettings>
+</SettingsBlock>

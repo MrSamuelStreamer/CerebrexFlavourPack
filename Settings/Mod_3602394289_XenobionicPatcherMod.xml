@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="XenobionicPatcher.XenobionicPatcherSettings">
+		<ConfigVersion>1.0.0</ConfigVersion>
+		<PatchArtificialToMech>Loose</PatchArtificialToMech>
+		<PatchMechlikeToHumanlike>Loose</PatchMechlikeToHumanlike>
+	</ModSettings>
+</SettingsBlock>

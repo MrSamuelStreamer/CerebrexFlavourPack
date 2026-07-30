@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AV_Mechspots.MechspotsSettings">
+		<ShowAssignedOnMechSpots>True</ShowAssignedOnMechSpots>
+		<AllowDeadColoredAssignmentLabels>True</AllowDeadColoredAssignmentLabels>
+		<ShowUnassignedOnMechSpots>True</ShowUnassignedOnMechSpots>
+		<DefaultAllowRechargeOnSpot>True</DefaultAllowRechargeOnSpot>
+		<ChargingSocketEfficiency>2</ChargingSocketEfficiency>
+		<AllowUsageUnpoweredSpots>True</AllowUsageUnpoweredSpots>
+		<ChargingSocketProducesWaste>False</ChargingSocketProducesWaste>
+		<ChargingSocketWasteStorageSpace>5</ChargingSocketWasteStorageSpace>
+	</ModSettings>
+</SettingsBlock>

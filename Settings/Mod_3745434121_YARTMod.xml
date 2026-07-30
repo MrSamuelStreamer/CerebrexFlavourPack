@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="YART.YARTModSettings">
+		<focusHighlightDimming>True</focusHighlightDimming>
+		<eraColors>
+			<li>RGBA(0.850, 0.360, 0.300, 1.000)</li>
+			<li>RGBA(0.850, 0.360, 0.300, 1.000)</li>
+			<li>RGBA(0.784, 0.608, 0.314, 1.000)</li>
+			<li>RGBA(0.300, 0.700, 0.400, 1.000)</li>
+			<li>RGBA(0.000, 0.898, 0.898, 1.000)</li>
+			<li>RGBA(0.700, 0.440, 1.000, 1.000)</li>
+			<li>RGBA(1.000, 0.843, 0.000, 1.000)</li>
+		</eraColors>
+		<tabPresets />
+		<favorites />
+	</ModSettings>
+</SettingsBlock>

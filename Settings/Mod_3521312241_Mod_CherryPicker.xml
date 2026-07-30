@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="CherryPicker.ModSettings_CherryPicker">
+		<keys>
+			<li>FactionDef/OutlanderCivil</li>
+			<li>FactionDef/OutlanderRough</li>
+			<li>FactionDef/TribeCivil</li>
+			<li>FactionDef/TribeRough</li>
+			<li>FactionDef/TribeSavage</li>
+			<li>FactionDef/Pirate</li>
+			<li>FactionDef/Empire</li>
+			<li>FactionDef/TribeCannibal</li>
+			<li>FactionDef/NudistTribe</li>
+			<li>FactionDef/CannibalPirate</li>
+			<li>FactionDef/TribeRoughNeanderthal</li>
+			<li>FactionDef/OutlanderRoughPig</li>
+			<li>FactionDef/PirateWaster</li>
+			<li>FactionDef/TradersGuild</li>
+			<li>FactionDef/Salvagers</li>
+			<li>FactionDef/TribeSavageImpid</li>
+			<li>FactionDef/PirateYttakin</li>
+			<li>XenotypeDef/Pigskin</li>
+			<li>XenotypeDef/Impid</li>
+			<li>XenotypeDef/Yttakin</li>
+			<li>XenotypeDef/Highmate</li>
+			<li>XenotypeDef/Starjack</li>
+			<li>XenotypeDef/MSSV_TheAscendant</li>
+			<li>XenotypeDef/MSSV_TheDevourer</li>
+			<li>XenotypeDef/MSSV_TheIntruder</li>
+			<li>XenotypeDef/MSSV_TheThief</li>
+			<li>XenotypeDef/Genie</li>
+			<li>XenotypeDef/Hussar</li>
+		</keys>
+	</ModSettings>
+</SettingsBlock>

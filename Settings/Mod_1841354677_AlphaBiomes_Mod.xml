@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AlphaBiomes.AlphaBiomes_Settings">
+		<AB_UseAgariluxParticles>True</AB_UseAgariluxParticles>
+		<AB_BrighterCrags>True</AB_BrighterCrags>
+		<AB_ShowBuildingsButton>True</AB_ShowBuildingsButton>
+		<feraliskInfestedJungleMultiplier>2</feraliskInfestedJungleMultiplier>
+		<gallatrossGraveyardMultiplier>2</gallatrossGraveyardMultiplier>
+		<gelatinousSuperorganismMultiplier>0</gelatinousSuperorganismMultiplier>
+		<idyllicMeadowsMultiplier>0</idyllicMeadowsMultiplier>
+		<mechanoidIntrusionMultiplier>2</mechanoidIntrusionMultiplier>
+		<miasmicMangroveMultiplier>2</miasmicMangroveMultiplier>
+		<mycoticJungleMultiplier>2</mycoticJungleMultiplier>
+		<ocularForestMultiplier>0</ocularForestMultiplier>
+		<propaneLakesMultiplier>2</propaneLakesMultiplier>
+		<rockyCragsMultiplier>0</rockyCragsMultiplier>
+		<pyroclasticConflagrationMultiplier>2</pyroclasticConflagrationMultiplier>
+		<tarPitsMultiplier>2</tarPitsMultiplier>
+		<AB_RemoveVanillaBiomes>False</AB_RemoveVanillaBiomes>
+	</ModSettings>
+</SettingsBlock>

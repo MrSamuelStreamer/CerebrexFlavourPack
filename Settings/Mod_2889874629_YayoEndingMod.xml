@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="yayoEnding.YayoEndingSettings">
+		<goalBiome>5</goalBiome>
+	</ModSettings>
+</SettingsBlock>

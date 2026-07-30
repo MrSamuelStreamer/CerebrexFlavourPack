@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VanillaRacesExpandedSanguophage.VanillaRacesExpandedSanguophage_Settings">
+		<drainCasketAmount>2</drainCasketAmount>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VanillaMemesExpanded.VanillaMemesExpanded_Settings">
+		<memeAmount>8</memeAmount>
+		<ritualsAmount>15</ritualsAmount>
+		<stylesAmount>5</stylesAmount>
+		<relicsAmount>15</relicsAmount>
+		<buildingsAmount>10</buildingsAmount>
+		<allowHighImpactMemesForFluidIdeos>True</allowHighImpactMemesForFluidIdeos>
+	</ModSettings>
+</SettingsBlock>

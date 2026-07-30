@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Leo.ResearchBasedRaidsDifficulty.ResearchBasedRaidsDifficulty_ModSettings">
+		<maxMultiplierAtRatio>1</maxMultiplierAtRatio>
+		<researchProjectBlacklist>
+			<keys />
+			<values />
+		</researchProjectBlacklist>
+		<researchProjectWhitelist>
+			<keys />
+			<values />
+		</researchProjectWhitelist>
+	</ModSettings>
+</SettingsBlock>

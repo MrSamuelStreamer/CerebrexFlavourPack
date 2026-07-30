@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="RPGDialog.SettingsData">
+		<dontPauseOnOpen>False</dontPauseOnOpen>
+		<openWindowOnEvent>False</openWindowOnEvent>
+		<useFactionLeaderForOtherFactions>True</useFactionLeaderForOtherFactions>
+		<customPortraitMappings>
+			<keys />
+			<values />
+		</customPortraitMappings>
+		<typingSoundVolume>0.104241669</typingSoundVolume>
+		<defaultSpeaker>Leader</defaultSpeaker>
+		<storytellerNames>
+			<keys />
+			<values />
+		</storytellerNames>
+		<customStorytellerTypingSounds>
+			<keys />
+			<values />
+		</customStorytellerTypingSounds>
+	</ModSettings>
+</SettingsBlock>

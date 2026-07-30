@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AV_Mechtech.MechtechSettings">
+		<HackingLanceBandwidth>3</HackingLanceBandwidth>
+		<NeurofoamProductionCount>1</NeurofoamProductionCount>
+		<NeutroamineProductionCount>1</NeutroamineProductionCount>
+		<HemogenePasteProductionCount>1</HemogenePasteProductionCount>
+	</ModSettings>
+</SettingsBlock>

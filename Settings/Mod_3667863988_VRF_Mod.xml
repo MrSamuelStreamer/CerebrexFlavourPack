@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VehicleRaidFramework.VRF_ModSettings">
+		<factionConfigs>
+			<li>
+				<factionDefName>CannibalPirate</factionDefName>
+				<vehicleEntries>
+					<li>
+						<vehicleKindDefName>CVN_ExostriderB_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVN_ExostriderC_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVN_ExostriderA_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVNG3Geist_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVNGravitywell_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>HighReaver_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVNMassculling_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVNmasscircumcizor_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>Mechtek_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVN_Mightboomer_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVNOVAdam_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVNOVJeff_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVN_MBT_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVN_truck_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>SupplyWardenpawn_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>CVN_VoidHerald_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>DMS_Chelydridae_MainBattleTank_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>DMS_ArmySteed_APC_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>DMS_Chameleon_TD_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+					<li>
+						<vehicleKindDefName>DMS_Mule_ATV_PawnKind</vehicleKindDefName>
+						<turretAmmo />
+						<paintConfig IsNull="True" />
+						<upgradeLoadouts />
+					</li>
+				</vehicleEntries>
+				<settlementVehicleEntries />
+				<outpostVehicleEntries />
+				<ambushVehicleEntries />
+			</li>
+		</factionConfigs>
+		<hoverConfigs />
+	</ModSettings>
+</SettingsBlock>

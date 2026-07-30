@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="WzrdCarry.WzrdCarrySettings">
+		<carryCapacity>150</carryCapacity>
+		<transportPodCapacity>300</transportPodCapacity>
+	</ModSettings>
+</SettingsBlock>

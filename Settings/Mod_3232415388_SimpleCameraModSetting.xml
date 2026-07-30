@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="SimpleCameraSetting.ModSetting">
+		<sizeRange>0.5~130.300003</sizeRange>
+		<followCameraKey>
+			<label>Follow Camera Key</label>
+			<key>Backspace</key>
+		</followCameraKey>
+	</ModSettings>
+</SettingsBlock>

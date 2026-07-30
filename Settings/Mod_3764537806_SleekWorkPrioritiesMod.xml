@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="SleekWorkPriorities.SleekWorkSettings">
+		<coolSteelPalette>True</coolSteelPalette>
+		<jobPresets />
+		<colorThemes />
+		<settingsWindowWidth>900</settingsWindowWidth>
+		<settingsWindowHeight>700</settingsWindowHeight>
+		<numberStyle>2</numberStyle>
+		<showUnassignedDots>False</showUnassignedDots>
+		<scrollEdit>False</scrollEdit>
+	</ModSettings>
+</SettingsBlock>

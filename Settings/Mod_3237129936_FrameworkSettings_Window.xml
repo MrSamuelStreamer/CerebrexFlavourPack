@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AV_Framework.FrameworkSettings">
+		<MessageOnBiocodableCreation>True</MessageOnBiocodableCreation>
+		<AllowCaravanItemSpawn>True</AllowCaravanItemSpawn>
+		<ShowMessageOnItemSpawn>True</ShowMessageOnItemSpawn>
+		<UsePlaceworker>True</UsePlaceworker>
+		<MechlinkInstallationForPsychiclyDeafAllowed>True</MechlinkInstallationForPsychiclyDeafAllowed>
+		<UseColoredMechlinkRange>True</UseColoredMechlinkRange>
+		<SkipProductionPatch>True</SkipProductionPatch>
+		<SkipPlantsPatch>True</SkipPlantsPatch>
+		<UseAutoCompatibility>True</UseAutoCompatibility>
+		<CenteredSpots>True</CenteredSpots>
+	</ModSettings>
+</SettingsBlock>

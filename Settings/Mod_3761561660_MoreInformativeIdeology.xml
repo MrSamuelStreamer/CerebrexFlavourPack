@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MoreInformativeIdeology.MoreInformativeIdeologySettings">
+		<reformIdeoRestrictedByHiddenFaction>True</reformIdeoRestrictedByHiddenFaction>
+		<cultureRestrictedByFaction>True</cultureRestrictedByFaction>
+		<preferAssociatedIdeoIconColorOnRandom>True</preferAssociatedIdeoIconColorOnRandom>
+	</ModSettings>
+</SettingsBlock>

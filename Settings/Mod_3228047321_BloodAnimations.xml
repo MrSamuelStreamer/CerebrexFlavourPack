@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="BloodAnimations.Settings">
+		<bloodMultiplier>1.50111878</bloodMultiplier>
+		<bloodTime>30</bloodTime>
+		<filthMultiplier>0</filthMultiplier>
+		<bleedMultiplier>0.854886293</bleedMultiplier>
+		<ticksUntilBleed>35</ticksUntilBleed>
+	</ModSettings>
+</SettingsBlock>

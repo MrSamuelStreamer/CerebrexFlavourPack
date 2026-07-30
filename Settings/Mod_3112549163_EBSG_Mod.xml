@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="EBSGFramework.EBSG_Settings">
+		<EBSG_ThinkTreeSettings>
+			<keys>
+				<li>EBSGFrameworkEBSGThinkTree</li>
+				<li>EBSGFrameworkEBSGColonistAI</li>
+				<li>EBSGFrameworkEBSGDraftedAI</li>
+			</keys>
+			<values>
+				<li>True</li>
+				<li>False</li>
+				<li>False</li>
+			</values>
+		</EBSG_ThinkTreeSettings>
+		<EBSG_FlexibleBoolSettings>
+			<keys />
+			<values />
+		</EBSG_FlexibleBoolSettings>
+		<EBSG_FlexibleNumSetttings>
+			<keys />
+			<values />
+		</EBSG_FlexibleNumSetttings>
+	</ModSettings>
+</SettingsBlock>

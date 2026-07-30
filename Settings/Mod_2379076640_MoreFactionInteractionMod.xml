@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MoreFactionInteraction.MoreFactionInteraction_Settings">
+		<doNotAffectTraders>True</doNotAffectTraders>
+		<timeModifierBetweenFactionInteraction>2.04073596</timeModifierBetweenFactionInteraction>
+		<traderWealthOffsetFromTimesTraded>0.699999988</traderWealthOffsetFromTimesTraded>
+		<MFI_pirateBaseUpgraderModifier>0.491636455</MFI_pirateBaseUpgraderModifier>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AV_MechanoidSkins.MechanoidSkinsSettings">
+		<FavoriteSkinsAsStrings />
+		<FactionColorInfoList />
+		<FavoriteColors_One>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_One>
+		<FavoriteColors_Two>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Two>
+		<FavoriteColors_Three>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Three>
+		<FavoriteColors_Four>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Four>
+		<FavoriteColors_Five>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Five>
+		<FavoriteColors_Six>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Six>
+		<FavoriteColors_Seven>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Seven>
+		<FavoriteColors_Eight>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Eight>
+		<FavoriteColors_Nine>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Nine>
+		<FavoriteColors_Ten>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Ten>
+		<FavoriteColors_Eleven>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Eleven>
+		<FavoriteColors_Twelve>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Twelve>
+		<FavoriteColors_Thirteen>RGBA(1.000, 1.000, 1.000, 1.000)</FavoriteColors_Thirteen>
+		<GenerateFromAllRenderTrees>False</GenerateFromAllRenderTrees>
+		<AllowChangingOfDraftedMechs>True</AllowChangingOfDraftedMechs>
+		<AllowChangingOfEnemySkins>False</AllowChangingOfEnemySkins>
+		<ForceComp_MechanoidSkin>True</ForceComp_MechanoidSkin>
+		<StandardRulePlayerFaction>1</StandardRulePlayerFaction>
+		<StandardRuleMechhiveFaction>1</StandardRuleMechhiveFaction>
+		<StandardRuleOtherFaction>1</StandardRuleOtherFaction>
+		<PlayerFactionColor>RGBA(0.000, 1.000, 1.000, 1.000)</PlayerFactionColor>
+		<HiveFactionColor>RGBA(0.780, 0.788, 0.710, 1.000)</HiveFactionColor>
+		<PlayerFactionColorDensity>0.5</PlayerFactionColorDensity>
+		<HiveFactionColorDensity>0.5</HiveFactionColorDensity>
+		<FirstStartUpDone>True</FirstStartUpDone>
+		<HeartShapedBox>True</HeartShapedBox>
+		<ShowOnlyMatchingSkins>True</ShowOnlyMatchingSkins>
+		<ShowFavoriteSkins>True</ShowFavoriteSkins>
+		<OnlyResurrectPrevOverseenMode>True</OnlyResurrectPrevOverseenMode>
+		<PlayerDensitySlotDefault>0.5</PlayerDensitySlotDefault>
+		<PlayerDensitySlotA>0.5</PlayerDensitySlotA>
+		<PlayerDensitySlotB>0.5</PlayerDensitySlotB>
+		<PlayerDensitySlotC>0.5</PlayerDensitySlotC>
+		<RandysChaosMode>False</RandysChaosMode>
+		<DEVLogging>False</DEVLogging>
+		<UseIdeologySkinsOnPlayer>True</UseIdeologySkinsOnPlayer>
+		<UseIdeologySkinsOnNPC>True</UseIdeologySkinsOnNPC>
+		<UseFactionSkinsOnNPC>True</UseFactionSkinsOnNPC>
+		<UseRandomMatchingSkinOnPlayer>False</UseRandomMatchingSkinOnPlayer>
+		<UseRandomMatchingSkinOnNPC>False</UseRandomMatchingSkinOnNPC>
+		<SimulateHighColorInfoCount>False</SimulateHighColorInfoCount>
+	</ModSettings>
+</SettingsBlock>

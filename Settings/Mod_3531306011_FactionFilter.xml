@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Boots_SensibleFactions.SensibleFactions_Settings">
+		<allowedFactionDefNames>
+			<li>PirateYttakin</li>
+			<li>PirateWaster</li>
+			<li>Empire</li>
+			<li>PatreonCivil</li>
+			<li>TribeSavage</li>
+			<li>OutlanderRoughPig</li>
+			<li>OutlanderRough</li>
+			<li>TribeSavageImpid</li>
+			<li>BS_HostileAndroids</li>
+			<li>UltratechEnemy_AA</li>
+			<li>Pirate</li>
+			<li>R_PirateBandBaseAndroid</li>
+			<li>R_OutlanderAndroid</li>
+			<li>NudistTribe</li>
+			<li>Insect</li>
+			<li>TribeRough</li>
+			<li>TribeCivil</li>
+			<li>TribeRoughNeanderthal</li>
+			<li>RM_Remnants</li>
+			<li>DMS_Army</li>
+			<li>OutlanderCivil</li>
+			<li>CannibalPirate</li>
+			<li>TribeCannibal</li>
+		</allowedFactionDefNames>
+		<factionBiomeWeights />
+		<selectedFactionDefName>PirateYttakin</selectedFactionDefName>
+	</ModSettings>
+</SettingsBlock>

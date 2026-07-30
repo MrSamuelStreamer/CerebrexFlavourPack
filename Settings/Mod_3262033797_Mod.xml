@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Rachek128.RitualAttenuation.Settings">
+		<requiredPopulationPercentage>0.75</requiredPopulationPercentage>
+		<bonusExponent>2</bonusExponent>
+		<maximumBonusPercentage>0.25</maximumBonusPercentage>
+	</ModSettings>
+</SettingsBlock>

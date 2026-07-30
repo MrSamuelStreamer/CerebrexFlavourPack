@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="RealisticHumanSounds.Settings">
+		<selectedMaleSound>anime</selectedMaleSound>
+		<selectedFemaleSound>anime</selectedFemaleSound>
+		<maleVolumePercent>100</maleVolumePercent>
+		<femaleVolumePercent>100</femaleVolumePercent>
+	</ModSettings>
+</SettingsBlock>

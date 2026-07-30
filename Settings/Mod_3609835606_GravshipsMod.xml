@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="VanillaGravshipExpanded.GravshipsMod_Settings">
+		<orbitalObjectsMultiplier>2</orbitalObjectsMultiplier>
+		<maintenanceLossMultiplier>1</maintenanceLossMultiplier>
+	</ModSettings>
+</SettingsBlock>

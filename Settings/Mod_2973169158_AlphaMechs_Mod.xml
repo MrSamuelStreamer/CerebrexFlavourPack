@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="AlphaMechs.AlphaMechs_Settings">
+		<flagAura>True</flagAura>
+		<flagDaggersnout>True</flagDaggersnout>
+		<flagDemolisher>True</flagDemolisher>
+		<flagFireworm>True</flagFireworm>
+		<flagGoliath>True</flagGoliath>
+		<flagPhalanx>True</flagPhalanx>
+		<flagSiegebreaker>True</flagSiegebreaker>
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="SirRandoo.MPE.Settings">
+		<predatorLetters>True</predatorLetters>
+		<berserk>True</berserk>
+		<jailBreak>True</jailBreak>
+		<madAnimal>False</madAnimal>
+		<predator>True</predator>
+		<sadisticRage>True</sadisticRage>
+		<transportPodCrash>False</transportPodCrash>
+	</ModSettings>
+</SettingsBlock>

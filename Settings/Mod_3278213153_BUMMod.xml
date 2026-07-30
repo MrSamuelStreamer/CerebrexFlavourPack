@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="BlockUnwantedMinutiae.BUMSettings">
+		<taintedMessagePatch>True</taintedMessagePatch>
+		<idleColonistsPatch>True</idleColonistsPatch>
+		<drawAutoSelectCheckboxPatch>True</drawAutoSelectCheckboxPatch>
+		<customFilters />
+		<seenText>
+			<li>Saved as Test.</li>
+			<li>(*Name)Barnabe(/Name): Total War: War Queen</li>
+			<li>Akal Purakh's Doctor role activated</li>
+			<li>Master Stylist role activated</li>
+			<li>Nurse role activated</li>
+			<li>Barnabe tried to equip War Queen Charge Blaster but couldn't due to lack of proficiency</li>
+		</seenText>
+	</ModSettings>
+</SettingsBlock>

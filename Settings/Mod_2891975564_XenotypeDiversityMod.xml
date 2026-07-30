@@ -1,0 +1,1636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="XenotypeSpawnControl.ModSettings">
+		<Templates>
+			<keys />
+			<values />
+		</Templates>
+		<XenotypesByFactionDef>
+			<keys>
+				<li>Ancients</li>
+				<li>AncientsHostile</li>
+				<li>Mechanoid</li>
+				<li>Insect</li>
+				<li>OutlanderCivil</li>
+				<li>OutlanderRough</li>
+				<li>TribeCivil</li>
+				<li>TribeRough</li>
+				<li>TribeSavage</li>
+				<li>Pirate</li>
+				<li>PlayerColony</li>
+				<li>PlayerTribe</li>
+				<li>OutlanderRefugee</li>
+				<li>Empire</li>
+				<li>Beggars</li>
+				<li>TribeCannibal</li>
+				<li>NudistTribe</li>
+				<li>CannibalPirate</li>
+				<li>Pilgrims</li>
+				<li>TribeRoughNeanderthal</li>
+				<li>PirateYttakin</li>
+				<li>TribeSavageImpid</li>
+				<li>OutlanderRoughPig</li>
+				<li>PirateWaster</li>
+				<li>Sanguophages</li>
+				<li>TradersGuild</li>
+				<li>Salvagers</li>
+				<li>GravshipCrew</li>
+				<li>BS_PlayerTribeXenoPlus</li>
+				<li>BS_PlayerColonyXenoPlus</li>
+				<li>BS_ZombieFaction</li>
+				<li>UltratechEnemy_AA</li>
+				<li>USAC_QuestIsolation</li>
+				<li>USAC_Faction</li>
+				<li>RM_Remnants</li>
+				<li>VFEI2_PlayerOutpost</li>
+				<li>VREA_AndroidAwakenedUtopia</li>
+				<li>R_OutlanderAndroid</li>
+				<li>R_PirateBandBaseAndroid</li>
+				<li>BS_HostileAndroids</li>
+				<li>DMS_Army</li>
+				<li>DMS_Legacy</li>
+				<li>PatreonCivil</li>
+				<li>DMS_AncientCorps</li>
+				<li>BlackMechanoid</li>
+				<li>NCL_faction</li>
+				<li>NCL_factionEnemy</li>
+				<li>::Generated::NoFaction</li>
+				<li>Ferny_ProgRoboticsSpacers</li>
+			</keys>
+			<values>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Baseliner</li>
+							<li>Dirtmole</li>
+							<li>Genie</li>
+							<li>Hussar</li>
+							<li>Neanderthal</li>
+							<li>Pigskin</li>
+							<li>Yttakin</li>
+							<li>Highmate</li>
+							<li>Starjack</li>
+						</keys>
+						<values>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>144</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>145</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>119</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+			</values>
+		</XenotypesByFactionDef>
+		<XenotypesByPawnKindDef>
+			<keys>
+				<li>Grenadier_Destructive</li>
+				<li>Grenadier_EMP</li>
+				<li>Grenadier_Smoke</li>
+				<li>Mercenary_Gunner</li>
+				<li>Mercenary_Gunner_Acidifier</li>
+				<li>Mercenary_Sniper</li>
+				<li>Mercenary_Sniper_Acidifier</li>
+				<li>Mercenary_Slasher</li>
+				<li>Mercenary_Slasher_Acidifier</li>
+				<li>Mercenary_Heavy</li>
+				<li>PirateBoss</li>
+				<li>Mercenary_Elite</li>
+				<li>Mercenary_Elite_Acidifier</li>
+				<li>Villager</li>
+				<li>Town_Guard</li>
+				<li>Town_Trader</li>
+				<li>Town_Councilman</li>
+				<li>Drifter</li>
+				<li>Scavenger</li>
+				<li>Thrasher</li>
+				<li>Pirate</li>
+				<li>Colonist</li>
+				<li>Tribesperson</li>
+				<li>SpaceRefugee</li>
+				<li>SpaceRefugee_Clothed</li>
+				<li>AncientSoldier</li>
+				<li>Slave</li>
+				<li>WildMan</li>
+				<li>StrangerInBlack</li>
+				<li>Tribal_Penitent</li>
+				<li>Tribal_Archer</li>
+				<li>Tribal_Warrior</li>
+				<li>Tribal_Hunter</li>
+				<li>Tribal_Trader</li>
+				<li>Tribal_Berserker</li>
+				<li>Tribal_HeavyArcher</li>
+				<li>Tribal_ChiefMelee</li>
+				<li>Tribal_ChiefRanged</li>
+				<li>Tribal_Breacher</li>
+				<li>Mech_Termite_Breach</li>
+				<li>Bear_Grizzly</li>
+				<li>Bear_Polar</li>
+				<li>Ostrich</li>
+				<li>Emu</li>
+				<li>Cassowary</li>
+				<li>Cougar</li>
+				<li>Panther</li>
+				<li>Lynx</li>
+				<li>Cat</li>
+				<li>YorkshireTerrier</li>
+				<li>GuineaPig</li>
+				<li>LabradorRetriever</li>
+				<li>Husky</li>
+				<li>Monkey</li>
+				<li>Chicken</li>
+				<li>Duck</li>
+				<li>Turkey</li>
+				<li>Goose</li>
+				<li>Cow</li>
+				<li>Boomalope</li>
+				<li>Muffalo</li>
+				<li>Bison</li>
+				<li>Dromedary</li>
+				<li>Goat</li>
+				<li>Elk</li>
+				<li>Yak</li>
+				<li>Caribou</li>
+				<li>Horse</li>
+				<li>Donkey</li>
+				<li>Elephant</li>
+				<li>Rhinoceros</li>
+				<li>Hare</li>
+				<li>Snowhare</li>
+				<li>Megascarab</li>
+				<li>Spelopede</li>
+				<li>Megaspider</li>
+				<li>Thrumbo</li>
+				<li>Cobra</li>
+				<li>Tortoise</li>
+				<li>Alphabeaver</li>
+				<li>Pig</li>
+				<li>WildBoar</li>
+				<li>Ibex</li>
+				<li>Deer</li>
+				<li>Gazelle</li>
+				<li>Chinchilla</li>
+				<li>Sheep</li>
+				<li>Alpaca</li>
+				<li>Megasloth</li>
+				<li>Capybara</li>
+				<li>Squirrel</li>
+				<li>Rat</li>
+				<li>Boomrat</li>
+				<li>Raccoon</li>
+				<li>Iguana</li>
+				<li>Warg</li>
+				<li>Wolf_Timber</li>
+				<li>Wolf_Arctic</li>
+				<li>Fox_Fennec</li>
+				<li>Fox_Red</li>
+				<li>Fox_Arctic</li>
+				<li>Mech_CentipedeBlaster</li>
+				<li>Mech_CentipedeGunner</li>
+				<li>Mech_CentipedeBurner</li>
+				<li>Mech_Lancer</li>
+				<li>Mech_Scyther</li>
+				<li>Mech_Pikeman</li>
+				<li>Slave_Empire</li>
+				<li>Empire_Common_Lodger</li>
+				<li>Empire_Common_Trader</li>
+				<li>Empire_Common_Laborer</li>
+				<li>Empire_Fighter_Trooper</li>
+				<li>Empire_Fighter_Grenadier</li>
+				<li>Empire_Fighter_Janissary</li>
+				<li>Empire_Fighter_Champion</li>
+				<li>Empire_Fighter_Cataphract</li>
+				<li>Empire_Fighter_StellicGuardRanged</li>
+				<li>Empire_Fighter_StellicGuardMelee</li>
+				<li>Empire_Royal_NobleWimp</li>
+				<li>Empire_Royal_Yeoman</li>
+				<li>Empire_Royal_Acolyte</li>
+				<li>Empire_Royal_Knight</li>
+				<li>Empire_Royal_Praetor</li>
+				<li>Empire_Royal_Baron</li>
+				<li>Empire_Royal_Count</li>
+				<li>Empire_Royal_Duke</li>
+				<li>Empire_Royal_Consul</li>
+				<li>Empire_Royal_Stellarch</li>
+				<li>Empire_Royal_Bestower</li>
+				<li>Refugee</li>
+				<li>Tribal_Miner</li>
+				<li>Miner</li>
+				<li>Hunter</li>
+				<li>Tribal_Logger</li>
+				<li>Logger</li>
+				<li>Tribal_Farmer</li>
+				<li>Farmer</li>
+				<li>Beggar</li>
+				<li>PovertyPilgrim</li>
+				<li>WellEquippedTraveler</li>
+				<li>Dryad_Basic</li>
+				<li>Dryad_Woodmaker</li>
+				<li>Dryad_Berrymaker</li>
+				<li>Dryad_Medicinemaker</li>
+				<li>Dryad_Gaumaker</li>
+				<li>Dryad_Carrier</li>
+				<li>Dryad_Clawer</li>
+				<li>Dryad_Barkskin</li>
+				<li>Tribal_Archer_Fire</li>
+				<li>Tribal_Hunter_Fire</li>
+				<li>Tribal_Warrior_Fire</li>
+				<li>Tribal_Penitent_Fire</li>
+				<li>Tribal_Child_Fire</li>
+				<li>Villager_Pig</li>
+				<li>Villager_Child_Pig</li>
+				<li>Town_Guard_Pig</li>
+				<li>Town_Councilman_Pig</li>
+				<li>Town_Trader_Pig</li>
+				<li>Mercenary_Gunner_Pig</li>
+				<li>Mercenary_Elite_Pig</li>
+				<li>Mechanitor</li>
+				<li>Mechanitor_Basic</li>
+				<li>Sanguophage</li>
+				<li>Sanguophage_Player</li>
+				<li>SanguophageThrall</li>
+				<li>Villager_Child</li>
+				<li>Tribal_Child</li>
+				<li>Mercenary_GunnerTox</li>
+				<li>Mercenary_SlasherTox</li>
+				<li>Mercenary_EliteTox</li>
+				<li>Grenadier_Tox</li>
+				<li>Mercenary_HeavyTox</li>
+				<li>PirateBossTox</li>
+				<li>Pirate_Yttakin</li>
+				<li>Scavenger_Yttakin</li>
+				<li>Drifter_Yttakin</li>
+				<li>Thrasher_Yttakin</li>
+				<li>Mercenary_Gunner_Yttakin</li>
+				<li>Mercenary_Heavy_Yttakin</li>
+				<li>Mercenary_Slasher_Yttakin</li>
+				<li>Mercenary_Sniper_Yttakin</li>
+				<li>Mercenary_Elite_Yttakin</li>
+				<li>WasteRat</li>
+				<li>Toxalope</li>
+				<li>Mech_Tunneler</li>
+				<li>Mech_Militor</li>
+				<li>Mech_Lifter</li>
+				<li>Mech_Constructoid</li>
+				<li>Mech_Fabricor</li>
+				<li>Mech_Agrihand</li>
+				<li>Mech_Cleansweeper</li>
+				<li>Mech_WarUrchin</li>
+				<li>Mech_Paramedic</li>
+				<li>Mech_Legionary</li>
+				<li>Mech_Tesseron</li>
+				<li>Mech_Scorcher</li>
+				<li>Mech_Apocriton</li>
+				<li>Mech_Centurion</li>
+				<li>Mech_Warqueen</li>
+				<li>Mech_Diabolus</li>
+				<li>Drone_Hunter</li>
+				<li>Drone_Wasp</li>
+				<li>Drone_Sentry</li>
+				<li>Mech_Cyclops</li>
+				<li>CrewMember</li>
+				<li>Salvager_Pirate</li>
+				<li>Salvager_Scrapper</li>
+				<li>Salvager_Elite</li>
+				<li>AncientSoldier_Leader</li>
+				<li>TradersGuild_Citizen</li>
+				<li>TradersGuild_Child</li>
+				<li>TradersGuild_Gunner</li>
+				<li>TradersGuild_Slasher</li>
+				<li>TradersGuild_Heavy</li>
+				<li>TradersGuild_Magister</li>
+				<li>TradersGuild_Elite</li>
+				<li>BogHound</li>
+				<li>MonitorLizard</li>
+				<li>PrairieDog</li>
+				<li>Porcupine</li>
+				<li>Mastodon</li>
+				<li>Cat_Scimitar</li>
+				<li>Wolverine</li>
+				<li>Wolf_Great</li>
+				<li>Moose</li>
+				<li>AlphaThrumbo</li>
+				<li>Muskox</li>
+				<li>Tiger</li>
+				<li>Mink</li>
+				<li>Gorilla</li>
+				<li>Badger</li>
+				<li>Panda</li>
+				<li>Hippo</li>
+				<li>Megavole</li>
+				<li>Armadillo</li>
+				<li>Alligator</li>
+				<li>Bullfrog</li>
+				<li>ColossusToad</li>
+				<li>LavaSnail</li>
+				<li>Sparrow</li>
+				<li>Crow</li>
+				<li>Bluebird</li>
+				<li>Quail</li>
+				<li>Macaw</li>
+				<li>Flamingo</li>
+				<li>Heron</li>
+				<li>Swan</li>
+				<li>Peacock</li>
+				<li>Vulture</li>
+				<li>Penguin</li>
+				<li>Walrus</li>
+				<li>SeaLion</li>
+				<li>Seal</li>
+				<li>HermitCrab</li>
+				<li>StoneCrab</li>
+				<li>SeaTurtle</li>
+				<li>Otter</li>
+				<li>Larva</li>
+				<li>HiveQueen</li>
+				<li>Locust</li>
+				<li>BS_ColonistXenoPlus</li>
+				<li>BS_TribespersonXenoPlus</li>
+				<li>BS_VillagerXenoPlus</li>
+				<li>BS_SpaceRefugeeXenoPlus</li>
+				<li>BS_VillagerMedieval</li>
+				<li>RG_Hemolope</li>
+				<li>RG_Rabbit</li>
+				<li>RG_WoollyStegosaurus</li>
+				<li>RG_Neutrolope</li>
+				<li>RG_Rimclaw</li>
+				<li>RG_KiwiBird</li>
+				<li>MAP_Mech_Hermit</li>
+				<li>MAP_Mech_Justice</li>
+				<li>Mech_AdvancedMilitor</li>
+				<li>Mech_AdvancedLifter</li>
+				<li>Mech_AdvancedParamedic</li>
+				<li>Mech_AdvancedTunneler</li>
+				<li>Mech_AdvancedFabricor</li>
+				<li>Mech_AdvancedCleansweeper</li>
+				<li>Mech_AdvancedAgrihand</li>
+				<li>Mech_AdvancedConstructoid</li>
+				<li>AM_Apoptosis</li>
+				<li>AM_Mech_Bellicor</li>
+				<li>AM_Mech_Artilleron</li>
+				<li>AM_Blitzkrieg</li>
+				<li>AM_Mech_Guttersnipe</li>
+				<li>AM_Infernus</li>
+				<li>AM_Mech_Legate</li>
+				<li>AM_Mech_Lux</li>
+				<li>AM_Mech_MasterChef</li>
+				<li>AM_Mech_Munifex</li>
+				<li>AM_Mech_Optio</li>
+				<li>AM_Mech_Polychoron</li>
+				<li>AM_Mech_PristineAssembler</li>
+				<li>AM_Mech_PristineSlurrypede</li>
+				<li>AM_PristineStrider</li>
+				<li>AM_Mech_Sagittarius</li>
+				<li>AM_Siegemelter</li>
+				<li>AM_Starfire</li>
+				<li>AM_Mech_TurboCleaner</li>
+				<li>AM_WarEmpress</li>
+				<li>AM_Aura</li>
+				<li>AM_Daggersnout</li>
+				<li>AM_Demolisher</li>
+				<li>AM_Fireworm</li>
+				<li>AM_Goliath</li>
+				<li>AM_Phalanx</li>
+				<li>AM_Siegebreaker</li>
+				<li>AM_Dryad_Ocular</li>
+				<li>AM_Dryad_Spitter</li>
+				<li>AM_Dryad_Corruptor</li>
+				<li>AM_Dryad_Unstable</li>
+				<li>AM_Dryad_Tumorous</li>
+				<li>AA_Eyeling</li>
+				<li>AM_UnshackledDryad</li>
+				<li>UltratechGunner_AA</li>
+				<li>UltratechLeader_AA</li>
+				<li>UltratechGunnerAdvanced_AA</li>
+				<li>UltratechSniper_AA</li>
+				<li>UltratechSniperAdvanced_AA</li>
+				<li>UltratechMelee_AA</li>
+				<li>UltratechMeleeAdvanced_AA</li>
+				<li>USAC_Rifleman</li>
+				<li>USAC_Heavy</li>
+				<li>USAC_Sniper</li>
+				<li>USAC_Heavy_Sniper</li>
+				<li>USAC_Elite</li>
+				<li>USAC_Executive</li>
+				<li>USAC_Mech_Cobalt</li>
+				<li>USAC_Mech_Gonk</li>
+				<li>USAC_Mech_Omaha</li>
+				<li>USAC_Mech_Paraman</li>
+				<li>USAC_Mech_Rocky</li>
+				<li>USAC_Mech_Rocky_AR</li>
+				<li>USAC_Mech_Rocky_LMG</li>
+				<li>USAC_Mech_Rocky_DMR</li>
+				<li>USAC_Mech_Rocky_Heavy</li>
+				<li>Mech_Lifturtle</li>
+				<li>LE_AwakenedTree</li>
+				<li>LE_Mimic</li>
+				<li>HML_MechSentry</li>
+				<li>HML_MechSuppressor</li>
+				<li>HML_MechPenetrator</li>
+				<li>HML_MechBombard</li>
+				<li>HML_MechGrenadier</li>
+				<li>HML_MechDownpour</li>
+				<li>IM_Mech_Templar</li>
+				<li>IM_Mech_Berserker</li>
+				<li>IM_Mech_Aide</li>
+				<li>IM_Mech_Ripperling</li>
+				<li>IM_Mech_Skirmisher</li>
+				<li>IM_Mech_Ripper</li>
+				<li>IM_Mech_Infiltrator</li>
+				<li>IM_Mech_Constrictor</li>
+				<li>IM_Mech_Bombardier</li>
+				<li>Mechanoid_Vespa</li>
+				<li>Mechanoid_Hound</li>
+				<li>Mechanoid_Chimera</li>
+				<li>Mechanoid_Goliath</li>
+				<li>Mechanoid_Kraken</li>
+				<li>Mech_Crawler</li>
+				<li>Mech_Skullywag</li>
+				<li>Mech_Flamebot</li>
+				<li>Mech_Assaulter</li>
+				<li>Mech_Mammoth</li>
+				<li>MP_Mech_Progenitor_Kind</li>
+				<li>RM_Droid_Buffer</li>
+				<li>RM_Droid_Spartan</li>
+				<li>RM_Mech_Vulture</li>
+				<li>RM_Mech_Caretaker</li>
+				<li>RM_Mech_Falcon</li>
+				<li>RM_Mech_Gremlin</li>
+				<li>RM_Mech_Harpy</li>
+				<li>RM_Mech_Ranger</li>
+				<li>RM_Mech_Zealot</li>
+				<li>RM_Mech_Marshal</li>
+				<li>RM_Mech_Sentinel</li>
+				<li>RM_Mech_Behemoth</li>
+				<li>RM_Mech_WraithSiege</li>
+				<li>RM_Mech_Locust</li>
+				<li>RM_Missionary</li>
+				<li>RM_Inquisitor</li>
+				<li>RM_LesserProphet</li>
+				<li>RM_Mech_Matriarch</li>
+				<li>VFE_Mercenary</li>
+				<li>VFEI2_Acidspitter</li>
+				<li>VFEI2_Boomtick</li>
+				<li>VFEI2_Durapod</li>
+				<li>VFEI2_Empress</li>
+				<li>VFEI2_Fuelmite</li>
+				<li>VFEI2_Gigalocust</li>
+				<li>VFEI2_Gigamite</li>
+				<li>VFEI2_Hellbeetle</li>
+				<li>VFEI2_Ironclad</li>
+				<li>VFEI2_Macrofly</li>
+				<li>VFEI2_Megapede</li>
+				<li>VFEI2_Megathrips</li>
+				<li>VFEI2_Megawasp</li>
+				<li>VFEI2_Patriarch</li>
+				<li>VFEI2_Queen</li>
+				<li>VFEI2_RoyalMegascarab</li>
+				<li>VFEI2_RoyalMegaspider</li>
+				<li>VFEI2_RoyalSpelopede</li>
+				<li>VFEI2_Silverfish</li>
+				<li>VFEI2_Swarmling</li>
+				<li>VFEI2_Tankroach</li>
+				<li>VFEI2_Teramantis</li>
+				<li>VFEI2_Titantick</li>
+				<li>VFEI2_Venomite</li>
+				<li>VGE_Astronaut</li>
+				<li>VGE_Astropede</li>
+				<li>VGE_Hunter</li>
+				<li>VQE_AutobroadcasterDrone</li>
+				<li>VQE_BattleDrone</li>
+				<li>VQE_CleanerDrone</li>
+				<li>VQE_CraftingDroneKindDef</li>
+				<li>VQE_FarmingDrone</li>
+				<li>VQE_FirefighterDrone</li>
+				<li>VQE_HaulerDrone</li>
+				<li>VQE_HornetDrone</li>
+				<li>VQE_MinerDrone</li>
+				<li>VQE_PackDrone</li>
+				<li>VQE_Protolancer</li>
+				<li>VQE_RaiderDrone</li>
+				<li>VQE_ShufflerDrone</li>
+				<li>VQE_DriverDrone</li>
+				<li>VQE_CrawlerDrone</li>
+				<li>VQE_StingrayDrone</li>
+				<li>VQE_TurretDrone</li>
+				<li>VREA_AndroidBasic</li>
+				<li>VREA_AndroidAwakened</li>
+				<li>VSE_ManInTheCoat</li>
+				<li>DevDesigner_Mech_Freyja</li>
+				<li>DevDesigner_Mech_Sif</li>
+				<li>DevDesigner_Mech_Hlin</li>
+				<li>AV_Mech_Companion</li>
+				<li>AV_Mech_Royallancer</li>
+				<li>AV_Mech_Fluoid</li>
+				<li>AV_Mech_Scrapper</li>
+				<li>AV_Mech_Tarantula</li>
+				<li>BS_TV_Villager</li>
+				<li>BS_TV_Grunt</li>
+				<li>BS_TV_Sapient</li>
+				<li>BS_TV_Sapient_R</li>
+				<li>BS_TV_Sapient_G</li>
+				<li>BS_TV_Sapient_B</li>
+				<li>BS_TV_Sapient_RG</li>
+				<li>BS_TV_Sapient_GB</li>
+				<li>BS_TV_Sapient_BR</li>
+				<li>BS_TV_Sapient_Black</li>
+				<li>BS_TV_Sapient_White</li>
+				<li>BS_TV_Boom</li>
+				<li>BS_TV_Elite</li>
+				<li>BS_TV_EliteTrader</li>
+				<li>BS_Commando_Grunt</li>
+				<li>BS_Commando_Grunt_Sapient</li>
+				<li>BS_Commando_Boom</li>
+				<li>BS_Commando_Elite</li>
+				<li>BS_CommandoBotPersona_Crafted</li>
+				<li>BS_TVRobot_Crafted</li>
+				<li>BS_CommandoBot</li>
+				<li>BS_TVAndroid</li>
+				<li>Mech_Bulwarkon</li>
+				<li>DMS_Squad_ServiceSynth</li>
+				<li>DMS_Mechanitor</li>
+				<li>DMS_Mech_BattleFrame</li>
+				<li>DMS_Mech_FieldCommand</li>
+				<li>DMS_Mech_EscortLifter</li>
+				<li>DMS_Mech_ShaftWorker</li>
+				<li>DMS_Mech_Tachanka</li>
+				<li>DMS_Mech_Mammoth</li>
+				<li>DMS_Mech_Geochelone</li>
+				<li>DMS_Mech_Geochelone_b</li>
+				<li>DMS_Mech_Caretta</li>
+				<li>DMS_Mech_Killdozer</li>
+				<li>DMS_Mech_Killdozer_b</li>
+				<li>DMS_Mech_Iguana</li>
+				<li>DMS_Mech_Gecko</li>
+				<li>DMS_Mech_Ape</li>
+				<li>DMS_Mech_HermitCrab</li>
+				<li>DMS_Mech_Tarbosaurus</li>
+				<li>DMS_Mech_Falcon</li>
+				<li>DMS_Mech_Noctula</li>
+				<li>DMS_Mech_Hyrax</li>
+				<li>DMS_Mech_Arquebusier</li>
+				<li>DMS_Mech_Jaeger</li>
+				<li>DMS_Mech_Pioneer</li>
+				<li>DMS_Mech_Sniper</li>
+				<li>DMS_Mech_Ronin</li>
+				<li>DMS_Mech_Gladiator</li>
+				<li>DMS_Mech_Siegebreaker</li>
+				<li>DMS_Mech_Protector</li>
+				<li>DMS_Mech_Phalanx</li>
+				<li>DMS_Mech_Soldat</li>
+				<li>DMS_Mech_Soldat_B</li>
+				<li>DMS_Mech_Raider</li>
+				<li>DMS_Mech_Grenadier</li>
+				<li>DMS_Mech_Kanonier</li>
+				<li>DMS_Mech_Sergeant</li>
+				<li>DMS_Drone_VerlingBrid</li>
+				<li>DMS_Drone_Hound</li>
+				<li>DMS_Drone_Trashpan</li>
+				<li>DMS_Mech_Lady</li>
+				<li>DMS_Mech_Dogge</li>
+				<li>DMS_Civilian</li>
+				<li>DMS_Trader</li>
+				<li>DMS_MinuteMan</li>
+				<li>DMS_MinuteMan_Heavy</li>
+				<li>DMS_Security</li>
+				<li>DMS_Squad_ServiceMan</li>
+				<li>DMS_Escort</li>
+				<li>DMS_Squad_Sniper</li>
+				<li>DMS_Soldier</li>
+				<li>DMS_HeavyGunner</li>
+				<li>DMS_Officer</li>
+				<li>DMS_Officer_A</li>
+				<li>DMS_Officer_B</li>
+				<li>DMS_Officer_C</li>
+				<li>DMS_Officer_Ceremonist</li>
+				<li>DMS_Officer_Leader</li>
+				<li>DMS_Police</li>
+				<li>DMS_Police_Pistol</li>
+				<li>DMS_Police_Melee</li>
+				<li>DMS_Police_Leader</li>
+				<li>DMS_Police_Assault</li>
+				<li>DMS_Police_Ranged</li>
+				<li>BfG_Mech_Fidget</li>
+				<li>BfG_Mech_Shredder</li>
+				<li>MSSFP_HoloProjection</li>
+				<li>MSSFP_Frogge</li>
+				<li>MSSFP_Raven</li>
+				<li>MSSFP_TrekCrasher</li>
+				<li>DMS_Mech_BattleWalker</li>
+				<li>DMS_Mech_Mushketer_AR</li>
+				<li>DMS_Mech_Mushketer_SAR</li>
+				<li>DMS_Mech_CommandWalker</li>
+				<li>DMS_Mech_Gorod</li>
+				<li>DMS_Mech_Gorod_Cornetist</li>
+				<li>DMS_Mech_Gorod_Organist</li>
+				<li>DMS_Mech_Gorod_Piper</li>
+				<li>DMS_Mech_Krepost</li>
+				<li>DMS_Mech_Krepost_Sweeper</li>
+				<li>DMS_Mech_Molot</li>
+				<li>DMS_Mech_Molot_Reservoir</li>
+				<li>DMS_Mech_Molot_Mosta</li>
+				<li>DMS_Mech_Molot_Kamin</li>
+				<li>DMS_Mech_Pravda</li>
+				<li>DMS_Mech_Tsvetnik</li>
+				<li>DMS_Mech_Zabor</li>
+				<li>DMS_Mech_Zabor_Shkatulka</li>
+				<li>DMS_Mech_Zabor_Pirate</li>
+				<li>DMSE_Mech_ClusterWeaver</li>
+				<li>DMSE_Drone_Wildfowl</li>
+				<li>DMS_LastPilot</li>
+				<li>DMS_Squad_ArmyDragoon_Trainee</li>
+				<li>DMS_Squad_ArmyDragoon</li>
+				<li>DMS_Squad_ArmyDragoon_Explosive</li>
+				<li>DMS_Squad_ArmyDragoon_Claymore</li>
+				<li>DMS_Squad_ArmyDragoon_Gatling</li>
+				<li>DMS_WalkerFrame_Outlander</li>
+				<li>DMS_Dragoon_Outlander</li>
+				<li>DMS_WalkerFrame_Pirate</li>
+				<li>DMS_Dragoon_Pirate</li>
+				<li>DMS_Dragoon_PirateRotary</li>
+				<li>Mech_Annihilator</li>
+				<li>Mech_BlackApocriton</li>
+				<li>Mech_Observer</li>
+				<li>Drone_ArchoHunter</li>
+				<li>Mech_CentipedeSword</li>
+				<li>Mech_CataphractCentipede</li>
+				<li>Mech_MarineLancer</li>
+				<li>Mech_ReconScyther</li>
+				<li>Mech_Firefly</li>
+				<li>Mech_Mosquito</li>
+				<li>Mech_BlackScyther</li>
+				<li>Mech_BlackLancer</li>
+				<li>Mech_BlackTesseron</li>
+				<li>Mech_BlackLegionary</li>
+				<li>Mech_BlackMilitor</li>
+				<li>NCL_MechWorm</li>
+				<li>NCL_Mech_Dinergate_Kind</li>
+				<li>NCL_Mech_DinergateSniper_Kind</li>
+				<li>NCL_Mech_Ironbark_Kind</li>
+				<li>NCL_Mech_Mantis_Kind</li>
+				<li>NCL_Mech_PillBug_Kind</li>
+				<li>NCL_Mech_Scorpion_Kind</li>
+				<li>NCL_Mech_Scutiger_Kind</li>
+				<li>TW_Mech_Birgus_Kind</li>
+				<li>TW_Mech_Capitalistic_Militor</li>
+				<li>TW_University_Minitor</li>
+				<li>TW_Gestapo_Minitor</li>
+				<li>TW_Mech_Doxa_Kind</li>
+				<li>TW_Mech_Shellsplitter_Spider</li>
+				<li>Mech_CentipedeMissile_Kind</li>
+				<li>TW_MechPenguin_Kind</li>
+				<li>TW_Mech_MechTeslaCentipede_Kind</li>
+				<li>TW_Mech_Paratrooper_Kind</li>
+				<li>TW_Mech_Praetor_Kind</li>
+				<li>TW_Mech_Psycasts_Militor_Kind</li>
+				<li>TW_Mech_Psycasts_Militor_Ally_Kind</li>
+				<li>TW_Mech_Shell_Fortification_Kind</li>
+				<li>TW_Mech_Shell_Fortification_ShellBreakFormed_Kind</li>
+				<li>TW_Mech_Shell_Fortification_Reforged_Kind</li>
+				<li>NCL_Dinergate_Drone</li>
+				<li>NCL_Scutiger_Drone</li>
+				<li>SupplyWardenpawn_PawnKind</li>
+				<li>CVN_ExostriderA_PawnKind</li>
+				<li>CVN_ExostriderB_PawnKind</li>
+				<li>CVN_ExostriderC_PawnKind</li>
+				<li>CVNG3Geist_PawnKind</li>
+				<li>CVNGravitywell_PawnKind</li>
+				<li>HighReaver_PawnKind</li>
+				<li>CVNmasscircumcizor_PawnKind</li>
+				<li>CVNMassculling_PawnKind</li>
+				<li>Mechtek_PawnKind</li>
+				<li>CVN_Mightboomer_PawnKind</li>
+				<li>CVNOVAdam_PawnKind</li>
+				<li>CVNOVJeff_PawnKind</li>
+				<li>CVN_MBT_PawnKind</li>
+				<li>CVN_truck_PawnKind</li>
+				<li>CVN_VoidHerald_PawnKind</li>
+				<li>DMS_ArmySteed_APC_PawnKind</li>
+				<li>DMS_Chameleon_TD_PawnKind</li>
+				<li>DMS_Chelydridae_MainBattleTank_PawnKind</li>
+				<li>DMS_Mule_ATV_PawnKind</li>
+				<li>AM_Mech_Sanguinarius</li>
+			</keys>
+			<values>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Sanguophage</li>
+							<li>VRE_Strigoi</li>
+							<li>VRE_Ekkimian</li>
+							<li>VRE_Bruxa</li>
+						</keys>
+						<values>
+							<li>
+								<chance>250</chance>
+							</li>
+							<li>
+								<chance>250</chance>
+							</li>
+							<li>
+								<chance>250</chance>
+							</li>
+							<li>
+								<chance>250</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Sanguophage</li>
+							<li>VRE_Strigoi</li>
+							<li>VRE_Ekkimian</li>
+							<li>VRE_Bruxa</li>
+						</keys>
+						<values>
+							<li>
+								<chance>250</chance>
+							</li>
+							<li>
+								<chance>250</chance>
+							</li>
+							<li>
+								<chance>250</chance>
+							</li>
+							<li>
+								<chance>250</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Dirtmole</li>
+							<li>Genie</li>
+							<li>Hussar</li>
+							<li>Neanderthal</li>
+							<li>Pigskin</li>
+							<li>Impid</li>
+							<li>Waster</li>
+							<li>Yttakin</li>
+							<li>Highmate</li>
+						</keys>
+						<values>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>500</chance>
+							</li>
+							<li>
+								<chance>500</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Dirtmole</li>
+							<li>Genie</li>
+							<li>Hussar</li>
+							<li>Neanderthal</li>
+							<li>Pigskin</li>
+							<li>Impid</li>
+							<li>Waster</li>
+							<li>Yttakin</li>
+							<li>Highmate</li>
+						</keys>
+						<values>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>334</chance>
+							</li>
+							<li>
+								<chance>333</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>333</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Dirtmole</li>
+							<li>Genie</li>
+							<li>Hussar</li>
+							<li>Neanderthal</li>
+							<li>Pigskin</li>
+							<li>Impid</li>
+							<li>Waster</li>
+							<li>Yttakin</li>
+							<li>Highmate</li>
+						</keys>
+						<values>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>500</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>500</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Dirtmole</li>
+							<li>Genie</li>
+							<li>Hussar</li>
+							<li>Neanderthal</li>
+							<li>Pigskin</li>
+							<li>Impid</li>
+							<li>Waster</li>
+							<li>Yttakin</li>
+							<li>Highmate</li>
+							<li>Baseliner</li>
+						</keys>
+						<values>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>500</chance>
+							</li>
+							<li>
+								<chance>500</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+			</values>
+		</XenotypesByPawnKindDef>
+	</ModSettings>
+</SettingsBlock>

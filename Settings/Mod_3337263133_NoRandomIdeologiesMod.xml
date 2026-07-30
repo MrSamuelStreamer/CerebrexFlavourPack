@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="NoRandomIdeologies.NoRandomIdeologiesSettings">
+		<PreferedIdeology>
+			<keys>
+				<li>Beggars</li>
+				<li>BlackMechanoid</li>
+				<li>DMS_Legacy</li>
+				<li>Insect</li>
+				<li>USAC_QuestIsolation</li>
+				<li>BS_ZombieFaction</li>
+				<li>Mechanoid</li>
+				<li>NCL_factionEnemy</li>
+				<li>NCL_faction</li>
+				<li>R_OutlanderAndroid</li>
+				<li>OutlanderRefugee</li>
+				<li>Pilgrims</li>
+				<li>DMS_AncientCorps</li>
+			</keys>
+			<values>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+				<li>./RandomSaved</li>
+			</values>
+		</PreferedIdeology>
+		<FactionIgnore />
+		<PercentChance>1</PercentChance>
+	</ModSettings>
+</SettingsBlock>

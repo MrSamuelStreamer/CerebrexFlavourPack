@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Replace_Stuff.Settings">
+		<hideNormalCoolers>True</hideNormalCoolers>
+		<bridgePrefNames>
+			<li>Bridge</li>
+			<li>AncientBridge</li>
+			<li>HeavyBridge</li>
+			<li>AncientHeavyBridge</li>
+			<li>CVN_Oceanplatform</li>
+			<li>AB_AsphaltBridge</li>
+			<li>AB_AsphaltFloor</li>
+			<li>CVNcrystalfloorbuild</li>
+			<li>AB_CompactedSand</li>
+			<li>VGE_DamagedSubstructure</li>
+			<li>VFEI2_Creep</li>
+			<li>VFEI2_JellyFloor</li>
+			<li>VFEI2_RoyalJellyFloor</li>
+		</bridgePrefNames>
+	</ModSettings>
+</SettingsBlock>

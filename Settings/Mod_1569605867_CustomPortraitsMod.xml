@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="CustomPortraits.CustomPortraitsModSettings">
+		<scaleSize>0.841536582</scaleSize>
+		<offsetX>0.00222149794</offsetX>
+		<offsetZ>-0.182439983</offsetZ>
+		<nlCustomPortraitOffsetDict>
+			<keys>
+				<li>Human</li>
+				<li>HL_Mech_Warqueen</li>
+			</keys>
+			<values>
+				<li />
+				<li />
+			</values>
+		</nlCustomPortraitOffsetDict>
+	</ModSettings>
+</SettingsBlock>

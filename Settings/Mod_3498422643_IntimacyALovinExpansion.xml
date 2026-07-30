@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="LoveyDoveySexWithEuterpe.IntimacySettings">
+		<intimacyDecayRate>10</intimacyDecayRate>
+		<lovinSpotPickingPriority>AlwaysPrivate</lovinSpotPickingPriority>
+		<pregnancyChanceMultiplier>0.801752329</pregnancyChanceMultiplier>
+		<disableIntimacyNeedForSlaves>True</disableIntimacyNeedForSlaves>
+		<disableIntimacyNeedForNonPlayerFactionPawn>True</disableIntimacyNeedForNonPlayerFactionPawn>
+	</ModSettings>
+</SettingsBlock>

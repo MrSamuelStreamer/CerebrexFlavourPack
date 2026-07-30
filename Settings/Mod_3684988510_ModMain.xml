@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Despicable.Settings">
+		<animationExtensionEnabled>False</animationExtensionEnabled>
+		<facialPartsExtensionEnabled>False</facialPartsExtensionEnabled>
+		<runtimeFacialDynamicsZoomGateEnabled>False</runtimeFacialDynamicsZoomGateEnabled>
+		<nudityEnabled>False</nudityEnabled>
+		<renderGenitalsEnabled>False</renderGenitalsEnabled>
+		<soundVolume>0.251541823</soundVolume>
+		<headTypeBlacklistDefNames />
+		<allowedDefaultDisabledHeadDefNames />
+	</ModSettings>
+</SettingsBlock>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="Orbital_Cannons.CannonSettings">
+		<gaussAutoCannon_Projectile>GravShip_Rocket</gaussAutoCannon_Projectile>
+	</ModSettings>
+</SettingsBlock>
