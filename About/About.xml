@@ -39,6 +39,7 @@
         <li>aoba.deadmanswitch.ancientcorps</li>
         <li>mlie.reinforcedmechanoid2</li>
         <li>mlie.yayosendgame</li>
+        <li>redmattis.sapientanimals</li>
         <!-- Optional: Compatibility/rokk.playwright only loads when both of these are active. -->
     </loadAfter>
 </ModMetaData>

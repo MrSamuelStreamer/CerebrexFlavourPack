@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Item -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BS_Sapienator"]/label</xpath>
+        <value>
+            <label>Sapience Protocols</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="BS_Sapienator"]/description</xpath>
+        <value>
+            <description>A datacore of higher-level operating functions that bestow Mechanoids with full autonomy, necessary for decentralising processing overhead from the main hive.\n\nFormed over time by the Cerebrex core, a sapient Mechanoid can use this on another to bestow it full operational independence, allowing to operative without any form of controller, such as a Mechanitor or Gestalt Engine, and freely decide its own schedule, work types, and more.</description>
+        </value>
+    </Operation>
+        <!-- Research, originally about "animals" -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BS_SapientAnimalsResearch"]/label</xpath>
+        <value>
+            <label>Sapience Protocol Device</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="BS_SapientAnimalsResearch"]/description</xpath>
+        <value>
+            <description>Research the deployment of sapience protocols in mechanoid units, granting them full autonomy.</description>
+        </value>
+    </Operation>
+</Patch>

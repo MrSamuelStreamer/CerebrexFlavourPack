@@ -11,5 +11,6 @@
 		<li IfModActive="aoba.deadmanswitch.ancientcorps">Compatibility/aoba.deadmanswitch.ancientcorps</li>
 		<li IfModActive="mlie.reinforcedmechanoid2">Compatibility/mlie.reinforcedmechanoid2</li>
 		<li IfModActive="mlie.yayosendgame">Compatibility/mlie.yayosendgame</li>
+		<li IfModActive="redmattis.sapientanimals">Compatibility/redmattis.sapientanimals</li>
 	</v1.6>
 </loadFolders>
