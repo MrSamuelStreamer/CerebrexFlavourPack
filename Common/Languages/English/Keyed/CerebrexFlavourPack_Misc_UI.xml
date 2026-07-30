@@ -49,4 +49,7 @@ This is permanent. The following are now gone:
   - Rainfall: rain becomes rare. Expect clear skies, fog, and dry thunderstorms.
 
 Caravans will also move more slowly across this tile.</CerebrexFlavourPack_BiomeFlipped_LetterText>
+
+<CFP_PrisonerProcessor_Complete>Prisoner processing complete: {0} has been fully processed.</CFP_PrisonerProcessor_Complete>
+
 </LanguageData>
