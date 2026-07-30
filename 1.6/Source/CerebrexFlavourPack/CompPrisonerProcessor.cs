@@ -12,6 +12,17 @@ public class CompProperties_PrisonerProcessor : CompProperties
     public float bloodFilthMultiplier = 5f;
     public List<ThingDefCountClass> products = new();
 
+    public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
+    {
+        foreach (string item in base.ConfigErrors(parentDef))
+        {
+            yield return item;
+        }
+        if (parentDef.tickerType != TickerType.Normal)
+        {
+            yield return GetType().Name + " requires parent ticker type Normal";
+        }
+    }
     public CompProperties_PrisonerProcessor()
     {
         compClass = typeof(CompPrisonerProcessor);

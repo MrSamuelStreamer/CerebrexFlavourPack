@@ -66,7 +66,7 @@
       <!-- pawn is destroyed after processing, leaving behind only blood (filth) and loot
        default bloodFilth multiplier if left blank is 5, override below in tag -->
       <li Class="CerebrexFlavourPack.CompProperties_PrisonerProcessor">
-        <ticksToKill>6000</ticksToKill>
+        <ticksToKill>7500</ticksToKill>
         <bloodFilthMultiplier>100</bloodFilthMultiplier>
         <products>
           <Meat_Human>75</Meat_Human>
