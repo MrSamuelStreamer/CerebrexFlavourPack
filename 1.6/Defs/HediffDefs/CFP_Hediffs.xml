@@ -39,4 +39,41 @@
     </stages>
   </HediffDef>
 
+  <!--
+    painOffset 0.75 is deliberately just under the 0.8 PainShockThreshold default so the pawn
+    stays conscious and mobile after processing instead of collapsing forever. That leaves only
+    ~0.05 of headroom before any further injury downs them - that fragility is intended, and this
+    value is the knob to turn if it feels too harsh or too lenient.
+
+    Permanence comes from omission, not a comp: no HediffCompProperties_Disappears/_Immunizable/
+    _SeverityPerDay, plus tendable false and everCurableByItem false. Deliberately NOT using
+    HediffComp_GetsPermanent - that comp exists to turn injuries into scars and rolls a random
+    PainCategory that would fight this hediff's fixed painOffset.
+
+    skinColorOverride tints every colorType=Skin render node (see HediffSet.GetSkinColor), which
+    covers the head and any body type with no dedicated "Peeled" texture (Child/Baby) for free.
+    The body/head texture swap itself is handled in Harmony_PeeledPawn.cs.
+  -->
+  <HediffDef>
+    <defName>CFP_SkinnedAlive</defName>
+    <label>skinned alive</label>
+    <labelNoun>a skinning</labelNoun>
+    <description>The integument extraction process has stripped away the skin, leaving raw flesh exposed. The wound will never fully close, and the pain will never fully fade.</description>
+    <hediffClass>CerebrexFlavourPack.Hediff_SkinnedAlive</hediffClass>
+    <defaultLabelColor>(0.75, 0.25, 0.25)</defaultLabelColor>
+    <isBad>true</isBad>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <tendable>false</tendable>
+    <everCurableByItem>false</everCurableByItem>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <chanceToCauseNoPain>0</chanceToCauseNoPain>
+    <skinColorOverride>(0.72, 0.28, 0.26)</skinColorOverride>
+    <stages>
+      <li>
+        <painOffset>0.75</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
 </Defs>

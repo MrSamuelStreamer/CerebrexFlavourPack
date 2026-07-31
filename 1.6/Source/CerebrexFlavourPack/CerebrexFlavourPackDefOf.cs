@@ -19,6 +19,8 @@ public static class CerebrexFlavourPackDefOf
 
     public static HediffDef CFP_CerebrexShutdown;
 
+    public static HediffDef CFP_SkinnedAlive;
+
     public static JobDef CFP_CarryPawnToPrisonerProcessor;
 
     /// <summary>Permanent world condition that replaces the home system's star with a black hole.</summary>

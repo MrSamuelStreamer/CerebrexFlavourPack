@@ -63,13 +63,13 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>200</basePowerConsumption>
       </li>
-      <!-- pawn is destroyed after processing, leaving behind only blood (filth) and loot
-       default bloodFilth multiplier if left blank is 5, override below in tag -->
+      <!-- occupant survives processing, permanently skinned (CFP_SkinnedAlive) and stripped of
+       clothing, leaving behind blood (filth) and harvested loot - no meat, since the pawn walks
+       away alive. Default bloodFilth multiplier if left blank is 5, override below in tag -->
       <li Class="CerebrexFlavourPack.CompProperties_PrisonerProcessor">
         <ticksToKill>7500</ticksToKill>
         <bloodFilthMultiplier>100</bloodFilthMultiplier>
         <products>
-          <Meat_Human>75</Meat_Human>
           <Leather_Human>35</Leather_Human>
           <HemogenPack>10</HemogenPack>
         </products>

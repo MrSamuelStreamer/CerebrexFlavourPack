@@ -94,7 +94,7 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
 
         ticksHeld += delta;
         if (ticksHeld >= Props.ticksToKill)
-            KillOccupantAndProduce();
+            ProcessOccupantAndEject();
     }
 
     private void ApplyProcessingDamage(Pawn occupant)
@@ -199,6 +199,11 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
         if (!pawn.IsPrisonerOfColony)
         {
             failReason = "Pawn must be a prisoner.";
+            return false;
+        }
+        if (pawn.health.hediffSet.HasHediff(CerebrexFlavourPackDefOf.CFP_SkinnedAlive))
+        {
+            failReason = "CFP_PrisonerProcessor_AlreadyProcessed".Translate();
             return false;
         }
         return true;
@@ -325,10 +330,10 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
             powerComp = parent.GetComp<CompPowerTrader>();
     }
 
-    private void KillOccupantAndProduce()
+    private void ProcessOccupantAndEject()
     {
         Pawn occupant = Occupant;
-        if (occupant == null)
+        if (occupant == null || occupant.Dead)
             return;
         Map map = parent.MapHeld;
 
@@ -339,13 +344,21 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
         FilthMaker.TryMakeFilth(dropCell, map, ThingDefOf.Filth_Blood, occupant.LabelIndefinite(), Mathf.CeilToInt(occupant.BodySize * Props.bloodFilthMultiplier));
         string label = occupant.LabelShortCap;
 
-        occupant.Kill(null);
-        innerContainer.ClearAndDestroyContents(DestroyMode.Vanish);
-        ticksHeld = 0;
+        // Strip and destroy clothing, then apply the permanent hediff - PostAdd on
+        // Hediff_SkinnedAlive dirties the render tree so the peeled body/head texture
+        // (Harmony_PeeledPawn.cs) takes effect immediately, without waiting on the eject.
+        occupant.apparel?.DestroyAll();
+        occupant.health.AddHediff(CerebrexFlavourPackDefOf.CFP_SkinnedAlive);
         myInjuries.Clear();
+        PawnComponentsUtility.AddComponentsForSpawn(occupant);
+
+        // Must be reset here, not left to EjectContents - EjectContents early-returns before
+        // its own reset if the container is ever already empty, which would otherwise leave
+        // ticksHeld >= ticksToKill and re-fire this method every tick.
+        ticksHeld = 0;
+        EjectContents(map);
+
         int lostCount = 0;
-
-
         foreach (ThingDefCountClass product in Props.products)
         {
         if (product?.thingDef == null || product.count <= 0)
