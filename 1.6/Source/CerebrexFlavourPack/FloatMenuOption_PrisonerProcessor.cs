@@ -29,9 +29,9 @@ public class FloatMenuOptionProvider_PrisonerProcessor : FloatMenuOptionProvider
         if (!actor.CanReserveAndReach(clickedPawn, PathEndMode.Touch, Danger.Deadly))
             return new FloatMenuOption($"{label} (no path or reserved)", null);
 
-        Thing processor = ClosestAvailableProcessor(actor, clickedPawn);
+        Thing processor = ClosestAvailableProcessor(actor, clickedPawn, out string reason);
         if (processor == null)
-            return new FloatMenuOption($"{label} (no powered empty processor reachable)", null);
+            return new FloatMenuOption($"{label} ({reason ?? "no powered empty processor reachable"})", null);
 
         void Action()
         {
@@ -44,10 +44,11 @@ public class FloatMenuOptionProvider_PrisonerProcessor : FloatMenuOptionProvider
     }
 
 
-    private static Thing ClosestAvailableProcessor(Pawn actor, Pawn target)
+    private static Thing ClosestAvailableProcessor(Pawn actor, Pawn target, out string failReason)
     {
         Thing bestThing = null;
         float bestDistanceSquared = float.MaxValue;
+        failReason = null;
 
         PrisonerProcessorTracker tracker = actor.Map.GetComponent<PrisonerProcessorTracker>();
         if (tracker == null)
@@ -55,7 +56,7 @@ public class FloatMenuOptionProvider_PrisonerProcessor : FloatMenuOptionProvider
 
         foreach (CompPrisonerProcessor comp in tracker.Processors)
         {
-            if (!comp.CanAcceptPawn(target))
+            if (!comp.CanAcceptPawn(target, out failReason))
                 continue;
             Thing thing = comp.ParentThing;
             if (!actor.CanReserveAndReach(thing, PathEndMode.InteractionCell, Danger.Deadly))
