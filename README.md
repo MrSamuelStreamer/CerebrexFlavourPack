@@ -14,4 +14,11 @@ Portions of the materials used to create this content/mod are trademarks and/or 
 ## Thanks
 * Ludeon for the Game
 * Marnador for the [Rimworld Font](https://github.com/spdskatr/RWModdingResources/raw/master/RimWordFont.ttf)
-
+* Wood Industry - Tools - 01 - Mid_ambient_noise_saw by IESDMA -- https://freesound.org/s/734790/ -- License: Creative Commons 0
+* Pestle and mortar grinding salt.wav by ScouseMouseJB -- https://freesound.org/s/536704/ -- License: Attribution 4.0
+* Asphalt Milling Machine.wav by sirnox -- https://freesound.org/s/520956/ -- License: Creative Commons 0
+* Pineapple_SlushySplooge_001.wav by duckduckpony -- https://freesound.org/s/204038/ -- License: Attribution 4.0
+* Splat/Squish 3 by mrickey13 -- https://freesound.org/s/515620/ -- License: Creative Commons 0
+* squishing gel between hands by breadparticles -- https://freesound.org/s/575333/ -- License: Creative Commons 0
+* Pumpmkin Guts Squish 2.aif by MWLANDI -- https://freesound.org/s/85863/ -- License: Attribution 3.0
+* squishes.wav by Cheddrock -- https://freesound.org/s/412919/ -- License: Creative Commons 0

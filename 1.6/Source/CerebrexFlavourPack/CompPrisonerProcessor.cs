@@ -3,6 +3,7 @@ using System.Linq;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace CerebrexFlavourPack;
 
@@ -34,6 +35,20 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
     private ThingOwner innerContainer;
     private CompPowerTrader powerComp;
     private int ticksHeld;
+    private Sustainer activeSustainer;
+    private int nextDamageTick;
+    private readonly List<Hediff_Injury> myInjuries = new();
+
+    private static Graphic slicersStaticGraphic;
+    private static Graphic slicersBlur1Graphic;
+    private static Graphic slicersBlur2Graphic;
+
+    private static Graphic SlicersStatic => slicersStaticGraphic ??= GraphicDatabase.Get<Graphic_Single>(
+        "Building/PeelerSlicersOnly", ShaderDatabase.Transparent, new Vector2(3f, 3f), Color.white);
+    private static Graphic SlicersBlur1 => slicersBlur1Graphic ??= GraphicDatabase.Get<Graphic_Single>(
+        "Building/PeelerSlicersOnlyBlur1", ShaderDatabase.Transparent, new Vector2(3f, 3f), Color.white);
+    private static Graphic SlicersBlur2 => slicersBlur2Graphic ??= GraphicDatabase.Get<Graphic_Single>(
+        "Building/PeelerSlicersOnlyBlur2", ShaderDatabase.Transparent, new Vector2(3f, 3f), Color.white);
 
     public CompProperties_PrisonerProcessor Props => (CompProperties_PrisonerProcessor)props;
     public Pawn Occupant => innerContainer.Count > 0 ? innerContainer[0] as Pawn : null;
@@ -64,13 +79,90 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
         base.CompTickInterval(delta);
 
         Pawn occupant = Occupant;
+        bool active = occupant != null && PowerOn;
 
-        if (occupant == null || !PowerOn)
+        UpdateSustainer(active);
+
+        if (!active)
             return;
+
+        if (Find.TickManager.TicksGame >= nextDamageTick)
+        {
+            ApplyProcessingDamage(occupant);
+            nextDamageTick = Find.TickManager.TicksGame + Rand.RangeInclusive(30, 90);
+        }
 
         ticksHeld += delta;
         if (ticksHeld >= Props.ticksToKill)
             KillOccupantAndProduce();
+    }
+
+    private void ApplyProcessingDamage(Pawn occupant)
+    {
+        if (occupant == null || occupant.Dead)
+        {
+            myInjuries.Clear();
+            return;
+        }
+
+        // Heal any of OUR previously-applied cuts to keep hediff count bounded.
+        // Player-inflicted or other injuries are left alone.
+        for (int i = myInjuries.Count - 1; i >= 0; i--)
+        {
+            Hediff_Injury inj = myInjuries[i];
+            if (inj == null || inj.pawn == null || inj.pawn.Dead || !inj.pawn.health.hediffSet.hediffs.Contains(inj))
+            {
+                myInjuries.RemoveAt(i);
+                continue;
+            }
+            inj.pawn.health.RemoveHediff(inj);
+            myInjuries.RemoveAt(i);
+        }
+
+        // Let the game pick a valid hittable outer body part using its own weighted selector.
+        BodyPartRecord part = occupant.health.hediffSet
+            .GetRandomNotMissingPart(DamageDefOf.Cut, BodyPartHeight.Undefined, BodyPartDepth.Outside);
+        if (part == null)
+            return;
+
+        // Keep the pawn's cached position on the machine so any effecter spawned
+        // by TakeDamage renders at the machine, not the pre-capture cell.
+        SnapPositionToParent(occupant);
+
+        DamageInfo dinfo = new(DamageDefOf.Cut, 0.1f, armorPenetration: 0f, angle: -1f, instigator: parent, hitPart: part);
+        DamageWorker.DamageResult result = occupant.TakeDamage(dinfo);
+        if (result?.hediffs == null)
+            return;
+
+        foreach (Hediff h in result.hediffs)
+        {
+            if (h is Hediff_Injury inj)
+                myInjuries.Add(inj);
+        }
+    }
+
+    private void UpdateSustainer(bool active)
+    {
+        if (active)
+        {
+            if (parent.Spawned && (activeSustainer == null || activeSustainer.Ended))
+            {
+                activeSustainer = CerebrexFlavourPackDefOf.CFP_HumanProcessor_Ambient
+                    .TrySpawnSustainer(SoundInfo.InMap(parent, MaintenanceType.PerTickRare));
+            }
+            activeSustainer?.Maintain();
+        }
+        else
+        {
+            EndSustainer();
+        }
+    }
+
+    private void EndSustainer()
+    {
+        if (activeSustainer != null && !activeSustainer.Ended)
+            activeSustainer.End();
+        activeSustainer = null;
     }
 
     public bool CanAcceptPawn(Pawn pawn) => CanAcceptPawn(pawn, out _);
@@ -118,6 +210,8 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
             return false;
 
         ticksHeld = 0;
+        nextDamageTick = Find.TickManager.TicksGame + Rand.RangeInclusive(30, 90);
+        myInjuries.Clear();
         bool wasSelected = pawn.DeSpawnOrDeselect(DestroyMode.Vanish);
         if (pawn.holdingOwner != null)
         {
@@ -128,10 +222,25 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
             innerContainer.TryAdd(pawn, false);
         }
 
+        // Move the pawn's cached position onto the machine so damage effecters
+        // (which read pawn.Position directly, not PositionHeld) spawn their
+        // visual FX on the machine instead of the pre-capture cell.
+        SnapPositionToParent(pawn);
+
         if (wasSelected)
             Find.Selector.Select(parent, playSound: false, forceDesignatorDeselect: false);
 
         return true;
+    }
+
+    private static readonly System.Reflection.FieldInfo PositionIntField =
+        typeof(Thing).GetField("positionInt", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
+
+    private void SnapPositionToParent(Thing pawn)
+    {
+        if (PositionIntField == null || pawn == null || pawn.Spawned)
+            return;
+        PositionIntField.SetValue(pawn, parent.Position);
     }
 
     public override string CompInspectStringExtra()
@@ -158,6 +267,23 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
         base.PostDraw();
 
         Pawn occupant = Occupant;
+        bool active = occupant != null && PowerOn;
+
+        Graphic overlay;
+        if (active)
+        {
+            int frame = (Find.TickManager.TicksGame / 4) % 2;
+            overlay = frame == 0 ? SlicersBlur1 : SlicersBlur2;
+        }
+        else
+        {
+            overlay = SlicersStatic;
+        }
+
+        Vector3 slicerPos = parent.DrawPos;
+        slicerPos.y = AltitudeLayer.BuildingOnTop.AltitudeFor();
+        overlay.Draw(slicerPos, Rot4.North, parent);
+
         if (occupant == null)
             return;
 
@@ -173,6 +299,7 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
     public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
     {
         map.GetComponent<PrisonerProcessorTracker>()?.Deregister(this);
+        EndSustainer();
 
         if (mode != DestroyMode.WillReplace)
             EjectContents(map);
@@ -182,6 +309,7 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
 
     public override void PostDestroy(DestroyMode mode, Map previousMap)
     {
+        EndSustainer();
         EjectContents(previousMap);
         base.PostDestroy(mode, previousMap);
     }
@@ -191,6 +319,7 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
         base.PostExposeData();
         Scribe_Deep.Look(ref innerContainer, "innerContainer", this);
         Scribe_Values.Look(ref ticksHeld, "ticksHeld");
+        Scribe_Values.Look(ref nextDamageTick, "nextDamageTick");
 
         if (Scribe.mode == LoadSaveMode.PostLoadInit)
             powerComp = parent.GetComp<CompPowerTrader>();
@@ -213,6 +342,7 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
         occupant.Kill(null);
         innerContainer.ClearAndDestroyContents(DestroyMode.Vanish);
         ticksHeld = 0;
+        myInjuries.Clear();
         int lostCount = 0;
 
 
@@ -251,5 +381,6 @@ public class CompPrisonerProcessor : ThingComp, IThingHolder
         IntVec3 dropCell = parent.InteractionCell.IsValid ? parent.InteractionCell : parent.PositionHeld;
         innerContainer.TryDropAll(dropCell, map, ThingPlaceMode.Near);
         ticksHeld = 0;
+        myInjuries.Clear();
     }
 }

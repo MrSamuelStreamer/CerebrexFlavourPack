@@ -3,9 +3,9 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>CFP_HumanProcessor</defName>
-    <label>human processor</label>
+    <label>Mechanoid Integument Needle Graft Extraction System</label>
     <description>PLACEHOLDER</description>
-    
+
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <!-- tickerType required as Normal -->
@@ -27,13 +27,13 @@
     <containedPawnsSelectable>true</containedPawnsSelectable>
 
     <graphicData>
-      <texPath>Building/HumanProcessor</texPath>
+      <texPath>Building/PeelerNoSlicers</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
     </graphicData>
     <researchPrerequisites>
       <li>Machining</li>
-    </researchPrerequisites>
+</researchPrerequisites>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
       <WorkToBuild>30000</WorkToBuild>
