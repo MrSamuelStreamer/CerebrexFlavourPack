@@ -45,6 +45,12 @@
             <description>Build radiation panels for electricity generation</description>
         </value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SolarGenerator"]/comps/li[compClass="CompPowerPlantSolar"]/basePowerConsumption</xpath>
+        <value>
+            <basePowerConsumption>-400</basePowerConsumption>
+        </value>
+    </Operation>
 
     <!-- solar flare -->
      <Operation Class="PatchOperationReplace">
