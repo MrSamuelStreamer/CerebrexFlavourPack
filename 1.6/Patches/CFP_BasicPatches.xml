@@ -94,7 +94,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/GameConditionDef[defName="Eclipse"]/letterText</xpath>
         <value>
-            <letterText>One of the moons of this planet has passed in front of the enormous, abyssal black hole. The recently named 'abyssal eclipse' has begun.</letterText>
+            <letterText>One of the moons of this planet has passed in front of the enormous, abyssal black hole. The abyssal eclipse has begun.</letterText>
         </value>
     </Operation>
 
@@ -102,19 +102,19 @@
      <Operation Class="PatchOperationReplace">
         <xpath>Defs/GameConditionDef[defName="VolcanicWinter"]/description</xpath>
         <value>
-            <description>Some distant volcano or fire is choking the atmosphere with ash, significantly reducing the already-faint abyssal light. Temperatures will be colder and plants will grow slower.</description>
+            <description>Some distant volcano or fire is choking the atmosphere with ash, significantly reducing the already-faint abyssal and lunar light. Temperatures will be colder and plants will grow slower.</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/GameConditionDef[defName="VolcanicWinter"]/letterText</xpath>
         <value>
-            <letterText>Some distant volcano or fire has begun spewing massive quantities of ash into the atmosphere.\n\nAsh in the atmosphere will obscure the already-faint abyssal light. Temperatures will drop and plants will suffer for lack of light. It could pass in a few weeks, or it might last many quadrums.</letterText>
+            <letterText>Some distant volcano or fire has begun spewing massive quantities of ash into the atmosphere.\n\nAsh in the atmosphere will obscure the already-faint abyssal and lunar light. Temperatures will drop and plants will suffer for lack of light. It could pass in a few weeks, or it might last many quadrums.</letterText>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/GameConditionDef[defName="VolcanicWinter"]/descriptionFuture</xpath>
         <value>
-            <descriptionFuture>a layer of ash will be deposited in the upper atmosphere, reducing the already-faint abyssal light around [map_definite] for [gameConditionDuration_duration], seriously harming the local ecosystem</descriptionFuture>
+            <descriptionFuture>a layer of ash will be deposited in the upper atmosphere, reducing the already-faint abyssal and lunar light around [map_definite] for [gameConditionDuration_duration], seriously harming the local ecosystem</descriptionFuture>
         </value>
     </Operation>
 
