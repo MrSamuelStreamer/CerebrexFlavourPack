@@ -50,7 +50,17 @@ This is permanent. The following are now gone:
 
 Caravans will also move more slowly across this tile.</CerebrexFlavourPack_BiomeFlipped_LetterText>
 
-<CFP_PrisonerProcessor_Complete>Integument extraction complete: {0} has been flayed alive and ejected.</CFP_PrisonerProcessor_Complete>
-<CFP_PrisonerProcessor_AlreadyProcessed>pawn has already been processed.</CFP_PrisonerProcessor_AlreadyProcessed>
+    <CFP_PrisonerProcessor_Complete>Integument extraction complete: {0} has been flayed alive and ejected.</CFP_PrisonerProcessor_Complete>
+    <CFP_PrisonerProcessor_AlreadyProcessed>pawn has already been processed.</CFP_PrisonerProcessor_AlreadyProcessed>
+
+    <SeasonSpring>thaw</SeasonSpring>
+    <SeasonSummer>peak drift</SeasonSummer>
+    <SeasonFall>wane</SeasonFall>
+    <SeasonWinter>deep dark</SeasonWinter>
+    <SeasonPermanentSummer>permanent peak drift</SeasonPermanentSummer>
+    <SeasonPermanentWinter>permanent deep dark</SeasonPermanentWinter>
+
+    <LetterLabelFirstSummerWarning>Peak Drift</LetterLabelFirstSummerWarning>
+    <FirstSummerWarning>The accretion disk is the brightest it can possibly be. Peak Drift has begun, but darker months are coming.\n\nOnce the remaining light fades, your crops will stop growing in the cold. Store enough food to last, or build a walk-in refrigerator to keep from spoiling.\n\nWhen Deep Dark arrives, you'll need parkas or you'll freeze the moment you step outside.</FirstSummerWarning>
 
 </LanguageData>

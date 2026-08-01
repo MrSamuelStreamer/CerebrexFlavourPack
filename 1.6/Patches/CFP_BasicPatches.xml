@@ -9,4 +9,137 @@
         </value>
     </Operation>
 
+    <!-- ======= FLAVOUR SHITE ======= -->
+    <!-- stuff to change: label, desc, accompanying research, research desc, letterText, endMessage, descriptionFuture -->
+
+    <!-- sun lamp -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SunLamp"]/label</xpath>
+        <value>
+            <label>artificial growth lamp</label>
+        </value>
+    </Operation>
+
+    <!-- solar panel -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SolarGenerator"]/label</xpath>
+        <value>
+            <label>lunar panel</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SolarGenerator"]/description</xpath>
+        <value>
+            <label>Produces electricity from lunar rays during what was formerly known as daytime hours. Does not work under artificial light.</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SolarPanels"]/label</xpath>
+        <value>
+            <label>lunar panel</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="SolarPanels"]/description</xpath>
+        <value>
+            <description>Build lunar panels for electricity generation</description>
+        </value>
+    </Operation>
+
+    <!-- solar flare -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="SolarFlare"]/label</xpath>
+        <value>
+            <label>hawking interference</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="SolarFlare"]/description</xpath>
+        <value>
+            <description>The local black hole has emitted a surge of mysterious, immeasurable Hawking radiation, interfering with electronic devices.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="SolarFlare"]/endMessage</xpath>
+        <value>
+            <endMessage>The hawking interference is ending.</endMessage>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="SolarFlare"]/letterText</xpath>
+        <value>
+            <letterText>A Hawking interference event, a result of unknown levels of radiation surging from the local blackhole, has begun.\n\nThe intense radiation will shut down all electrical devices.\n\nIt should pass in about a day.</letterText>
+        </value>
+    </Operation>
+
+    <!-- eclipse -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="Eclipse"]/label</xpath>
+        <value>
+            <label>abyssal eclipse</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="Eclipse"]/description</xpath>
+        <value>
+            <description>The moon is passing in front of the accretion disk, smothering what little light still spirals towards the enormous, abyssal black hole.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="Eclipse"]/endMessage</xpath>
+        <value>
+            <endMessage>The abyssal eclipse is ending.</endMessage>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="Eclipse"]/letterText</xpath>
+        <value>
+            <letterText>One of the moons of this planet has passed in front of the enormous, abyssal black hole. The recently named 'abyssal eclipse' has begun.</letterText>
+        </value>
+    </Operation>
+
+    <!-- volcanic winter -->
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="VolcanicWinter"]/description</xpath>
+        <value>
+            <description>Some distant volcano or fire is choking the atmosphere with ash, significantly reducing the already-faint abyssal light. Temperatures will be colder and plants will grow slower.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="VolcanicWinter"]/letterText</xpath>
+        <value>
+            <letterText>Some distant volcano or fire has begun spewing massive quantities of ash into the atmosphere.\n\nAsh in the atmosphere will obscure the already-faint abyssal light. Temperatures will drop and plants will suffer for lack of light. It could pass in a few weeks, or it might last many quadrums.</letterText>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GameConditionDef[defName="VolcanicWinter"]/descriptionFuture</xpath>
+        <value>
+            <descriptionFuture>a layer of ash will be deposited in the upper atmosphere, reducing the already-faint abyssal light around [map_definite] for [gameConditionDuration_duration], seriously harming the local ecosystem</descriptionFuture>
+        </value>
+    </Operation>
+
+    <!-- heatstroke - note: simple removal of the words "and sunlight" -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/HediffDef[defName="Heatstroke"]/description</xpath>
+        <value>
+            <description>A generalized disruption to body functioning caused by excessive exposure to heat. The victim becomes dizzy, weak, and confused. Recovery is quick once in a cool area, but if heat exposure continues, heat stroke gets worse until death.</description>
+        </value>
+    </Operation>
+
+    <!-- duster -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_Duster"]/description</xpath>
+        <value>
+            <description>A long duster coat. It was for blocking heat from the old sun, before it collapsed into a black hole.</description>
+        </value>
+    </Operation>
+
+    <!-- cowboy hat -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_CowboyHat"]/description</xpath>
+        <value>
+            <description>Stylish yet rugged, it was for blocking heat from the old sun, before it collapsed into a black hole - and it gives anyone who wears it a bit of extra charm. It is the most important part of traditional western attire.</description>
+        </value>
+    </Operation>
+
 </Patch>
