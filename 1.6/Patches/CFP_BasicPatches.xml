@@ -24,25 +24,25 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="SolarGenerator"]/label</xpath>
         <value>
-            <label>lunar panel</label>
+            <label>radiation panel</label>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="SolarGenerator"]/description</xpath>
         <value>
-            <label>Produces electricity from lunar rays during what was formerly known as daytime hours. Does not work under artificial light.</label>
+            <description>Adapted from old solar technology, radiation panels are capable of capturing small amounts of the microwave energy being bent by the black hole into the visible spectrum. This can produce a small amount of power, though not nearly as much as a traditional solar panel under a real star.</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ResearchProjectDef[defName="SolarPanels"]/label</xpath>
         <value>
-            <label>lunar panel</label>
+            <label>radiation panel</label>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ResearchProjectDef[defName="SolarPanels"]/description</xpath>
         <value>
-            <description>Build lunar panels for electricity generation</description>
+            <description>Build radiation panels for electricity generation</description>
         </value>
     </Operation>
 
@@ -68,7 +68,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/GameConditionDef[defName="SolarFlare"]/letterText</xpath>
         <value>
-            <letterText>A Hawking interference event, a result of unknown levels of radiation surging from the local blackhole, has begun.\n\nThe intense radiation will shut down all electrical devices.\n\nIt should pass in about a day.</letterText>
+            <letterText>A Hawking interference event, a result of unknown levels of radiation surging from the local black hole, has begun.\n\nThe intense radiation will shut down all electrical devices.\n\nIt should pass in about a day.</letterText>
         </value>
     </Operation>
 
@@ -102,19 +102,19 @@
      <Operation Class="PatchOperationReplace">
         <xpath>Defs/GameConditionDef[defName="VolcanicWinter"]/description</xpath>
         <value>
-            <description>Some distant volcano or fire is choking the atmosphere with ash, significantly reducing the already-faint abyssal and lunar light. Temperatures will be colder and plants will grow slower.</description>
+            <description>Some distant volcano or fire is choking the atmosphere with ash, significantly reducing the already-faint abyssal light. Temperatures will be colder and plants will grow slower.</description>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/GameConditionDef[defName="VolcanicWinter"]/letterText</xpath>
         <value>
-            <letterText>Some distant volcano or fire has begun spewing massive quantities of ash into the atmosphere.\n\nAsh in the atmosphere will obscure the already-faint abyssal and lunar light. Temperatures will drop and plants will suffer for lack of light. It could pass in a few weeks, or it might last many quadrums.</letterText>
+            <letterText>Some distant volcano or fire has begun spewing massive quantities of ash into the atmosphere.\n\nAsh in the atmosphere will obscure the already-faint abyssal light. Temperatures will drop and plants will suffer for lack of light. It could pass in a few weeks, or it might last many quadrums.</letterText>
         </value>
     </Operation>
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/GameConditionDef[defName="VolcanicWinter"]/descriptionFuture</xpath>
         <value>
-            <descriptionFuture>a layer of ash will be deposited in the upper atmosphere, reducing the already-faint abyssal and lunar light around [map_definite] for [gameConditionDuration_duration], seriously harming the local ecosystem</descriptionFuture>
+            <descriptionFuture>a layer of ash will be deposited in the upper atmosphere, reducing the already-faint abyssal light around [map_definite] for [gameConditionDuration_duration], seriously harming the local ecosystem</descriptionFuture>
         </value>
     </Operation>
 
