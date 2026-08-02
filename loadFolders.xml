@@ -12,5 +12,6 @@
 		<li IfModActive="mlie.reinforcedmechanoid2">Compatibility/mlie.reinforcedmechanoid2</li>
 		<li IfModActive="mlie.yayosendgame">Compatibility/mlie.yayosendgame</li>
 		<li IfModActive="redmattis.sapientanimals">Compatibility/redmattis.sapientanimals</li>
+		<li IfModActive="redmattis.betterprerequisites">Compatibility/redmattis.betterprerequisites</li>
 	</v1.6>
 </loadFolders>
