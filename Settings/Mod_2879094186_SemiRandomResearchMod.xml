@@ -8,11 +8,12 @@
 			</keys>
 			<values>
 				<li>
+					<allowManualReroll>Once</allowManualReroll>
 					<reofferAfterAmountOfRerolls>5</reofferAfterAmountOfRerolls>
 					<availableProjectCount>5</availableProjectCount>
 					<maxProjectCount>6</maxProjectCount>
-					<forceLowestTechLevel>True</forceLowestTechLevel>
 					<restrictToFactionTechLevel>True</restrictToFactionTechLevel>
+					<allowOneHigherTechProject>True</allowOneHigherTechProject>
 					<equalizeCost>True</equalizeCost>
 					<researchCostFactor>
 						<keys>

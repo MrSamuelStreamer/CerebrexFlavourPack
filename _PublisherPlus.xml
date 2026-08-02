@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Excluded>
+    <exclude>.editorconfig</exclude>
+    <exclude>.git</exclude>
+    <exclude>1.6\Assemblies\.idea</exclude>
+    <exclude>Assets</exclude>
+    <exclude>LICENSE</exclude>
+    <exclude>PeelerNoSlicers.png</exclude>
+    <exclude>PeelerSlicersOnly.png</exclude>
+    <exclude>PeelerSlicersOnlyBlur.png</exclude>
+    <exclude>PeelerSlicersOnlyBlur2.png</exclude>
+  </Excluded>
+</Configuration>

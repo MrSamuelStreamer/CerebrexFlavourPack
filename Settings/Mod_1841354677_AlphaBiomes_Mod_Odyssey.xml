@@ -2,8 +2,8 @@
 <SettingsBlock>
 	<ModSettings Class="AlphaBiomes.AlphaBiomes_Settings_Odyssey">
 		<AB_RemoveOdysseyBiomes>False</AB_RemoveOdysseyBiomes>
-		<mutatorMultiplier>20</mutatorMultiplier>
-		<landmarkMutatorMultiplier>20</landmarkMutatorMultiplier>
+		<mutatorMultiplier>5.13000011</mutatorMultiplier>
+		<landmarkMutatorMultiplier>5.26999998</landmarkMutatorMultiplier>
 		<mutatorCommonalities>
 			<keys>
 				<li>AnimalLife_Increased</li>
@@ -133,23 +133,24 @@
 				<li>VEE_DustStorms</li>
 				<li>VEE_MoreSolarPower</li>
 				<li>VEE_LessSolarPower</li>
+				<li>VEE_WastelandFauna</li>
 			</keys>
 			<values>
 				<li>0</li>
-				<li>0.107000001</li>
+				<li>0.0670000017</li>
 				<li>0</li>
 				<li>0</li>
-				<li>0.111000001</li>
+				<li>0.0719999969</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0.00999999978</li>
 				<li>0</li>
-				<li>0.063000001</li>
+				<li>0.0419999994</li>
 				<li>0</li>
-				<li>0.119000003</li>
-				<li>0.103</li>
-				<li>0.100000001</li>
+				<li>0.0610000007</li>
+				<li>0.0590000004</li>
+				<li>0.0689999983</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
@@ -158,26 +159,26 @@
 				<li>0</li>
 				<li>0.0370000005</li>
 				<li>0</li>
-				<li>0.407999992</li>
+				<li>0.218999997</li>
 				<li>0</li>
-				<li>0.388000011</li>
+				<li>0.109999999</li>
 				<li>0.0529999994</li>
 				<li>0.00499999989</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0.00499999989</li>
-				<li>0.0529999994</li>
-				<li>0.5</li>
+				<li>0.0419999994</li>
+				<li>0.201000005</li>
 				<li>0</li>
-				<li>0.125</li>
-				<li>0.5</li>
-				<li>0.261999995</li>
-				<li>0.331</li>
+				<li>0.0829999968</li>
+				<li>0.206</li>
+				<li>0.123000003</li>
+				<li>0.166999996</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
-				<li>0.150000006</li>
+				<li>0.0970000029</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
@@ -185,7 +186,7 @@
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
-				<li>1</li>
+				<li>0.266000003</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
@@ -193,13 +194,13 @@
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
-				<li>0.135000005</li>
+				<li>0.0780000016</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
-				<li>0.0810000002</li>
+				<li>0.0489999987</li>
 				<li>0.0579999983</li>
 				<li>0</li>
 				<li>0</li>
@@ -211,31 +212,31 @@
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
-				<li>0.163000003</li>
-				<li>0.147</li>
+				<li>0.112000003</li>
+				<li>0.0520000011</li>
 				<li>0</li>
-				<li>0.119999997</li>
+				<li>0.0810000002</li>
 				<li>0</li>
-				<li>0.0930000022</li>
+				<li>0.0649999976</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0.00499999989</li>
-				<li>0.0960000008</li>
+				<li>0.0469999984</li>
 				<li>0</li>
 				<li>0.0489999987</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0.00999999978</li>
-				<li>0.104000002</li>
-				<li>0.243000001</li>
+				<li>0.074000001</li>
+				<li>0.236000001</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
-				<li>0.107000001</li>
+				<li>0.0719999969</li>
 				<li>0</li>
-				<li>0.666000009</li>
-				<li>0.173999995</li>
+				<li>0.238000005</li>
+				<li>0.112999998</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
@@ -252,16 +253,17 @@
 				<li>0.0419999994</li>
 				<li>0</li>
 				<li>0</li>
-				<li>0.0719999969</li>
-				<li>0.074000001</li>
+				<li>0.0529999994</li>
+				<li>0.0599999987</li>
 				<li>0</li>
-				<li>0.115000002</li>
+				<li>0.064000003</li>
 				<li>0</li>
 				<li>0</li>
 				<li>0</li>
-				<li>0.0900000036</li>
+				<li>0.063000001</li>
 				<li>0</li>
-				<li>1</li>
+				<li>0.595000029</li>
+				<li>0.0199999996</li>
 			</values>
 		</mutatorCommonalities>
 	</ModSettings>

@@ -2,6 +2,7 @@
 <SettingsBlock>
 	<ModSettings Class="aRandomKiwi.ARS.Settings">
 		<folders>
+			<li>cinem</li>
 			<li>Default</li>
 			<li>Intro</li>
 		</folders>

@@ -2,6 +2,7 @@
 <SettingsBlock>
 	<ModSettings Class="Leo.ResearchBasedRaidsDifficulty.ResearchBasedRaidsDifficulty_ModSettings">
 		<maxMultiplierAtRatio>1</maxMultiplierAtRatio>
+		<researchOnlyThreatPoints>True</researchOnlyThreatPoints>
 		<researchProjectBlacklist>
 			<keys />
 			<values />

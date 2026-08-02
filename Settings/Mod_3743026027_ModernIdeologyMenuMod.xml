@@ -1,4 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
-	<ModSettings Class="ModernIdeologyMenu.ModernIdeologyMenuSettings" />
+	<ModSettings Class="ModernIdeologyMenu.ModernIdeologyMenuSettings">
+		<enabled>False</enabled>
+	</ModSettings>
 </SettingsBlock>

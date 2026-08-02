@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
 	<ModSettings Class="WhatsThatMod.WTM_ModSettings">
-		<Bold>False</Bold>
-		<CustomSize>16</CustomSize>
+		<FlagVanilla>True</FlagVanilla>
+		<CustomSize>10</CustomSize>
 		<ExcludedMods />
 		<ExcludedDefTypes />
 	</ModSettings>

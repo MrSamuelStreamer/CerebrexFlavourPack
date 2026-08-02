@@ -2,11 +2,9 @@
 <SettingsBlock>
 	<ModSettings Class="MSSFP.Settings">
 		<EnableWanderDelayModification>True</EnableWanderDelayModification>
-		<WanderDelayTicks>1813</WanderDelayTicks>
+		<WanderDelayTicks>1799</WanderDelayTicks>
 		<Active10SecondsToSpeed>True</Active10SecondsToSpeed>
-		<EnableSubNormalSpeeds>False</EnableSubNormalSpeeds>
-		<FactionLeaderRaidChance>0.0504585616</FactionLeaderRaidChance>
-		<RecoilKnockbackMultiplier>0.0938019827</RecoilKnockbackMultiplier>
+		<MechFormingSpeedBaseValue>0.5</MechFormingSpeedBaseValue>
 		<MonitoredSpeeds>
 			<li>Paused</li>
 			<li>Normal</li>
@@ -15,16 +13,13 @@
 		<ExtraBuildables />
 		<NoReplaceFactionLeader>True</NoReplaceFactionLeader>
 		<DrawByMrStreamer>True</DrawByMrStreamer>
-		<ViewerStructureScatterMult>1.49033093</ViewerStructureScatterMult>
-		<PointOfInterestFrequencyMult>0.979214072</PointOfInterestFrequencyMult>
 		<WanderDelayIncludeHumanoids>True</WanderDelayIncludeHumanoids>
 		<ShowHauntDevDashboard>False</ShowHauntDevDashboard>
-		<HauntMinCooldownDays>3000</HauntMinCooldownDays>
 		<EnableKillHaunts>False</EnableKillHaunts>
 		<DisableBSIncorporateGeneLimit>True</DisableBSIncorporateGeneLimit>
 		<EnableGeneStealerNeed>True</EnableGeneStealerNeed>
 		<EnableLoversRetreat>True</EnableLoversRetreat>
-		<allowAnyPregnant>True</allowAnyPregnant>
+		<EnableTrekBeamers>False</EnableTrekBeamers>
 		<EnableSkylanternRaids>True</EnableSkylanternRaids>
 		<EnableMercenaryHiring>False</EnableMercenaryHiring>
 		<EnableCodexPunch>False</EnableCodexPunch>

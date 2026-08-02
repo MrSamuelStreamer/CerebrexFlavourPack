@@ -1,4 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
-	<ModSettings Class="ProgressionEducation.EducationSettings" />
+	<ModSettings Class="ProgressionEducation.EducationSettings">
+		<enableWeaponProficiency>False</enableWeaponProficiency>
+	</ModSettings>
 </SettingsBlock>
