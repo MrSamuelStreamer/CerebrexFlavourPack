@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MU_BasicChipItemBase">
+    <defName>CFP_MechChip_HostileTrade</defName>
+    <label>person suit</label>
+    <description>Wraps a mechanoid in human leather so it can pass as a person and trade with hostile settlements.\n\nTraders either buy the act, or decide not to ask what is under the coat.</description>
+    <graphicData>
+      <texPath>Things/Item/MechanoidUpgrade/MU_MechChip_Production</texPath>
+    </graphicData>
+    <uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Production_A</uiIconPath>
+    <costList Inherit="False">
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Steel>5</Steel>
+      <Plasteel>5</Plasteel>
+      <Silver>4</Silver>
+      <Leather_Human>35</Leather_Human>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>CFP_PersonSuit</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li Class="MU.CompProperties_MechUpgrade">
+        <upgradeDef>CFP_MechChip_HostileTrade</upgradeDef>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <MU.MechUpgradeDef ParentName="MU_MechChipBase">
+    <defName>CFP_MechChip_HostileTrade</defName>
+    <label>person suit</label>
+    <description>Wraps a mechanoid in human leather so it can pass as a person and trade with hostile settlements.\n\nTraders either buy the act, or decide not to ask what is under the coat.</description>
+    <uiIconPath>UI/MechanoidUpgrades/MechChips/MU_MechChip_Production_A</uiIconPath>
+    <linkedThingDef>CFP_MechChip_HostileTrade</linkedThingDef>
+    <upgradePoints>2</upgradePoints>
+    <commonality>0</commonality>
+    <exclusionTags>
+      <li>CFP_HostileTrade</li>
+    </exclusionTags>
+    <comps>
+      <li Class="CerebrexFlavourPack.Compat.MechUpgrades.UpgradeCompProperties_HostileTrade">
+        <ignorePermanentEnemy>true</ignorePermanentEnemy>
+      </li>
+    </comps>
+  </MU.MechUpgradeDef>
+
+</Defs>

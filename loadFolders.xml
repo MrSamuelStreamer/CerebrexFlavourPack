@@ -10,6 +10,7 @@
 		<li IfModActive="aoba.deadmanswitch.core">Compatibility/aoba.deadmanswitch.core</li>
 		<li IfModActive="aoba.deadmanswitch.ancientcorps">Compatibility/aoba.deadmanswitch.ancientcorps</li>
 		<li IfModActive="mlie.reinforcedmechanoid2">Compatibility/mlie.reinforcedmechanoid2</li>
+		<li IfModActive="GoGaTio.MechanoidUpgrades">Compatibility/GoGaTio.MechanoidUpgrades</li>
 		<li IfModActive="mlie.yayosendgame">Compatibility/mlie.yayosendgame</li>
 		<li IfModActive="redmattis.sapientanimals">Compatibility/redmattis.sapientanimals</li>
 		<li IfModActive="redmattis.betterprerequisites">Compatibility/redmattis.betterprerequisites</li>
