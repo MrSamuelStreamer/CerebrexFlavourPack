@@ -126,6 +126,33 @@ You begin as a newly established Mechanoid hive - you start with databanks conta
           <thingDef>SubcoreBasic</thingDef>
           <count>5</count>
         </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>HemogenPack</thingDef>
+          <count>50</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>BS_AndroidFuel</thingDef>
+          <count>100</count>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>BS_AndroidFuelRefinery</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>HydroponicsBasin</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>PlayerTurret_AutoInferno</thingDef>
+        </li>
+        <li Class="ScenPart_StartingThing_Defined">
+          <def>StartingThing_Defined</def>
+          <thingDef>PlayerTurret_AutoMiniTurret</thingDef>
+          <count>3</count>
+        </li>
         <li Class="ScenPart_DisableMapGen">
           <def>DisableExostriderRemains</def>
         </li>
