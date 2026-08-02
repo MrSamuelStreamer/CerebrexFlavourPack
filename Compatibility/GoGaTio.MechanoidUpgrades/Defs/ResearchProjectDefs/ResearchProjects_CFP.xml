@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="MU_BasicBase">
+    <defName>CFP_PersonSuit</defName>
+    <label>person suits</label>
+    <description>Research into draping mechanoids in human leather so hostile settlements will talk to them.\n\nEarly trials were not convincing. Later trials were also not convincing. The project was declared a success after a pirate raider accepted a silver payment from a skin-wrapped lancer, muttered "nice coat," and left.</description>
+    <baseCost>200</baseCost>
+    <prerequisites>
+      <li>MU_BasicChips</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>0.70</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->person suits</li>
+        <li>subject_story->tried to disguise mechanoids as people</li>
+        <li>subject_gerund->stitching person suits</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+</Defs>
