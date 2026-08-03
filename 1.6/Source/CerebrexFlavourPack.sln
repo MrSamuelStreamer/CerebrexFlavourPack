@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerebrexFlavourPack", "Cere
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerebrexFlavourPack.Compat.Playwright", "CerebrexFlavourPack.Compat.Playwright/CerebrexFlavourPack.Compat.Playwright.csproj", "{9E2A4F1B-6C3D-4A8E-B5F0-2D7C9A1E3F4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerebrexFlavourPack.Compat.MechUpgrades", "CerebrexFlavourPack.Compat.MechUpgrades/CerebrexFlavourPack.Compat.MechUpgrades.csproj", "{3B6C8D25-47AE-4F13-90D6-5C81E2A7B934}"
+EndProject
 Global
     GlobalSection(SolutionConfigurationPlatforms) = preSolution
         Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
         {9E2A4F1B-6C3D-4A8E-B5F0-2D7C9A1E3F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
         {9E2A4F1B-6C3D-4A8E-B5F0-2D7C9A1E3F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
         {9E2A4F1B-6C3D-4A8E-B5F0-2D7C9A1E3F4B}.Release|Any CPU.Build.0 = Release|Any CPU
+        {3B6C8D25-47AE-4F13-90D6-5C81E2A7B934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {3B6C8D25-47AE-4F13-90D6-5C81E2A7B934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {3B6C8D25-47AE-4F13-90D6-5C81E2A7B934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {3B6C8D25-47AE-4F13-90D6-5C81E2A7B934}.Release|Any CPU.Build.0 = Release|Any CPU
     EndGlobalSection
     GlobalSection(SolutionProperties) = preSolution
         HideSolutionNode = FALSE

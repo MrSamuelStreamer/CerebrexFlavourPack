@@ -12,6 +12,13 @@
     <!-- ======= FLAVOUR SHITE ======= -->
     <!-- stuff to change: label, desc, accompanying research, research desc, letterText, endMessage, descriptionFuture -->
 
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/JobDef[defName="GoForWalk"]/reportString</xpath>
+        <value>
+            <reportString>going for a trundle.</reportString>
+        </value>
+    </Operation>
+
     <!-- sun lamp -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="SunLamp"]/label</xpath>
