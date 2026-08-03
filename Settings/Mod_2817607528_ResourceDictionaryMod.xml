@@ -4615,6 +4615,283 @@
 				<li>ancient low shield_building</li>
 				<li>ancient high shield_building</li>
 				<li>meditation focus_building</li>
+				<li>artificial growth lamp_building</li>
+				<li>radiation panel_building</li>
+				<li>toxic waste container_building</li>
+				<li>compact recycling bench_building</li>
+				<li>toxifungus_plant</li>
+				<li>toxicotton plant_plant</li>
+				<li>toxleaf plant_plant</li>
+				<li>toxroot_plant</li>
+				<li>toxhop plant_plant</li>
+				<li>toxtoria_plant</li>
+				<li>praetor(module)_item</li>
+				<li>hellsphere splitter_item</li>
+				<li>tox needle rifle_item</li>
+				<li>heavy graser_item</li>
+				<li>graser turret mount_item</li>
+				<li>minigun turret mount_item</li>
+				<li>charge lance turret mount_item</li>
+				<li>scorcher turret mount_item</li>
+				<li>signal relay(repair)_item</li>
+				<li>signal relay(defend)_item</li>
+				<li>signal relay(mobility)_item</li>
+				<li>signal relay(glitch)_item</li>
+				<li>toxiguana egg (fert.)_item</li>
+				<li>toxiguana egg (unfert.)_item</li>
+				<li>hydra egg (fert.)_item</li>
+				<li>hydra egg (unfert.)_item</li>
+				<li>toxic meat_item</li>
+				<li>wasteleather_item</li>
+				<li>hydra_pawn</li>
+				<li>megatardi_pawn</li>
+				<li>pestigator_pawn</li>
+				<li>toxafox_pawn</li>
+				<li>toxbear_pawn</li>
+				<li>toxiguana_pawn</li>
+				<li>toxlion_pawn</li>
+				<li>toxscorpion_pawn</li>
+				<li>wasteboar_pawn</li>
+				<li>wastedeer_pawn</li>
+				<li>wasteffalo_pawn</li>
+				<li>burn barrel_building</li>
+				<li>trashbrick floor_terrain</li>
+				<li>large pollution pump_building</li>
+				<li>pollution fastpump_building</li>
+				<li>waste crate_building</li>
+				<li>recycling bench_building</li>
+				<li>electric-powered recycling bench_building</li>
+				<li>garbage compactor_building</li>
+				<li>alloypack splitter_building</li>
+				<li>reclaimed biopack_item</li>
+				<li>reactive chempack_item</li>
+				<li>stabilized alloypack_item</li>
+				<li>volatile toxpack_item</li>
+				<li>radioactive isotopack_item</li>
+				<li>trash_item</li>
+				<li>trashbrick_item</li>
+				<li>wastepack powerplant_building</li>
+				<li>wastepack powerplant (non-explosive)_building</li>
+				<li>persona sword of surtr_item</li>
+				<li>persona skrýmir's mallet_item</li>
+				<li>giant club_item</li>
+				<li>giant primitive hammer_item</li>
+				<li>giant warhammer_item</li>
+				<li>sword of surtr_item</li>
+				<li>skrýmir's mallet_item</li>
+				<li>huge javelin_item</li>
+				<li>giant bow_item</li>
+				<li>throwing chunks_item</li>
+				<li>warmech anti-material rifle_item</li>
+				<li>warmech machinegun_item</li>
+				<li>warmech rocket launcher_item</li>
+				<li>soul shard_item</li>
+				<li>animal giantizer_item</li>
+				<li>animal minimizer_item</li>
+				<li>xenodiscombobulator_item</li>
+				<li>gene integrator_item</li>
+				<li>xenogerm cloner_item</li>
+				<li>germline cloner_item</li>
+				<li>archite xenogerm cloner_item</li>
+				<li>archite genome cloner_item</li>
+				<li>glutton_pawn</li>
+				<li>insect-like humanoid_pawn</li>
+				<li>archotech apparel-integrator_item</li>
+				<li>giant sword_item</li>
+				<li>gastropod meat_item</li>
+				<li>rose flamingo_pawn</li>
+				<li>rose flamingo egg (fert.)_item</li>
+				<li>rose flamingo egg (unfert.)_item</li>
+				<li>flamingo leather_item</li>
+				<li>terrestrial octopus_pawn</li>
+				<li>terrestrial octopus egg (fert.)_item</li>
+				<li>terrestrial octopus egg (unfert.)_item</li>
+				<li>maxolotl_pawn</li>
+				<li>maxolotl egg (fert.)_item</li>
+				<li>maxolotl egg (unfert.)_item</li>
+				<li>sandstone chinampa_terrain</li>
+				<li>granite chinampa_terrain</li>
+				<li>limestone chinampa_terrain</li>
+				<li>slate chinampa_terrain</li>
+				<li>marble chinampa_terrain</li>
+				<li>glacial ice_terrain</li>
+				<li>lava_terrain</li>
+				<li>magma_terrain</li>
+				<li>magma stone_terrain</li>
+				<li>pebbles_terrain</li>
+				<li>pontoon bridge_terrain</li>
+				<li>volcanic ash_terrain</li>
+				<li>abyssal deep water_terrain</li>
+				<li>lagoon water_terrain</li>
+				<li>brittle chitin_item</li>
+				<li>fragile chitin_item</li>
+				<li>gray shell_item</li>
+				<li>green shell_item</li>
+				<li>tough chitin_item</li>
+				<li>molluskshell_item</li>
+				<li>crystal carapace_item</li>
+				<li>royal chitin_item</li>
+				<li>crabshell_item</li>
+				<li>deep chitin_item</li>
+				<li>ice chunk_item</li>
+				<li>sand chunk_item</li>
+				<li>coral coconut tree_plant</li>
+				<li>coral coconuts_item</li>
+				<li>hermetic armor_item</li>
+				<li>hermetic helmet_item</li>
+				<li>fish meat_item</li>
+				<li>sand digging spot_building</li>
+				<li>ice digging spot_building</li>
+				<li>magma pump_building</li>
+				<li>lava generator_building</li>
+				<li>gastropodskin_item</li>
+				<li>amphibianskin_item</li>
+				<li>flame-proof leather_item</li>
+				<li>tough leather_item</li>
+				<li>pinnipedskin_item</li>
+				<li>fishskin_item</li>
+				<li>sharkskin_item</li>
+				<li>whaleskin_item</li>
+				<li>fish food_item</li>
+				<li>condensed sand_building</li>
+				<li>soft sand wall_building</li>
+				<li>dense sand wall_building</li>
+				<li>sand block_item</li>
+				<li>ice block_item</li>
+				<li>ice_building</li>
+				<li>constructed ice_building</li>
+				<li>barbed pangolin_pawn</li>
+				<li>bilious varog_pawn</li>
+				<li>bilious varog egg (fert.)_item</li>
+				<li>bilious varog egg (unfert.)_item</li>
+				<li>bloodletter petrel_pawn</li>
+				<li>bloodletter petrel egg (fert.)_item</li>
+				<li>bloodletter petrel egg (unfert.)_item</li>
+				<li>bunker bug_pawn</li>
+				<li>carrion vulture_pawn</li>
+				<li>carrion vulture egg (fert.)_item</li>
+				<li>carrion vulture egg (unfert.)_item</li>
+				<li>famine locust_pawn</li>
+				<li>famine locust egg (fert.)_item</li>
+				<li>famine locust egg (unfert.)_item</li>
+				<li>fenrid stoat_pawn</li>
+				<li>polluwog_pawn</li>
+				<li>gastro toad_pawn</li>
+				<li>gastro toad egg (fert.)_item</li>
+				<li>gastro toad egg (unfert.)_item</li>
+				<li>glowtail_pawn</li>
+				<li>glowtail egg (fert.)_item</li>
+				<li>glowtail egg (unfert.)_item</li>
+				<li>maligoat_pawn</li>
+				<li>mantrap_pawn</li>
+				<li>megakrill_pawn</li>
+				<li>megakrill egg (fert.)_item</li>
+				<li>megakrill egg (unfert.)_item</li>
+				<li>megaphorid maggot_pawn</li>
+				<li>megaphorid_pawn</li>
+				<li>megaroach_pawn</li>
+				<li>megaroach egg (unfert.)_item</li>
+				<li>megaroach egg (fert.)_item</li>
+				<li>mucklurker catfish_pawn</li>
+				<li>mucklurker catfish egg (fert.)_item</li>
+				<li>mucklurker catfish egg (unfert.)_item</li>
+				<li>mutagenic norphea_pawn</li>
+				<li>norphea egg (fert.)_item</li>
+				<li>norphea egg (unfert.)_item</li>
+				<li>mutating tumorfish spawn_pawn</li>
+				<li>mutating tumorfish fry_pawn</li>
+				<li>mutating tumorfish_pawn</li>
+				<li>mutating tumorfish egg (fert.)_item</li>
+				<li>mutating tumorfish egg (unfert.)_item</li>
+				<li>pustule hornet_pawn</li>
+				<li>pustule queen_pawn</li>
+				<li>pustule hornet queen egg (fert.)_item</li>
+				<li>sacapillar_pawn</li>
+				<li>sacapillar egg (fert.)_item</li>
+				<li>sacapillar egg (unfert.)_item</li>
+				<li>screecher_pawn</li>
+				<li>screecher egg (fert.)_item</li>
+				<li>screecher egg (unfert.)_item</li>
+				<li>sludgecrawler_pawn</li>
+				<li>sludgecrawler egg (fert.)_item</li>
+				<li>sludgecrawler egg (unfert.)_item</li>
+				<li>smog caterpillar_pawn</li>
+				<li>smog pupa_pawn</li>
+				<li>smog moth_pawn</li>
+				<li>smog moth egg (fert.)_item</li>
+				<li>smog moth egg (unfert.)_item</li>
+				<li>swarmcaller_pawn</li>
+				<li>swarmcaller egg (fert.)_item</li>
+				<li>swarmcaller egg (unfert.)_item</li>
+				<li>tainted turtle_pawn</li>
+				<li>tainted turtle egg (fert.)_item</li>
+				<li>tainted turtle egg (unfert.)_item</li>
+				<li>tox-wool sheep_pawn</li>
+				<li>triple snapper_pawn</li>
+				<li>triple snapper egg (fert.)_item</li>
+				<li>triple snapper egg (unfert.)_item</li>
+				<li>varmot_pawn</li>
+				<li>waste hound_pawn</li>
+				<li>bufo bile_item</li>
+				<li>mutapox vial_item</li>
+				<li>toxwood floor_terrain</li>
+				<li>pustule hornet hive_building</li>
+				<li>bunker bug claw_item</li>
+				<li>cement slime_item</li>
+				<li>pustule hornet stinger_item</li>
+				<li>tox-sheep wool_item</li>
+				<li>tox wood_item</li>
+				<li>regal milk_item</li>
+				<li>tox-clear_item</li>
+				<li>toxic chitin_item</li>
+				<li>blooming corpse_plant</li>
+				<li>cotton cap_plant</li>
+				<li>crying wolfberry bush_plant</li>
+				<li>crying berries_item</li>
+				<li>doomsprout_plant</li>
+				<li>eclipsus_plant</li>
+				<li>grey fern_plant</li>
+				<li>gutter plantain_plant</li>
+				<li>mantrap_plant</li>
+				<li>pagan thorns_plant</li>
+				<li>pestia_plant</li>
+				<li>pigs ears_plant</li>
+				<li>plague fans_plant</li>
+				<li>pox sorghum_plant</li>
+				<li>pox sorghum_item</li>
+				<li>rainbow tongue_plant</li>
+				<li>rashroot_plant</li>
+				<li>wild rashroot_plant</li>
+				<li>scorched stars_plant</li>
+				<li>sewer reed_plant</li>
+				<li>snaketails_plant</li>
+				<li>spiny hop_plant</li>
+				<li>toxcaps_plant</li>
+				<li>toxic ivy_plant</li>
+				<li>barbed larch tree_plant</li>
+				<li>blot birch tree_plant</li>
+				<li>clawhand citron_plant</li>
+				<li>clawed citrons_item</li>
+				<li>martyr tree_plant</li>
+				<li>scalped cypress_plant</li>
+				<li>seeping eucalyptus_plant</li>
+				<li>snake willow_plant</li>
+				<li>tangleroot mangrove_plant</li>
+				<li>twisting thornwood_plant</li>
+				<li>whistling cane_plant</li>
+				<li>wormoak tree_plant</li>
+				<li>tumorbulb hyacinth_plant</li>
+				<li>twisted dandelion_plant</li>
+				<li>twisting thorngrass_plant</li>
+				<li>twisting thornweed_plant</li>
+				<li>weeping hagbloom_plant</li>
+				<li>hagbloom nectar_item</li>
+				<li>mechanoid integument needle graft extraction system_building</li>
+				<li>basic medicine_item</li>
+				<li>인공 자궁_item</li>
+				<li>생체공학 인공 자궁_item</li>
+				<li>초월공학 메카노이드 자궁_item</li>
+				<li>인간 정자_item</li>
 			</keys>
 			<values>
 				<li>
@@ -5010,6 +5287,7 @@
 					<mainThingDefName>PackedDirt</mainThingDefName>
 					<thingDefs>
 						<li>PackedDirt</li>
+						<li>TweaksGalore_PlayerPackedDirt</li>
 					</thingDefs>
 					<removedDefs />
 				</li>
@@ -6264,6 +6542,7 @@
 				<li>
 					<thingKey>mini-slugger turret_building</thingKey>
 					<mainThingDefName>Turret_AutoMiniTurret</mainThingDefName>
+					<deduplicationEnabled>True</deduplicationEnabled>
 					<thingDefs>
 						<li>Turret_AutoMiniTurret</li>
 						<li>HML_AutoMiniTurret</li>
@@ -6282,15 +6561,18 @@
 				<li>
 					<thingKey>auto charge turret_building</thingKey>
 					<mainThingDefName>Turret_AutoChargeBlaster</mainThingDefName>
+					<deduplicationEnabled>True</deduplicationEnabled>
 					<thingDefs>
 						<li>Turret_AutoChargeBlaster</li>
 						<li>PlayerTurret_AutoChargeBlaster</li>
+						<li>Turret_TW_AutoChargeBlaster</li>
 					</thingDefs>
 					<removedDefs />
 				</li>
 				<li>
 					<thingKey>auto inferno turret_building</thingKey>
 					<mainThingDefName>Turret_AutoInferno</mainThingDefName>
+					<deduplicationEnabled>True</deduplicationEnabled>
 					<thingDefs>
 						<li>Turret_AutoInferno</li>
 						<li>HML_InfernoCannonTurret</li>
@@ -40211,17 +40493,13 @@
 				<li>
 					<thingKey>contraceptive_item</thingKey>
 					<mainThingDefName>SEX_Contraceptive</mainThingDefName>
-					<thingDefs>
-						<li>SEX_Contraceptive</li>
-					</thingDefs>
+					<thingDefs />
 					<removedDefs />
 				</li>
 				<li>
 					<thingKey>ui framework demo tab anchor_building</thingKey>
 					<mainThingDefName>D2_UIFrameworkDemoThing</mainThingDefName>
-					<thingDefs>
-						<li>D2_UIFrameworkDemoThing</li>
-					</thingDefs>
+					<thingDefs />
 					<removedDefs />
 				</li>
 				<li>
@@ -42156,6 +42434,2230 @@
 					<mainThingDefName>FSFMeditationFocus</mainThingDefName>
 					<thingDefs>
 						<li>FSFMeditationFocus</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>artificial growth lamp_building</thingKey>
+					<mainThingDefName>SunLamp</mainThingDefName>
+					<thingDefs>
+						<li>SunLamp</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>radiation panel_building</thingKey>
+					<mainThingDefName>SolarGenerator</mainThingDefName>
+					<thingDefs>
+						<li>SolarGenerator</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxic waste container_building</thingKey>
+					<mainThingDefName>WC_CargoContainerWaste</mainThingDefName>
+					<thingDefs>
+						<li>WC_CargoContainerWaste</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>compact recycling bench_building</thingKey>
+					<mainThingDefName>LTS_CompactRecyclingWorkbench</mainThingDefName>
+					<thingDefs>
+						<li>LTS_CompactRecyclingWorkbench</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxifungus_plant</thingKey>
+					<mainThingDefName>Plant_Toxifungus</mainThingDefName>
+					<thingDefs>
+						<li>Plant_Toxifungus</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxicotton plant_plant</thingKey>
+					<mainThingDefName>Plant_ToxCotton</mainThingDefName>
+					<thingDefs>
+						<li>Plant_ToxCotton</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxleaf plant_plant</thingKey>
+					<mainThingDefName>Plant_Toxleaf</mainThingDefName>
+					<thingDefs>
+						<li>Plant_Toxleaf</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxroot_plant</thingKey>
+					<mainThingDefName>Plant_Toxroot</mainThingDefName>
+					<thingDefs>
+						<li>Plant_Toxroot</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxhop plant_plant</thingKey>
+					<mainThingDefName>Plant_Toxhops</mainThingDefName>
+					<thingDefs>
+						<li>Plant_Toxhops</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxtoria_plant</thingKey>
+					<mainThingDefName>Plant_Toxtoria</mainThingDefName>
+					<thingDefs>
+						<li>Plant_Toxtoria</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>praetor(module)_item</thingKey>
+					<mainThingDefName>Addie_PraetorModule</mainThingDefName>
+					<thingDefs>
+						<li>Addie_PraetorModule</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>hellsphere splitter_item</thingKey>
+					<mainThingDefName>Addie_Module_HellsphereSplitter</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_HellsphereSplitter</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tox needle rifle_item</thingKey>
+					<mainThingDefName>Addie_Module_ToxNeedleRifle</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_ToxNeedleRifle</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>heavy graser_item</thingKey>
+					<mainThingDefName>Addie_Module_HeavyGraser</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_HeavyGraser</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>graser turret mount_item</thingKey>
+					<mainThingDefName>Addie_Module_GraserTurret</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_GraserTurret</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>minigun turret mount_item</thingKey>
+					<mainThingDefName>Addie_Module_MinigunTurret</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_MinigunTurret</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>charge lance turret mount_item</thingKey>
+					<mainThingDefName>Addie_Module_ChargeLanceTurret</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_ChargeLanceTurret</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>scorcher turret mount_item</thingKey>
+					<mainThingDefName>Addie_Module_ScorcherTurret</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_ScorcherTurret</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>signal relay(repair)_item</thingKey>
+					<mainThingDefName>Addie_Module_ProtocolRepair</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_ProtocolRepair</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>signal relay(defend)_item</thingKey>
+					<mainThingDefName>Addie_Module_ProtocolDefend</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_ProtocolDefend</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>signal relay(mobility)_item</thingKey>
+					<mainThingDefName>Addie_Module_ProtocolMobility</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_ProtocolMobility</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>signal relay(glitch)_item</thingKey>
+					<mainThingDefName>Addie_Module_ProtocolGlitch</mainThingDefName>
+					<thingDefs>
+						<li>Addie_Module_ProtocolGlitch</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxiguana egg (fert.)_item</thingKey>
+					<mainThingDefName>VAEWaste_EggToxiguanaFertilized</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_EggToxiguanaFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxiguana egg (unfert.)_item</thingKey>
+					<mainThingDefName>VAEWaste_EggToxiguanaUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_EggToxiguanaUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>hydra egg (fert.)_item</thingKey>
+					<mainThingDefName>VAEWaste_EggHydraFertilized</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_EggHydraFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>hydra egg (unfert.)_item</thingKey>
+					<mainThingDefName>VAEWaste_EggHydraUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_EggHydraUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxic meat_item</thingKey>
+					<mainThingDefName>VAEWaste_ToxicMeat</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_ToxicMeat</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wasteleather_item</thingKey>
+					<mainThingDefName>VAEWaste_ToxicLeather</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_ToxicLeather</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>hydra_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Hydra</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Hydra</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>megatardi_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Megatardi</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Megatardi</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pestigator_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Pestigator</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Pestigator</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxafox_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Toxafox</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Toxafox</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxbear_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Toxbear</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Toxbear</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxiguana_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Toxiguana</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Toxiguana</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxlion_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Toxlion</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Toxlion</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxscorpion_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Toxscorpion</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Toxscorpion</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wasteboar_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Wasteboar</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Wasteboar</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wastedeer_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Wastedeer</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Wastedeer</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wasteffalo_pawn</thingKey>
+					<mainThingDefName>VAEWaste_Wasteffalo</mainThingDefName>
+					<thingDefs>
+						<li>VAEWaste_Wasteffalo</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>burn barrel_building</thingKey>
+					<mainThingDefName>VRE_BurnBarrel</mainThingDefName>
+					<thingDefs>
+						<li>VRE_BurnBarrel</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>trashbrick floor_terrain</thingKey>
+					<mainThingDefName>VRecyclingE_TrashBrickFloor</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_TrashBrickFloor</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>large pollution pump_building</thingKey>
+					<mainThingDefName>VRecyclingE_LargePollutionPump</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_LargePollutionPump</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pollution fastpump_building</thingKey>
+					<mainThingDefName>VRecyclingE_PollutionFastPump</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_PollutionFastPump</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>waste crate_building</thingKey>
+					<mainThingDefName>VRecyclingE_WasteCrate</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_WasteCrate</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>recycling bench_building</thingKey>
+					<mainThingDefName>VRecyclingE_RecyclingWorkbench</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_RecyclingWorkbench</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>electric-powered recycling bench_building</thingKey>
+					<mainThingDefName>VRecyclingE_ElectricRecyclingWorkbench</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_ElectricRecyclingWorkbench</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>garbage compactor_building</thingKey>
+					<mainThingDefName>VRecyclingE_GarbageCompactor</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_GarbageCompactor</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>alloypack splitter_building</thingKey>
+					<mainThingDefName>VRecyclingE_AlloypackSplitter</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_AlloypackSplitter</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>reclaimed biopack_item</thingKey>
+					<mainThingDefName>VRecyclingE_ReclaimedBiopack</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_ReclaimedBiopack</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>reactive chempack_item</thingKey>
+					<mainThingDefName>VRecyclingE_ReactiveChempack</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_ReactiveChempack</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>stabilized alloypack_item</thingKey>
+					<mainThingDefName>VRecyclingE_StabilizedAlloypack</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_StabilizedAlloypack</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>volatile toxpack_item</thingKey>
+					<mainThingDefName>VRecyclingE_VolatileToxpack</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_VolatileToxpack</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>radioactive isotopack_item</thingKey>
+					<mainThingDefName>VRecyclingE_RadioactiveIsotopack</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_RadioactiveIsotopack</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>trash_item</thingKey>
+					<mainThingDefName>VRecyclingE_Trash</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_Trash</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>trashbrick_item</thingKey>
+					<mainThingDefName>VRecyclingE_TrashBrick</mainThingDefName>
+					<thingDefs>
+						<li>VRecyclingE_TrashBrick</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wastepack powerplant_building</thingKey>
+					<mainThingDefName>WastepackPowerplant</mainThingDefName>
+					<thingDefs>
+						<li>WastepackPowerplant</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wastepack powerplant (non-explosive)_building</thingKey>
+					<mainThingDefName>WastepackPowerplantNB</mainThingDefName>
+					<thingDefs>
+						<li>WastepackPowerplantNB</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>persona sword of surtr_item</thingKey>
+					<mainThingDefName>BS_SurtrSword_Persona</mainThingDefName>
+					<thingDefs>
+						<li>BS_SurtrSword_Persona</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>persona skrýmir's mallet_item</thingKey>
+					<mainThingDefName>BS_SkrymirHammer_Persona</mainThingDefName>
+					<thingDefs>
+						<li>BS_SkrymirHammer_Persona</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>giant club_item</thingKey>
+					<mainThingDefName>BS_OgreClub</mainThingDefName>
+					<thingDefs>
+						<li>BS_OgreClub</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>giant primitive hammer_item</thingKey>
+					<mainThingDefName>BS_GiantHammer</mainThingDefName>
+					<thingDefs>
+						<li>BS_GiantHammer</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>giant warhammer_item</thingKey>
+					<mainThingDefName>BS_JotunHammer</mainThingDefName>
+					<thingDefs>
+						<li>BS_JotunHammer</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sword of surtr_item</thingKey>
+					<mainThingDefName>BS_SurtrSword</mainThingDefName>
+					<thingDefs>
+						<li>BS_SurtrSword</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>skrýmir's mallet_item</thingKey>
+					<mainThingDefName>BS_SkrymirHammer</mainThingDefName>
+					<thingDefs>
+						<li>BS_SkrymirHammer</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>huge javelin_item</thingKey>
+					<mainThingDefName>BS_JotunJavelin</mainThingDefName>
+					<thingDefs>
+						<li>BS_JotunJavelin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>giant bow_item</thingKey>
+					<mainThingDefName>BS_GiantPrimitiveBow</mainThingDefName>
+					<thingDefs>
+						<li>BS_GiantPrimitiveBow</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>throwing chunks_item</thingKey>
+					<mainThingDefName>BS_OgreThrowinRock</mainThingDefName>
+					<thingDefs>
+						<li>BS_OgreThrowinRock</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>warmech anti-material rifle_item</thingKey>
+					<mainThingDefName>BS_JotunRifle</mainThingDefName>
+					<thingDefs>
+						<li>BS_JotunRifle</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>warmech machinegun_item</thingKey>
+					<mainThingDefName>BS_GiantMinigun</mainThingDefName>
+					<thingDefs>
+						<li>BS_GiantMinigun</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>warmech rocket launcher_item</thingKey>
+					<mainThingDefName>BS_JotunRocketLauncher</mainThingDefName>
+					<thingDefs>
+						<li>BS_JotunRocketLauncher</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>soul shard_item</thingKey>
+					<mainThingDefName>BS_DarkSoulshard</mainThingDefName>
+					<thingDefs>
+						<li>BS_DarkSoulshard</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>animal giantizer_item</thingKey>
+					<mainThingDefName>BS_Giant_Serum</mainThingDefName>
+					<thingDefs>
+						<li>BS_Giant_Serum</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>animal minimizer_item</thingKey>
+					<mainThingDefName>BS_Shrink_Serum</mainThingDefName>
+					<thingDefs>
+						<li>BS_Shrink_Serum</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>xenodiscombobulator_item</thingKey>
+					<mainThingDefName>BS_GeneDicombobulator</mainThingDefName>
+					<thingDefs>
+						<li>BS_GeneDicombobulator</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>gene integrator_item</thingKey>
+					<mainThingDefName>BS_GeneGeneIntegrator</mainThingDefName>
+					<thingDefs>
+						<li>BS_GeneGeneIntegrator</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>xenogerm cloner_item</thingKey>
+					<mainThingDefName>BS_CreateXenogerm</mainThingDefName>
+					<thingDefs>
+						<li>BS_CreateXenogerm</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>germline cloner_item</thingKey>
+					<mainThingDefName>BS_CreateXenogerm_Endo</mainThingDefName>
+					<thingDefs>
+						<li>BS_CreateXenogerm_Endo</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>archite xenogerm cloner_item</thingKey>
+					<mainThingDefName>BS_CreateArchiteXenogerm</mainThingDefName>
+					<thingDefs>
+						<li>BS_CreateArchiteXenogerm</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>archite genome cloner_item</thingKey>
+					<mainThingDefName>BS_CreateArchiteXenogerm_Endo</mainThingDefName>
+					<thingDefs>
+						<li>BS_CreateArchiteXenogerm_Endo</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>glutton_pawn</thingKey>
+					<mainThingDefName>BS_GluttonRace</mainThingDefName>
+					<thingDefs>
+						<li>BS_GluttonRace</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>insect-like humanoid_pawn</thingKey>
+					<mainThingDefName>BS_InsectoidHumanoid_FourArmed</mainThingDefName>
+					<thingDefs>
+						<li>BS_InsectoidHumanoid_FourArmed</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>archotech apparel-integrator_item</thingKey>
+					<mainThingDefName>BS_IndestructibelApparel</mainThingDefName>
+					<thingDefs>
+						<li>BS_IndestructibelApparel</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>giant sword_item</thingKey>
+					<mainThingDefName>BS_JotunSword</mainThingDefName>
+					<thingDefs>
+						<li>BS_JotunSword</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>gastropod meat_item</thingKey>
+					<mainThingDefName>BMT_GastropodMeat</mainThingDefName>
+					<thingDefs>
+						<li>BMT_GastropodMeat</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>rose flamingo_pawn</thingKey>
+					<mainThingDefName>BiomesIslands_Flamingo</mainThingDefName>
+					<thingDefs>
+						<li>BiomesIslands_Flamingo</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>rose flamingo egg (fert.)_item</thingKey>
+					<mainThingDefName>BiomesIslands_EggFlamingoFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BiomesIslands_EggFlamingoFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>rose flamingo egg (unfert.)_item</thingKey>
+					<mainThingDefName>BiomesIslands_EggFlamingoUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BiomesIslands_EggFlamingoUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>flamingo leather_item</thingKey>
+					<mainThingDefName>BiomesIslands_Leather_Flamingo</mainThingDefName>
+					<thingDefs>
+						<li>BiomesIslands_Leather_Flamingo</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>terrestrial octopus_pawn</thingKey>
+					<mainThingDefName>BMT_LandOctopus</mainThingDefName>
+					<thingDefs>
+						<li>BMT_LandOctopus</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>terrestrial octopus egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggLandOctopusFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggLandOctopusFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>terrestrial octopus egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggLandOctopusUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggLandOctopusUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>maxolotl_pawn</thingKey>
+					<mainThingDefName>BMT_Maxolotl</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Maxolotl</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>maxolotl egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMaxolotlFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMaxolotlFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>maxolotl egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMaxolotlUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMaxolotlUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sandstone chinampa_terrain</thingKey>
+					<mainThingDefName>BMT_Chinampa_Sandstone</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Chinampa_Sandstone</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>granite chinampa_terrain</thingKey>
+					<mainThingDefName>BMT_Chinampa_Granite</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Chinampa_Granite</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>limestone chinampa_terrain</thingKey>
+					<mainThingDefName>BMT_Chinampa_Limestone</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Chinampa_Limestone</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>slate chinampa_terrain</thingKey>
+					<mainThingDefName>BMT_Chinampa_Slate</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Chinampa_Slate</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>marble chinampa_terrain</thingKey>
+					<mainThingDefName>BMT_Chinampa_Marble</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Chinampa_Marble</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>glacial ice_terrain</thingKey>
+					<mainThingDefName>BMT_GlacialIce</mainThingDefName>
+					<thingDefs>
+						<li>BMT_GlacialIce</li>
+						<li>BMT_GlacialIceBuildable</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>lava_terrain</thingKey>
+					<mainThingDefName>BMT_Lava</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Lava</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>magma_terrain</thingKey>
+					<mainThingDefName>BMT_Magma</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Magma</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>magma stone_terrain</thingKey>
+					<mainThingDefName>BMT_MagmaStone</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MagmaStone</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pebbles_terrain</thingKey>
+					<mainThingDefName>BiomesCore_Pebbles</mainThingDefName>
+					<thingDefs>
+						<li>BiomesCore_Pebbles</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pontoon bridge_terrain</thingKey>
+					<mainThingDefName>BMT_PontoonBridge</mainThingDefName>
+					<thingDefs>
+						<li>BMT_PontoonBridge</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>volcanic ash_terrain</thingKey>
+					<mainThingDefName>BMT_VolcanicAsh</mainThingDefName>
+					<thingDefs>
+						<li>BMT_VolcanicAsh</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>abyssal deep water_terrain</thingKey>
+					<mainThingDefName>BiomesCore_WaterAbyssalDeep</mainThingDefName>
+					<thingDefs>
+						<li>BiomesCore_WaterAbyssalDeep</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>lagoon water_terrain</thingKey>
+					<mainThingDefName>BiomesCore_WaterShallowLagoon</mainThingDefName>
+					<thingDefs>
+						<li>BiomesCore_WaterShallowLagoon</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>brittle chitin_item</thingKey>
+					<mainThingDefName>BMT_WeakChitin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_WeakChitin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>fragile chitin_item</thingKey>
+					<mainThingDefName>BMT_FragileChitin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_FragileChitin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>gray shell_item</thingKey>
+					<mainThingDefName>BMT_GrayChitin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_GrayChitin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>green shell_item</thingKey>
+					<mainThingDefName>BiomesCore_GreenChitin</mainThingDefName>
+					<thingDefs>
+						<li>BiomesCore_GreenChitin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tough chitin_item</thingKey>
+					<mainThingDefName>BMT_MediumChitin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MediumChitin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>molluskshell_item</thingKey>
+					<mainThingDefName>BMT_Molluskshell</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Molluskshell</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>crystal carapace_item</thingKey>
+					<mainThingDefName>BMT_CrystalChitin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_CrystalChitin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>royal chitin_item</thingKey>
+					<mainThingDefName>BMT_RoyalChitin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_RoyalChitin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>crabshell_item</thingKey>
+					<mainThingDefName>BiomesCore_CrabShell</mainThingDefName>
+					<thingDefs>
+						<li>BiomesCore_CrabShell</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>deep chitin_item</thingKey>
+					<mainThingDefName>BMT_DeepChitin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_DeepChitin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ice chunk_item</thingKey>
+					<mainThingDefName>BMT_ChunkIce</mainThingDefName>
+					<thingDefs>
+						<li>BMT_ChunkIce</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sand chunk_item</thingKey>
+					<mainThingDefName>BMT_ChunkSand</mainThingDefName>
+					<thingDefs>
+						<li>BMT_ChunkSand</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>coral coconut tree_plant</thingKey>
+					<mainThingDefName>BiomesIslands_CoconutPalm</mainThingDefName>
+					<thingDefs>
+						<li>BiomesIslands_CoconutPalm</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>coral coconuts_item</thingKey>
+					<mainThingDefName>BiomesIslands_Coconuts</mainThingDefName>
+					<thingDefs>
+						<li>BiomesIslands_Coconuts</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>hermetic armor_item</thingKey>
+					<mainThingDefName>BMT_HermeticArmor</mainThingDefName>
+					<thingDefs>
+						<li>BMT_HermeticArmor</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>hermetic helmet_item</thingKey>
+					<mainThingDefName>BMT_HermeticHelmet</mainThingDefName>
+					<thingDefs>
+						<li>BMT_HermeticHelmet</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>fish meat_item</thingKey>
+					<mainThingDefName>BMT_FishMeatCore</mainThingDefName>
+					<thingDefs>
+						<li>BMT_FishMeatCore</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sand digging spot_building</thingKey>
+					<mainThingDefName>BMT_SandDiggingSpot</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SandDiggingSpot</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ice digging spot_building</thingKey>
+					<mainThingDefName>BMT_IceDiggingSpot</mainThingDefName>
+					<thingDefs>
+						<li>BMT_IceDiggingSpot</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>magma pump_building</thingKey>
+					<mainThingDefName>BMT_MagmaPump</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MagmaPump</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>lava generator_building</thingKey>
+					<mainThingDefName>BMT_LavaGenerator</mainThingDefName>
+					<thingDefs>
+						<li>BMT_LavaGenerator</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>gastropodskin_item</thingKey>
+					<mainThingDefName>BMT_Leather_Gastropoda</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Leather_Gastropoda</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>amphibianskin_item</thingKey>
+					<mainThingDefName>BMT_Leather_Amphibian</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Leather_Amphibian</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>flame-proof leather_item</thingKey>
+					<mainThingDefName>BMT_Leather_Magma</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Leather_Magma</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tough leather_item</thingKey>
+					<mainThingDefName>BMT_ToughLeather</mainThingDefName>
+					<thingDefs>
+						<li>BMT_ToughLeather</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pinnipedskin_item</thingKey>
+					<mainThingDefName>BMT_Pinnipedskin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Pinnipedskin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>fishskin_item</thingKey>
+					<mainThingDefName>BMT_Fishskin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Fishskin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sharkskin_item</thingKey>
+					<mainThingDefName>BMT_Sharkskin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Sharkskin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>whaleskin_item</thingKey>
+					<mainThingDefName>BMT_Whaleskin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Whaleskin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>fish food_item</thingKey>
+					<mainThingDefName>BMT_FishFood</mainThingDefName>
+					<thingDefs>
+						<li>BMT_FishFood</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>condensed sand_building</thingKey>
+					<mainThingDefName>BMT_SandWall</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SandWall</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>soft sand wall_building</thingKey>
+					<mainThingDefName>BMT_LightSandWall</mainThingDefName>
+					<thingDefs>
+						<li>BMT_LightSandWall</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>dense sand wall_building</thingKey>
+					<mainThingDefName>BMT_DenseSandWall</mainThingDefName>
+					<thingDefs>
+						<li>BMT_DenseSandWall</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sand block_item</thingKey>
+					<mainThingDefName>BMT_SandBlock</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SandBlock</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ice block_item</thingKey>
+					<mainThingDefName>BMT_IceBlock</mainThingDefName>
+					<thingDefs>
+						<li>BMT_IceBlock</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>ice_building</thingKey>
+					<mainThingDefName>BMT_IceWall</mainThingDefName>
+					<thingDefs>
+						<li>BMT_IceWall</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>constructed ice_building</thingKey>
+					<mainThingDefName>BMT_IceWallBuildable</mainThingDefName>
+					<thingDefs>
+						<li>BMT_IceWallBuildable</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>barbed pangolin_pawn</thingKey>
+					<mainThingDefName>BMT_BarbedPangolin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_BarbedPangolin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bilious varog_pawn</thingKey>
+					<mainThingDefName>BMT_BiliousVarog</mainThingDefName>
+					<thingDefs>
+						<li>BMT_BiliousVarog</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bilious varog egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggBiliousVarogFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggBiliousVarogFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bilious varog egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggBiliousVarogUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggBiliousVarogUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bloodletter petrel_pawn</thingKey>
+					<mainThingDefName>BMT_BloodletterPetrel</mainThingDefName>
+					<thingDefs>
+						<li>BMT_BloodletterPetrel</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bloodletter petrel egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggBloodletterPetrelFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggBloodletterPetrelFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bloodletter petrel egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggBloodletterPetrelUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggBloodletterPetrelUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bunker bug_pawn</thingKey>
+					<mainThingDefName>BMT_BunkerBug</mainThingDefName>
+					<thingDefs>
+						<li>BMT_BunkerBug</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>carrion vulture_pawn</thingKey>
+					<mainThingDefName>BMT_CarrionVulture</mainThingDefName>
+					<thingDefs>
+						<li>BMT_CarrionVulture</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>carrion vulture egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggCarrionVultureFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggCarrionVultureFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>carrion vulture egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggCarrionVultureUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggCarrionVultureUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>famine locust_pawn</thingKey>
+					<mainThingDefName>BMT_FamineLocust</mainThingDefName>
+					<thingDefs>
+						<li>BMT_FamineLocust</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>famine locust egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggFamineLocustFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggFamineLocustFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>famine locust egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggFamineLocustUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggFamineLocustUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>fenrid stoat_pawn</thingKey>
+					<mainThingDefName>BMT_FenridStoat</mainThingDefName>
+					<thingDefs>
+						<li>BMT_FenridStoat</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>polluwog_pawn</thingKey>
+					<mainThingDefName>BMT_Polluwog</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Polluwog</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>gastro toad_pawn</thingKey>
+					<mainThingDefName>BMT_GastroToad</mainThingDefName>
+					<thingDefs>
+						<li>BMT_GastroToad</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>gastro toad egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggGastroToadFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggGastroToadFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>gastro toad egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggGastroToadUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggGastroToadUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>glowtail_pawn</thingKey>
+					<mainThingDefName>BMT_Glowtail</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Glowtail</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>glowtail egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggGlowtailFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggGlowtailFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>glowtail egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggGlowtailUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggGlowtailUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>maligoat_pawn</thingKey>
+					<mainThingDefName>BMT_Maligoat</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Maligoat</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mantrap_pawn</thingKey>
+					<mainThingDefName>BMT_Creature_Mantrap</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Creature_Mantrap</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>megakrill_pawn</thingKey>
+					<mainThingDefName>BMT_Megakrill</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Megakrill</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>megakrill egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMegakrillFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMegakrillFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>megakrill egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMegakrillUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMegakrillUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>megaphorid maggot_pawn</thingKey>
+					<mainThingDefName>BMT_MegaphoridLarva</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MegaphoridLarva</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>megaphorid_pawn</thingKey>
+					<mainThingDefName>BMT_Megaphorid</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Megaphorid</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>megaroach_pawn</thingKey>
+					<mainThingDefName>BMT_Megaroach</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Megaroach</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>megaroach egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMegaroachUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMegaroachUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>megaroach egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMegaroachFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMegaroachFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mucklurker catfish_pawn</thingKey>
+					<mainThingDefName>BMT_MucklurkerCatfish</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MucklurkerCatfish</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mucklurker catfish egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMucklurkerCatfishFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMucklurkerCatfishFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mucklurker catfish egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMucklurkerCatfishUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMucklurkerCatfishUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mutagenic norphea_pawn</thingKey>
+					<mainThingDefName>BMT_MutagenicNorphea</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MutagenicNorphea</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>norphea egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggNorpheaFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggNorpheaFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>norphea egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggNorpheaUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggNorpheaUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mutating tumorfish spawn_pawn</thingKey>
+					<mainThingDefName>BMT_MutatingTumorfishSpawn</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MutatingTumorfishSpawn</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mutating tumorfish fry_pawn</thingKey>
+					<mainThingDefName>BMT_MutatingTumorfishFry</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MutatingTumorfishFry</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mutating tumorfish_pawn</thingKey>
+					<mainThingDefName>BMT_MutatingTumorfishAdult</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MutatingTumorfishAdult</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mutating tumorfish egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMutatingTumorfishFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMutatingTumorfishFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mutating tumorfish egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggMutatingTumorfishUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggMutatingTumorfishUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pustule hornet_pawn</thingKey>
+					<mainThingDefName>BMT_PustuleHornet</mainThingDefName>
+					<thingDefs>
+						<li>BMT_PustuleHornet</li>
+						<li>BMT_PustuleHornetSpawned</li>
+						<li>BMT_ColonyPustuleHornet</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pustule queen_pawn</thingKey>
+					<mainThingDefName>BMT_PustuleHornetQueen</mainThingDefName>
+					<thingDefs>
+						<li>BMT_PustuleHornetQueen</li>
+						<li>BMT_ColonyPustuleHornetQueen</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pustule hornet queen egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggPustuleHornetQueenFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggPustuleHornetQueenFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sacapillar_pawn</thingKey>
+					<mainThingDefName>BMT_Sacapillar</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Sacapillar</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sacapillar egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggSacapillarFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggSacapillarFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sacapillar egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggSacapillarUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggSacapillarUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>screecher_pawn</thingKey>
+					<mainThingDefName>BMT_Screecher</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Screecher</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>screecher egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggScreecherFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggScreecherFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>screecher egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggScreecherUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggScreecherUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sludgecrawler_pawn</thingKey>
+					<mainThingDefName>BMT_SludgeCrawler</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SludgeCrawler</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sludgecrawler egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggSludgeCrawlerFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggSludgeCrawlerFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sludgecrawler egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggSludgeCrawlerUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggSludgeCrawlerUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>smog caterpillar_pawn</thingKey>
+					<mainThingDefName>BMT_SmogMothLarvae</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SmogMothLarvae</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>smog pupa_pawn</thingKey>
+					<mainThingDefName>BMT_SmogPupa</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SmogPupa</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>smog moth_pawn</thingKey>
+					<mainThingDefName>BMT_SmogMoth</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SmogMoth</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>smog moth egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_SmogMothEggFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SmogMothEggFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>smog moth egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_SmogMothEggUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SmogMothEggUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>swarmcaller_pawn</thingKey>
+					<mainThingDefName>BMT_Swarmcaller</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Swarmcaller</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>swarmcaller egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggSwarmcallerFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggSwarmcallerFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>swarmcaller egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggSwarmcallerUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggSwarmcallerUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tainted turtle_pawn</thingKey>
+					<mainThingDefName>BMT_TaintedTurtle</mainThingDefName>
+					<thingDefs>
+						<li>BMT_TaintedTurtle</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tainted turtle egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggTaintedTurtleFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggTaintedTurtleFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tainted turtle egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggTaintedTurtleUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggTaintedTurtleUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tox-wool sheep_pawn</thingKey>
+					<mainThingDefName>BMT_ToxSheep</mainThingDefName>
+					<thingDefs>
+						<li>BMT_ToxSheep</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>triple snapper_pawn</thingKey>
+					<mainThingDefName>BMT_TripleSnapper</mainThingDefName>
+					<thingDefs>
+						<li>BMT_TripleSnapper</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>triple snapper egg (fert.)_item</thingKey>
+					<mainThingDefName>BMT_EggTripleSnapperFertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggTripleSnapperFertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>triple snapper egg (unfert.)_item</thingKey>
+					<mainThingDefName>BMT_EggTripleSnapperUnfertilized</mainThingDefName>
+					<thingDefs>
+						<li>BMT_EggTripleSnapperUnfertilized</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>varmot_pawn</thingKey>
+					<mainThingDefName>BMT_Varmot</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Varmot</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>waste hound_pawn</thingKey>
+					<mainThingDefName>BMT_WasteHound</mainThingDefName>
+					<thingDefs>
+						<li>BMT_WasteHound</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bufo bile_item</thingKey>
+					<mainThingDefName>BMT_BufoBile</mainThingDefName>
+					<thingDefs>
+						<li>BMT_BufoBile</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mutapox vial_item</thingKey>
+					<mainThingDefName>BMT_MutapoxVial</mainThingDefName>
+					<thingDefs>
+						<li>BMT_MutapoxVial</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxwood floor_terrain</thingKey>
+					<mainThingDefName>BMT_ToxWoodPlankFloor</mainThingDefName>
+					<thingDefs>
+						<li>BMT_ToxWoodPlankFloor</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pustule hornet hive_building</thingKey>
+					<mainThingDefName>BMT_PustuleHornetHive</mainThingDefName>
+					<thingDefs>
+						<li>BMT_PustuleHornetHive</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>bunker bug claw_item</thingKey>
+					<mainThingDefName>BMT_BunkerClaw</mainThingDefName>
+					<thingDefs>
+						<li>BMT_BunkerClaw</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>cement slime_item</thingKey>
+					<mainThingDefName>BMT_CementSlime</mainThingDefName>
+					<thingDefs>
+						<li>BMT_CementSlime</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pustule hornet stinger_item</thingKey>
+					<mainThingDefName>BMT_PustuleHornetStinger</mainThingDefName>
+					<thingDefs>
+						<li>BMT_PustuleHornetStinger</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tox-sheep wool_item</thingKey>
+					<mainThingDefName>BMT_ToxWoolSheep</mainThingDefName>
+					<thingDefs>
+						<li>BMT_ToxWoolSheep</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tox wood_item</thingKey>
+					<mainThingDefName>BMT_Toxwood</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Toxwood</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>regal milk_item</thingKey>
+					<mainThingDefName>BMT_RegalMilk</mainThingDefName>
+					<thingDefs>
+						<li>BMT_RegalMilk</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tox-clear_item</thingKey>
+					<mainThingDefName>BMT_ToxClear</mainThingDefName>
+					<thingDefs>
+						<li>BMT_ToxClear</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxic chitin_item</thingKey>
+					<mainThingDefName>BMT_ToxiChitin</mainThingDefName>
+					<thingDefs>
+						<li>BMT_ToxiChitin</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>blooming corpse_plant</thingKey>
+					<mainThingDefName>BMT_Plant_BloomingCorpse</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_BloomingCorpse</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>cotton cap_plant</thingKey>
+					<mainThingDefName>BMT_Plant_CottonCap</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_CottonCap</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>crying wolfberry bush_plant</thingKey>
+					<mainThingDefName>BMT_Plant_CryingWolfberryBush</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_CryingWolfberryBush</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>crying berries_item</thingKey>
+					<mainThingDefName>BMT_CryingWolfBerries</mainThingDefName>
+					<thingDefs>
+						<li>BMT_CryingWolfBerries</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>doomsprout_plant</thingKey>
+					<mainThingDefName>BMT_Plant_Doomsprout</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_Doomsprout</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>eclipsus_plant</thingKey>
+					<mainThingDefName>BMT_Plant_EclipsusFlower</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_EclipsusFlower</li>
+						<li>BMT_Plant_EclipsusLeaves</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>grey fern_plant</thingKey>
+					<mainThingDefName>BMT_Plant_GreyFern</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_GreyFern</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>gutter plantain_plant</thingKey>
+					<mainThingDefName>BMT_Plant_GutterPlantain</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_GutterPlantain</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mantrap_plant</thingKey>
+					<mainThingDefName>BMT_Plant_Mantrap</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_Mantrap</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pagan thorns_plant</thingKey>
+					<mainThingDefName>BMT_Plant_PaganThorns</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_PaganThorns</li>
+						<li>BMT_Plant_PaganThornsPotted</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pestia_plant</thingKey>
+					<mainThingDefName>BMT_Plant_Pestia</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_Pestia</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pigs ears_plant</thingKey>
+					<mainThingDefName>BMT_Plant_PigsEars</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_PigsEars</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>plague fans_plant</thingKey>
+					<mainThingDefName>BMT_Plant_PlagueFans</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_PlagueFans</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pox sorghum_plant</thingKey>
+					<mainThingDefName>BMT_Plant_PoxSorghum</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_PoxSorghum</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>pox sorghum_item</thingKey>
+					<mainThingDefName>BMT_PoxSorghumHarvested</mainThingDefName>
+					<thingDefs>
+						<li>BMT_PoxSorghumHarvested</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>rainbow tongue_plant</thingKey>
+					<mainThingDefName>BMT_RainbowTongue</mainThingDefName>
+					<thingDefs>
+						<li>BMT_RainbowTongue</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>rashroot_plant</thingKey>
+					<mainThingDefName>BMT_Plant_Rashroot</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_Rashroot</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wild rashroot_plant</thingKey>
+					<mainThingDefName>BMT_Plant_WildRashroot</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_WildRashroot</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>scorched stars_plant</thingKey>
+					<mainThingDefName>BMT_Plant_ScorchedStars</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_ScorchedStars</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>sewer reed_plant</thingKey>
+					<mainThingDefName>BMT_Plant_SewerReed</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_SewerReed</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>snaketails_plant</thingKey>
+					<mainThingDefName>BMT_Plant_Snaketails</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_Snaketails</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>spiny hop_plant</thingKey>
+					<mainThingDefName>BMT_SpinyHops</mainThingDefName>
+					<thingDefs>
+						<li>BMT_SpinyHops</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxcaps_plant</thingKey>
+					<mainThingDefName>BMT_Plant_Toxcaps</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_Toxcaps</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>toxic ivy_plant</thingKey>
+					<mainThingDefName>BMT_Plant_ToxicIvy</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_ToxicIvy</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>barbed larch tree_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeBarbedLarch</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeBarbedLarch</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>blot birch tree_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeBlotBirch</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeBlotBirch</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>clawhand citron_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeClawhandCitron</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeClawhandCitron</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>clawed citrons_item</thingKey>
+					<mainThingDefName>BMT_ClawhandCitron</mainThingDefName>
+					<thingDefs>
+						<li>BMT_ClawhandCitron</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>martyr tree_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeMartyr</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeMartyr</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>scalped cypress_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeScalpedCypress</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeScalpedCypress</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>seeping eucalyptus_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeSeepingEucalyptus</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeSeepingEucalyptus</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>snake willow_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeSnakeWillow</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeSnakeWillow</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tangleroot mangrove_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeTanglerootMangrove</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeTanglerootMangrove</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>twisting thornwood_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeTwistingThornwood</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeTwistingThornwood</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>whistling cane_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeWhistlingCane</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeWhistlingCane</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>wormoak tree_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TreeWormoak</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TreeWormoak</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>tumorbulb hyacinth_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TumorbulbHyacinth</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TumorbulbHyacinth</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>twisted dandelion_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TwistedDandelion</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TwistedDandelion</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>twisting thorngrass_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TwistingThorngrass</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TwistingThorngrass</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>twisting thornweed_plant</thingKey>
+					<mainThingDefName>BMT_Plant_TwistingThornweed</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_TwistingThornweed</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>weeping hagbloom_plant</thingKey>
+					<mainThingDefName>BMT_Plant_WeepingHagbloom</mainThingDefName>
+					<thingDefs>
+						<li>BMT_Plant_WeepingHagbloom</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>hagbloom nectar_item</thingKey>
+					<mainThingDefName>BMT_HagbloomNectar</mainThingDefName>
+					<thingDefs>
+						<li>BMT_HagbloomNectar</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>mechanoid integument needle graft extraction system_building</thingKey>
+					<mainThingDefName>CFP_HumanProcessor</mainThingDefName>
+					<thingDefs>
+						<li>CFP_HumanProcessor</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>basic medicine_item</thingKey>
+					<mainThingDefName>SubcoreBasic</mainThingDefName>
+					<thingDefs>
+						<li>SubcoreBasic</li>
+					</thingDefs>
+					<removedDefs>
+						<li>MedicineBasic</li>
+					</removedDefs>
+				</li>
+				<li>
+					<thingKey>인공 자궁_item</thingKey>
+					<mainThingDefName>MechBaby_ArtificialWombItem</mainThingDefName>
+					<thingDefs>
+						<li>MechBaby_ArtificialWombItem</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>생체공학 인공 자궁_item</thingKey>
+					<mainThingDefName>MechBaby_BionicWombItem</mainThingDefName>
+					<thingDefs>
+						<li>MechBaby_BionicWombItem</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>초월공학 메카노이드 자궁_item</thingKey>
+					<mainThingDefName>MechBaby_ArchotechWombItem</mainThingDefName>
+					<thingDefs>
+						<li>MechBaby_ArchotechWombItem</li>
+					</thingDefs>
+					<removedDefs />
+				</li>
+				<li>
+					<thingKey>인간 정자_item</thingKey>
+					<mainThingDefName>MechBaby_HumanSperm</mainThingDefName>
+					<thingDefs>
+						<li>MechBaby_HumanSperm</li>
 					</thingDefs>
 					<removedDefs />
 				</li>

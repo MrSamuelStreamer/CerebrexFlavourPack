@@ -3,6 +3,7 @@
 	<ModSettings Class="MapDesigner.MapDesignerSettings">
 		<configs />
 		<hillRadialAmt>1</hillRadialAmt>
+		<densityAnimal>1.47417688</densityAnimal>
 		<oreCommonality>
 			<keys>
 				<li>MineableSteel</li>

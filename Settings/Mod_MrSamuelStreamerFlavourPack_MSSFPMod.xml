@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="MSSFP.Settings">
+		<EnableWanderDelayModification>True</EnableWanderDelayModification>
+		<WanderDelayTicks>1813</WanderDelayTicks>
+		<EnableSubNormalSpeeds>False</EnableSubNormalSpeeds>
+		<MechFormingSpeedBaseValue>0.5</MechFormingSpeedBaseValue>
+		<TenSecondsToSpeedDelay>30</TenSecondsToSpeedDelay>
+		<MonitoredSpeeds>
+			<li>Paused</li>
+			<li>Normal</li>
+			<li>Fast</li>
+		</MonitoredSpeeds>
+		<ExtraBuildables />
+		<DrawByMrStreamer>True</DrawByMrStreamer>
+		<WanderDelayIncludeHumanoids>True</WanderDelayIncludeHumanoids>
+	</ModSettings>
+</SettingsBlock>

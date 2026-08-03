@@ -1,4 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
-	<ModSettings Class="Leoltron.StoredResearch.Settings" />
+	<ModSettings Class="Leoltron.StoredResearch.Settings">
+		<StoredResearchFactor>0.00999999978</StoredResearchFactor>
+	</ModSettings>
 </SettingsBlock>

@@ -81,6 +81,8 @@
 				<li>Ideos</li>
 				<li>DMMB_PlaySettingsMenu</li>
 				<li>Menu</li>
+				<li>DubsOptimizer</li>
+				<li>PaintShop</li>
 			</keys>
 			<values>
 				<li>105.271317</li>
@@ -104,6 +106,8 @@
 				<li>45.7948723</li>
 				<li>111.625</li>
 				<li>119.066666</li>
+				<li>44.6500092</li>
+				<li>44.6500092</li>
 			</values>
 		</freeSizeWidths>
 		<freeSizeXPositions>
@@ -129,6 +133,8 @@
 				<li>Ideos</li>
 				<li>DMMB_PlaySettingsMenu</li>
 				<li>Menu</li>
+				<li>DubsOptimizer</li>
+				<li>PaintShop</li>
 			</keys>
 			<values>
 				<li>0</li>
@@ -152,6 +158,8 @@
 				<li>1282.25623</li>
 				<li>1562.75</li>
 				<li>1666.93323</li>
+				<li>113.113297</li>
+				<li>497.103333</li>
 			</values>
 		</freeSizeXPositions>
 		<mainButtonAppearances>

@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
 	<ModSettings Class="IAintBuildingThat.Settings">
-		<hiddenBuildables />
+		<hiddenBuildables>
+			<li>PS_BugWallStorage</li>
+			<li>PS_BugWallCocoon</li>
+			<li>PS_BugCocoon</li>
+		</hiddenBuildables>
 	</ModSettings>
 </SettingsBlock>

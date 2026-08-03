@@ -2,10 +2,8 @@
 <SettingsBlock>
 	<ModSettings Class="CM_Semi_Random_Research.SemiRandomResearchModSettings">
 		<allowManualReroll>Once</allowManualReroll>
-		<availableProjectCount>4</availableProjectCount>
-		<maxProjectCount>6</maxProjectCount>
 		<progressAddsChoice>Never</progressAddsChoice>
-		<forceLowestTechLevel>True</forceLowestTechLevel>
+		<allowOneHigherTechProject>True</allowOneHigherTechProject>
 		<experimentalAnomalySupport>True</experimentalAnomalySupport>
 	</ModSettings>
 </SettingsBlock>

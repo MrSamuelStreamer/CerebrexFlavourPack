@@ -2,9 +2,14 @@
 <SettingsBlock>
 	<ModSettings Class="LoveyDoveySexWithEuterpe.IntimacySettings">
 		<intimacyDecayRate>10</intimacyDecayRate>
+		<allowManualLovin>False</allowManualLovin>
+		<lovinCommonality>2</lovinCommonality>
+		<minChanceForSeduction>0</minChanceForSeduction>
 		<lovinSpotPickingPriority>AlwaysPrivate</lovinSpotPickingPriority>
 		<pregnancyChanceMultiplier>0.801752329</pregnancyChanceMultiplier>
+		<enableIntimacyNeed>False</enableIntimacyNeed>
 		<disableIntimacyNeedForSlaves>True</disableIntimacyNeedForSlaves>
 		<disableIntimacyNeedForNonPlayerFactionPawn>True</disableIntimacyNeedForNonPlayerFactionPawn>
+		<contraceptivesSystemEnabled>False</contraceptivesSystemEnabled>
 	</ModSettings>
 </SettingsBlock>

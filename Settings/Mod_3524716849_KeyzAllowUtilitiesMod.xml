@@ -3,7 +3,5 @@
 	<ModSettings Class="KeyzAllowUtilities.Settings">
 		<MaxSelect>1000</MaxSelect>
 		<DisableFinishOff>True</DisableFinishOff>
-		<DisableSelectOnScreen>True</DisableSelectOnScreen>
-		<DisableSelectInRect>True</DisableSelectInRect>
 	</ModSettings>
 </SettingsBlock>
