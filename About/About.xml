@@ -41,6 +41,7 @@
         <li>mlie.yayosendgame</li>
         <li>redmattis.sapientanimals</li>
         <li>redmattis.betterprerequisites</li>
+        <li>iluvsilicon.basicmedicine2</li>
         <!-- Optional: Compatibility/rokk.playwright only loads when both of these are active. -->
     </loadAfter>
 </ModMetaData>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MedicineBasic"]/label</xpath>
+        <value>
+            <label>Repair Core</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MedicineBasic"]/description</xpath>
+        <value>
+            <description>A mechanical subcore used for repairs and maintenance. Contains all the basic subroutines needed for fixing damage, and contains machinery compatible with replacement mechanical parts that have been entirely lost. Could theoretically be used on meatbags too.</description>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MedicineBasic"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Item/Resource/Medicine/MechanicKit</texPath>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MedicineBasic"]/costList</xpath>
+        <value>
+            <costList>
+                <Steel>50</Steel>
+                <ComponentIndustrial>2</ComponentIndustrial>
+            </costList>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="MedicineBasic"]/recipeMaker</xpath>
+        <value>
+            <recipeMaker>
+                <researchPrerequisite>BasicMechtech</researchPrerequisite>
+                <workSpeedStat>SubcoreEncodingSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <recipeUsers>
+                    <li>SubcoreEncoder</li>
+                </recipeUsers>
+                <mechanitorOnlyRecipe>true</mechanitorOnlyRecipe>
+                <unfinishedThingDef>UnfinishedSubcore</unfinishedThingDef>
+                <soundWorking>SubcoreEncoder_Working</soundWorking>
+            </recipeMaker>
+        </value>
+    </Operation>
+</Patch>

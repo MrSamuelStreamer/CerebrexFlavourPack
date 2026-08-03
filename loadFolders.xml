@@ -13,5 +13,6 @@
 		<li IfModActive="mlie.yayosendgame">Compatibility/mlie.yayosendgame</li>
 		<li IfModActive="redmattis.sapientanimals">Compatibility/redmattis.sapientanimals</li>
 		<li IfModActive="redmattis.betterprerequisites">Compatibility/redmattis.betterprerequisites</li>
+		<li IfModActive="iluvsilicon.basicmedicine2">Compatibility/iluvsilicon.basicmedicine2</li>
 	</v1.6>
 </loadFolders>

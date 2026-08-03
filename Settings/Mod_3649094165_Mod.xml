@@ -3,7 +3,6 @@
 	<ModSettings Class="Declutter_Main_Buttons_Bar.ModSettings">
 		<mainButtonSettingsSchemaVersion>3</mainButtonSettingsSchemaVersion>
 		<hiddenFromBarDefs>
-			<li>History</li>
 			<li>KeyzReferenceTools_MainButton</li>
 			<li>Research</li>
 			<li>PE_Education</li>
@@ -24,7 +23,6 @@
 		<blacklistedFromMenuDefs />
 		<dropdownConfigs />
 		<customOrderDefs>
-			<li>DMMB_MainButtonsMenu</li>
 			<li>Architect</li>
 			<li>Work</li>
 			<li>Schedule</li>
@@ -35,15 +33,16 @@
 			<li>Mechs</li>
 			<li>SM_MechWork</li>
 			<li>CM_Semi_Random_Research_MainButton_Next_Research</li>
-			<li>Quests</li>
 			<li>World</li>
+			<li>History</li>
+			<li>Quests</li>
 			<li>Factions</li>
+			<li>Menu</li>
+			<li>DMMB_MainButtonsMenu</li>
 			<li>Ideos</li>
 			<li>DMMB_PlaySettingsMenu</li>
-			<li>Menu</li>
 			<li>PE_Education</li>
 			<li>Research</li>
-			<li>History</li>
 			<li>KeyzReferenceTools_MainButton</li>
 			<li>Inspect</li>
 			<li>MintMenus</li>
@@ -85,26 +84,26 @@
 			</keys>
 			<values>
 				<li>105.271317</li>
-				<li>105.271317</li>
-				<li>105.271317</li>
-				<li>105.271317</li>
-				<li>105.271317</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
 				<li>91.5897446</li>
-				<li>105.271317</li>
-				<li>105.271317</li>
-				<li>105.271317</li>
-				<li>105.271317</li>
-				<li>105.271317</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
 				<li>91.5897446</li>
-				<li>105.271317</li>
-				<li>105.271317</li>
-				<li>105.271317</li>
-				<li>91.5897446</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
+				<li>119.066666</li>
 				<li>45.7948723</li>
-				<li>105.271317</li>
+				<li>119.066666</li>
 				<li>45.7948723</li>
 				<li>111.625</li>
-				<li>105.271317</li>
+				<li>119.066666</li>
 			</values>
 		</freeSizeWidths>
 		<freeSizeXPositions>
@@ -133,26 +132,26 @@
 			</keys>
 			<values>
 				<li>0</li>
-				<li>105.271317</li>
-				<li>210.542633</li>
-				<li>315.813965</li>
-				<li>421.085266</li>
+				<li>0</li>
+				<li>119.066666</li>
+				<li>238.133331</li>
+				<li>357.200012</li>
 				<li>457.9487</li>
-				<li>526.356567</li>
-				<li>842.170471</li>
-				<li>631.627869</li>
-				<li>947.441772</li>
-				<li>736.89917</li>
+				<li>476.266663</li>
+				<li>833.466614</li>
+				<li>595.333313</li>
+				<li>952.533264</li>
+				<li>714.399963</li>
 				<li>1007.48706</li>
-				<li>1052.71313</li>
-				<li>1157.9845</li>
-				<li>1263.25586</li>
-				<li>1373.84595</li>
+				<li>1071.59998</li>
+				<li>1428.79993</li>
+				<li>1190.66663</li>
+				<li>1309.73328</li>
 				<li>1465.43567</li>
-				<li>1368.52722</li>
+				<li>1547.86658</li>
 				<li>1282.25623</li>
 				<li>1562.75</li>
-				<li>1532.72864</li>
+				<li>1666.93323</li>
 			</values>
 		</freeSizeXPositions>
 		<mainButtonAppearances>
@@ -163,6 +162,7 @@
 			<keys />
 			<values />
 		</minimizedOverrides>
+		<useFreeSizeMode>True</useFreeSizeMode>
 		<fixedButtonWidth>127.507545</fixedButtonWidth>
 		<snapThreshold>7.53062248</snapThreshold>
 		<centerFixedWidthButtons>True</centerFixedWidthButtons>
