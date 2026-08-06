@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Transfer CompMechCarrier (war queen urchin release) onto sapient HL_ versions. -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/BigAndSmall.HumanlikeAnimalSettings[defName="DefaultHumanlikeAnimalSettings"]/compWhitelist</xpath>
+    <value>
+      <li>RimWorld.CompProperties_MechCarrier</li>
+    </value>
+  </Operation>
+</Patch>

@@ -12,7 +12,7 @@
 		<li IfModActive="mlie.reinforcedmechanoid2">Compatibility/mlie.reinforcedmechanoid2</li>
 		<li IfModActive="GoGaTio.MechanoidUpgrades">Compatibility/GoGaTio.MechanoidUpgrades</li>
 		<li IfModActive="mlie.yayosendgame">Compatibility/mlie.yayosendgame</li>
-		<li IfModActive="redmattis.sapientanimals">Compatibility/redmattis.sapientanimals</li>
+		<li IfModActive="RedMattis.SapientAnimals">Compatibility/redmattis.sapientanimals</li>
 		<li IfModActive="redmattis.betterprerequisites">Compatibility/redmattis.betterprerequisites</li>
 		<li IfModActive="iluvsilicon.basicmedicine2">Compatibility/iluvsilicon.basicmedicine2</li>
 		<li IfModActive="mlie.tastyhemo">Compatibility/mlie.tastyhemo</li>
