@@ -1,0 +1,16 @@
+<Defs>
+  <HediffDef ParentName="BS_DefaultHumanlikeAnimal">
+    <defName>HL_Mech_Tunneler_RaceHediff</defName> 
+    <description>A heavy mechanoid built for mining in treacherous locations. While intended for excavation, the tunneler's gigantic power claws and ultra-thick armor makes it a dangerous force in combat.</description>
+    <label>Tunneler</label>
+    <defaultLabelColor>(0.5, 1, 1)</defaultLabelColor>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <traitIcon>Things/Pawn/Things/Pawn/Mechanoid/Tunneler/Tunneler_east</traitIcon>
+        <aptitudes>
+          <Mining>8</Mining>
+        </aptitudes>
+      </li>
+    </modExtensions>
+  </HediffDef>
+</Defs>
