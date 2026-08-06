@@ -177,6 +177,11 @@ You begin as a newly established Mechanoid hive - you start with databanks conta
             <li>Mech_Lifter</li>
           </mechs>
         </li>
+        <li Class="ScenPart_StatFactor">
+          <def>StatFactor</def>
+          <stat>EBSG_HungerRateFactor</stat>
+          <factor>0.5</factor>
+        </li>
         <li Class="ScenPart_StartingResearch">
           <def>StartingResearch</def>
           <project>BasicMechtech</project>

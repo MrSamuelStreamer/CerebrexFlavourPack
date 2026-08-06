@@ -2,8 +2,68 @@
 <SettingsBlock>
 	<ModSettings Class="XenotypeSpawnControl.ModSettings">
 		<Templates>
-			<keys />
-			<values />
+			<keys>
+				<li>Divine</li>
+				<li>Hell</li>
+			</keys>
+			<values>
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Baseliner</li>
+							<li>BS_Authority</li>
+							<li>BS_Malakim</li>
+							<li>BS_Satan</li>
+						</keys>
+						<values>
+							<li>
+								<chance>600</chance>
+							</li>
+							<li>
+								<chance>50</chance>
+							</li>
+							<li>
+								<chance>300</chance>
+							</li>
+							<li>
+								<chance>50</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>VU_Succubus</li>
+							<li>VU_Hellguard</li>
+							<li>VU_Gatekeeper</li>
+							<li>VU_Imp</li>
+							<li>BS_LilGlutton</li>
+							<li>BS_Lilim</li>
+						</keys>
+						<values>
+							<li>
+								<chance>92</chance>
+							</li>
+							<li>
+								<chance>192</chance>
+							</li>
+							<li>
+								<chance>92</chance>
+							</li>
+							<li>
+								<chance>392</chance>
+							</li>
+							<li>
+								<chance>141</chance>
+							</li>
+							<li>
+								<chance>91</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+			</values>
 		</Templates>
 		<XenotypesByFactionDef>
 			<keys>
@@ -56,6 +116,10 @@
 				<li>NCL_factionEnemy</li>
 				<li>::Generated::NoFaction</li>
 				<li>Ferny_ProgRoboticsSpacers</li>
+				<li>BMT_PustuleHornets</li>
+				<li>BS_Heaven</li>
+				<li>BS_Hell</li>
+				<li>BS_Outcasts</li>
 			</keys>
 			<values>
 				<li />
@@ -134,6 +198,99 @@
 				<li />
 				<li />
 				<li />
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Baseliner</li>
+							<li>VU_Succubus</li>
+							<li>VU_Hellguard</li>
+							<li>VU_Gatekeeper</li>
+							<li>VU_Imp</li>
+							<li>BS_LilGlutton</li>
+							<li>BS_Lilim</li>
+						</keys>
+						<values>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>92</chance>
+							</li>
+							<li>
+								<chance>192</chance>
+							</li>
+							<li>
+								<chance>92</chance>
+							</li>
+							<li>
+								<chance>392</chance>
+							</li>
+							<li>
+								<chance>141</chance>
+							</li>
+							<li>
+								<chance>91</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>BS_GiantRobot</li>
+							<li>BS_CommandoAndroid</li>
+							<li>BS_TVAndroid_Funky</li>
+							<li>BS_Hemohunter</li>
+						</keys>
+						<values>
+							<li>
+								<chance>3</chance>
+							</li>
+							<li>
+								<chance>493</chance>
+							</li>
+							<li>
+								<chance>492</chance>
+							</li>
+							<li>
+								<chance>12</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>Baseliner</li>
+							<li>DMS_AndroidSynth</li>
+							<li>BS_Authority</li>
+							<li>BS_Malakim</li>
+							<li>BS_Satan</li>
+						</keys>
+						<values>
+							<li>
+								<chance>600</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>50</chance>
+							</li>
+							<li>
+								<chance>300</chance>
+							</li>
+							<li>
+								<chance>50</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
 				<li />
 				<li />
 				<li />
@@ -144,11 +301,42 @@
 				<li />
 				<li />
 				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
+				<li>
+					<XenotypeChances>
+						<keys>
+							<li>VU_Succubus</li>
+							<li>VU_Hellguard</li>
+							<li>VU_Gatekeeper</li>
+							<li>VU_Imp</li>
+							<li>BS_Glutton</li>
+							<li>BS_LilGlutton</li>
+							<li>BS_Lilim</li>
+						</keys>
+						<values>
+							<li>
+								<chance>92</chance>
+							</li>
+							<li>
+								<chance>192</chance>
+							</li>
+							<li>
+								<chance>92</chance>
+							</li>
+							<li>
+								<chance>392</chance>
+							</li>
+							<li>
+								<chance>0</chance>
+							</li>
+							<li>
+								<chance>141</chance>
+							</li>
+							<li>
+								<chance>91</chance>
+							</li>
+						</values>
+					</XenotypeChances>
+				</li>
 				<li />
 			</values>
 		</XenotypesByFactionDef>
@@ -780,6 +968,92 @@
 				<li>DMS_Chelydridae_MainBattleTank_PawnKind</li>
 				<li>DMS_Mule_ATV_PawnKind</li>
 				<li>AM_Mech_Sanguinarius</li>
+				<li>VAEWaste_Hydra</li>
+				<li>VAEWaste_Megatardi</li>
+				<li>VAEWaste_Pestigator</li>
+				<li>VAEWaste_Toxafox</li>
+				<li>VAEWaste_Toxbear</li>
+				<li>VAEWaste_Toxiguana</li>
+				<li>VAEWaste_Toxlion</li>
+				<li>VAEWaste_Toxscorpion</li>
+				<li>VAEWaste_Wasteboar</li>
+				<li>VAEWaste_Wastedeer</li>
+				<li>VAEWaste_Wasteffalo</li>
+				<li>BS_WomanInBlue</li>
+				<li>Naked_Warrior</li>
+				<li>Tribal_Wildman</li>
+				<li>Tribal_WildmanNW</li>
+				<li>Tribal_Wildman_Leader</li>
+				<li>BiomesIslands_Flamingo</li>
+				<li>BMT_LandOctopus</li>
+				<li>BMT_Maxolotl</li>
+				<li>BS_GiantRobotRanged</li>
+				<li>BS_GiantRobotRanged_One</li>
+				<li>BS_GiantRobotMelee</li>
+				<li>BS_GiantRobotMelee_One</li>
+				<li>BS_TV_Melee_Mega</li>
+				<li>BMT_BarbedPangolin</li>
+				<li>BMT_BiliousVarog</li>
+				<li>BMT_BloodletterPetrel</li>
+				<li>BMT_BunkerBug</li>
+				<li>BMT_CarrionVulture</li>
+				<li>BMT_FamineLocust</li>
+				<li>BMT_FenridStoat</li>
+				<li>BMT_Polluwog</li>
+				<li>BMT_GastroToad</li>
+				<li>BMT_Glowtail</li>
+				<li>BMT_Maligoat</li>
+				<li>BMT_Creature_Mantrap</li>
+				<li>BMT_Megakrill</li>
+				<li>BMT_MegaphoridLarva</li>
+				<li>BMT_Megaphorid</li>
+				<li>BMT_Megaroach</li>
+				<li>BMT_MucklurkerCatfish</li>
+				<li>BMT_MutagenicNorphea</li>
+				<li>BMT_MutatingTumorfishSpawn</li>
+				<li>BMT_MutatingTumorfishFry</li>
+				<li>BMT_MutatingTumorfishAdult</li>
+				<li>BMT_PustuleHornet</li>
+				<li>BMT_PustuleHornetSpawned</li>
+				<li>BMT_ColonyPustuleHornet</li>
+				<li>BMT_PustuleHornetQueen</li>
+				<li>BMT_ColonyPustuleHornetQueen</li>
+				<li>BMT_Sacapillar</li>
+				<li>BMT_Screecher</li>
+				<li>BMT_SludgeCrawler</li>
+				<li>BMT_SmogMothLarvae</li>
+				<li>BMT_SmogPupa</li>
+				<li>BMT_SmogMoth</li>
+				<li>BMT_Swarmcaller</li>
+				<li>BMT_TaintedTurtle</li>
+				<li>BMT_ToxSheep</li>
+				<li>BMT_TripleSnapper</li>
+				<li>BMT_Varmot</li>
+				<li>BMT_WasteHound</li>
+				<li>VU_ImpFighter</li>
+				<li>VU_DemonWarrior</li>
+				<li>VU_DemonCommander</li>
+				<li>VU_DemonCommander_Suc</li>
+				<li>VU_DemonCommander_PL</li>
+				<li>VU_DemonPrince</li>
+				<li>VU_DemonBrute</li>
+				<li>BS_ServitorBasic</li>
+				<li>BS_ServitorMelee</li>
+				<li>BS_ServitorMeleeLimited</li>
+				<li>BS_ServitorRanged</li>
+				<li>BS_Satan</li>
+				<li>BS_SatanLimited</li>
+				<li>BS_SatanGreat</li>
+				<li>BS_AuthorityWarrior</li>
+				<li>BS_Authority_Single</li>
+				<li>BS_AuthorityLord</li>
+				<li>BS_Metatron</li>
+				<li>BS_NephilimWarrior</li>
+				<li>BS_BigGlutton</li>
+				<li>BS_SmallGlutton</li>
+				<li>BS_LordOfGluttony</li>
+				<li>BS_DukeOfGluttony</li>
+				<li>VU_LilimWarrior</li>
 			</keys>
 			<values>
 				<li />
@@ -1232,7 +1506,6 @@
 							<li>Waster</li>
 							<li>Yttakin</li>
 							<li>Highmate</li>
-							<li>Baseliner</li>
 						</keys>
 						<values>
 							<li>
@@ -1262,12 +1535,95 @@
 							<li>
 								<chance>0</chance>
 							</li>
-							<li>
-								<chance>0</chance>
-							</li>
 						</values>
 					</XenotypeChances>
 				</li>
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
 				<li />
 				<li />
 				<li />

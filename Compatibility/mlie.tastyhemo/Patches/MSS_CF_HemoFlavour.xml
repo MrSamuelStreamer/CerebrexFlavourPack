@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThoughtDef[defName="IMJ_LavishSippy"]/requiredGenes</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThoughtDef[defName="IMJ_FineSippy"]/requiredGenes</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThoughtDef[defName="IMJ_BadSippy"]/requiredGenes</xpath>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThoughtDef[defName="IMJ_FineSippy"]/stages</xpath>
+        <value>
+            <stages>
+                <li>
+                    <label>Ingested Hemogen Sack</label>
+                    <description>I ingested a hemogen pack. My Mechanoid parts feel more functional and lubricated than ever.</description>
+                    <baseMoodEffect>5</baseMoodEffect> <!-- Slight nerf -->
+                </li>
+            </stages>
+        </value>
+    </Operation>
+</Patch>

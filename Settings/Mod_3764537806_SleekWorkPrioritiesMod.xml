@@ -1,13 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
 	<ModSettings Class="SleekWorkPriorities.SleekWorkSettings">
+		<sleekCheckboxStyle>2</sleekCheckboxStyle>
 		<coolSteelPalette>True</coolSteelPalette>
 		<jobPresets />
 		<colorThemes />
+		<workTypeOrder />
 		<settingsWindowWidth>900</settingsWindowWidth>
 		<settingsWindowHeight>700</settingsWindowHeight>
+		<builtInPresetVersion>5</builtInPresetVersion>
+		<sleekCheckboxStyleDefaultVersion>1</sleekCheckboxStyleDefaultVersion>
 		<numberStyle>2</numberStyle>
+		<passionCellsDefaultVersion>1</passionCellsDefaultVersion>
+		<passionOnCells>False</passionOnCells>
+		<skillBrightnessStrength>1</skillBrightnessStrength>
+		<skillBrightnessStrengthDefaultVersion>1</skillBrightnessStrengthDefaultVersion>
 		<showUnassignedDots>False</showUnassignedDots>
+		<renameButtonDefaultVersion>1</renameButtonDefaultVersion>
 		<scrollEdit>False</scrollEdit>
+		<customFocusWidth>True</customFocusWidth>
+		<interactionDefaultsVersion>2</interactionDefaultsVersion>
 	</ModSettings>
 </SettingsBlock>

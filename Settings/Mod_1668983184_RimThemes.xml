@@ -6,6 +6,7 @@
 		<expansionsIconsMode>2</expansionsIconsMode>
 		<curTheme>ghost023.stellarisdmtheme§Sci-Fi Dark Mode UI</curTheme>
 		<disableWallpaper>True</disableWallpaper>
+		<disableCustomFonts>True</disableCustomFonts>
 		<disableParticle>False</disableParticle>
 		<disableCustomLoader>True</disableCustomLoader>
 		<dialogStacking>2</dialogStacking>
@@ -14,8 +15,9 @@
 		<disableMainVideoBg>True</disableMainVideoBg>
 		<forceVanillaVideoBgWhenNoVBG>True</forceVanillaVideoBgWhenNoVBG>
 		<disableRandomBg>False</disableRandomBg>
-		<curRandomBg>ghost023.stellarisdmtheme§Sci-Fi Dark Mode UI</curRandomBg>
+		<curRandomBg>-1§Rim-Life 2</curRandomBg>
 		<lastVersionInfo>RimThemes NX rev10</lastVersionInfo>
+		<disableTinyCustomFont>True</disableTinyCustomFont>
 		<enableCentipedeTheme>False</enableCentipedeTheme>
 		<enableClassicCassandraTheme>True</enableClassicCassandraTheme>
 		<enableCyberpunkTheme>False</enableCyberpunkTheme>

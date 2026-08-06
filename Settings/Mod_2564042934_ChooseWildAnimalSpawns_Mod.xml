@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SettingsBlock>
+	<ModSettings Class="ChooseWildAnimalSpawns.ChooseWildAnimalSpawns_Settings">
+		<CustomSpawnRates>
+			<keys />
+			<values />
+		</CustomSpawnRates>
+		<CustomDensities>
+			<keys>
+				<li>Scarlands</li>
+				<li>AB_MechanoidIntrusion</li>
+				<li>Desert</li>
+			</keys>
+			<values>
+				<li>1.995</li>
+				<li>0.108000003</li>
+				<li>1.01400006</li>
+			</values>
+		</CustomDensities>
+	</ModSettings>
+</SettingsBlock>

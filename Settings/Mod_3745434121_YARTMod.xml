@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
 	<ModSettings Class="YART.YARTModSettings">
+		<unifiedBenchView>False</unifiedBenchView>
 		<focusHighlightDimming>True</focusHighlightDimming>
 		<eraColors>
 			<li>RGBA(0.850, 0.360, 0.300, 1.000)</li>

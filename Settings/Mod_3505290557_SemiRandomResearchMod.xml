@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsBlock>
-	<ModSettings Class="CM_Semi_Random_Research.SemiRandomResearchModSettings">
-		<allowManualReroll>Once</allowManualReroll>
-		<progressAddsChoice>Never</progressAddsChoice>
-		<allowOneHigherTechProject>True</allowOneHigherTechProject>
-		<experimentalAnomalySupport>True</experimentalAnomalySupport>
-	</ModSettings>
-</SettingsBlock>

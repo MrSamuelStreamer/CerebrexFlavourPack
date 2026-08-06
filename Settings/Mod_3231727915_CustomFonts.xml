@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SettingsBlock>
 	<ModSettings Class="CustomFonts.FontSettings">
+		<CurrentWorldFontName>Cadman (Regular)</CurrentWorldFontName>
 		<CurrentUIFontName>Cadman Bold</CurrentUIFontName>
 		<CurrentUITinyFontName>Cadman Bold</CurrentUITinyFontName>
 		<CurrentUISmallFontName>Cadman Bold</CurrentUISmallFontName>
+		<ScaleFactor>0.899999976</ScaleFactor>
+		<ScaleFactorTiny>0.899999976</ScaleFactorTiny>
+		<ScaleFactorSmall>0.899999976</ScaleFactorSmall>
 	</ModSettings>
 </SettingsBlock>

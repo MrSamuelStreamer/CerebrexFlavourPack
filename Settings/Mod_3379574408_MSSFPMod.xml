@@ -4,15 +4,14 @@
 		<EnableWanderDelayModification>True</EnableWanderDelayModification>
 		<WanderDelayTicks>1799</WanderDelayTicks>
 		<Active10SecondsToSpeed>True</Active10SecondsToSpeed>
+		<EnableSubNormalSpeeds>False</EnableSubNormalSpeeds>
 		<MechFormingSpeedBaseValue>0.5</MechFormingSpeedBaseValue>
 		<MonitoredSpeeds>
 			<li>Paused</li>
 			<li>Normal</li>
 		</MonitoredSpeeds>
-		<EnableOrbJumpEvents>False</EnableOrbJumpEvents>
 		<ExtraBuildables />
 		<NoReplaceFactionLeader>True</NoReplaceFactionLeader>
-		<DrawByMrStreamer>True</DrawByMrStreamer>
 		<WanderDelayIncludeHumanoids>True</WanderDelayIncludeHumanoids>
 		<ShowHauntDevDashboard>False</ShowHauntDevDashboard>
 		<EnableKillHaunts>False</EnableKillHaunts>
