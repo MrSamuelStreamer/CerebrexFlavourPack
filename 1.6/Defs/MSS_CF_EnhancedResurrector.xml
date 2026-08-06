@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="MechSerumBase">
+        <defName>MSS_CP_MechResurrector</defName>
+        <label>Sapient Mech Rebooter</label>
+        <description>A reboot payload of nanites designed to target key damage on a sapient Mechanoid unit and resurrect it. Similar to the functions of a gestation unit, however is in remote form to avoid the personality reformatting functions of standard Mechanoid unit resurrection.</description>
+        <graphicData>
+            <texPath>Things/Item/Special/MechSerumResurrector</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(0.7,0.9,1.0)</color>
+        </graphicData>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <thingCategories>
+            <li>Drugs</li>
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Use {0_label}</useLabel>
+                <useDuration>0</useDuration>
+                <warmupMote>Mote_ResurrectAbility</warmupMote>
+                <showUseGizmo>true</showUseGizmo>
+            </li>
+            <li Class="CompProperties_Targetable">
+                <compClass>CompTargetable_SingleCorpse</compClass>
+                <fleshCorpsesOnly>true</fleshCorpsesOnly>
+                <nonDessicatedCorpsesOnly>true</nonDessicatedCorpsesOnly>
+            </li>
+            <li Class="CompProperties_TargetEffectResurrect">
+                <moteDef>Mote_ResurrectFlash</moteDef>
+            </li>
+        </comps>
+    </ThingDef>
+    <RecipeDef>
+        <defName>MSS_CF_MakeMechResurrector</defName>
+        <label>Make Sapient Mech Rebooter</label>
+        <description>A portable variant of the Mech Gestators resurrection ability, with the personality reformatting functions disabled for use on Mechanoids upgraded with sapience subroutines.</description>
+        <jobString>Synthesising mech reboot tools.</jobString>
+        <workAmount>22000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <workSkill>Crafting</workSkill>
+        <skillRequirements>
+            <Crafting>10</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SubcoreHigh</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+             <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineBasic</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SubcoreHigh</li>
+                <li>Plasteel</li>
+                <li>MedicineBasic</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <MSS_CF_MechResurrector>1</MSS_CF_MechResurrector>
+        </products>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <researchPrerequisite>HighMechtech</researchPrerequisite>
+    </RecipeDef>
+</Defs>
