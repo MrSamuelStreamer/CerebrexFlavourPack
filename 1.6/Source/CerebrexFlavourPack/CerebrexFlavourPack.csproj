@@ -73,6 +73,10 @@
   <ItemGroup>
         <ReleaseFiles Include="../../../1.*/**" Exclude="../../../1.*/Source/**" />
     <AboutFiles Include="../../../About/**" Exclude="../../../About/*.png~" />
-    <CommonFiles Include="../../../Common/**" /> <CompatibilityFiles Include="../../../Compatibility/**" />  <ExtraFiles Include="../../../loadFolders.xml;../../../LICENSE;../../../README.md" />
+    <CommonFiles Include="../../../Common/**" /> <CompatibilityFiles Include="../../../Compatibility/**" />  <ExtraFiles Include="../../../loadFolders.xml;../../../LICENSE;../../../README.md" />  <CompatibilityFiles Update="..\..\..\Compatibility\redmattis.sapientanimals\Defs\MSS_CF_MechBuffs.xml">
+  <Link>CerebrexFlavourPack\Compatibility\redmattis.sapientanimals\Defs\MSS_CF_MechBuffs.xml</Link>
+</CompatibilityFiles>  <CommonFiles Update="..\..\..\Common\Languages\English\DefInjected\PawnKindDef\Mechs.xml">
+  <Link>CerebrexFlavourPack\Common\Languages\English\DefInjected\PawnKindDef\Mechs.xml</Link>
+</CommonFiles>
     </ItemGroup>
 </Project>
