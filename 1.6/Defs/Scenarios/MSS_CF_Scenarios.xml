@@ -325,21 +325,20 @@ You begin as a newly established Mechanoid hive - you start with databanks conta
         <li Class="CerebrexFlavourPack.Compat.Playwright.ScenPart_StartingAnimalSapientHediff">
           <def>CFP_StartingAnimalSapientHediff</def>
           <AnimalKind>Mech_Warqueen</AnimalKind>
-          <hediffs>
+          <Hediffs>
             <li>
-              <hediff>Biohacking_HackingImplant</hediff>
-              <bodyPart>ArtificialBrain</bodyPart>
-              <side>Random</side>
-              <severityRange>1~1</severityRange>
+              <Hediff>Biohacking_HackingImplant</Hediff>
+              <BodyPart>ArtificialBrain</BodyPart>
+              <Side>Random</Side>
+              <SeverityRange>1~1</SeverityRange>
             </li>
-            <!-- Not functional, scenario fails to load -->
             <li>
-              <hediff>MechlinkImplant</hediff>
-              <bodyPart>ArtificialBrain</bodyPart>
-              <side>Random</side>
-              <severityRange>1~1</severityRange>
+              <Hediff>MechlinkImplant</Hediff>
+              <BodyPart>ArtificialBrain</BodyPart>
+              <Side>Random</Side>
+              <SeverityRange>1~1</SeverityRange>
             </li>
-          </hediffs>
+          </Hediffs>
         </li>
       </parts>
     </scenario>
