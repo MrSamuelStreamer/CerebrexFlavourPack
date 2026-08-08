@@ -19,6 +19,13 @@
         </value>
     </Operation>
 
+    <Operation Class="PatchOperationReplace" MayRequire="ReBuild.COTR.DoorsAndCorners">
+        <xpath>Defs/ThingDef[defName="RB_OverwallArmor"]/label</xpath>
+        <value>
+            <label>worr armour</label>
+        </value>
+    </Operation>
+
     <!-- sun lamp -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="SunLamp"]/label</xpath>
