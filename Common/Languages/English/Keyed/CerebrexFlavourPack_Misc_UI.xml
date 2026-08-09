@@ -16,6 +16,9 @@
     <CerebrexFlavourPack_Settings_CoreRetreatHpFraction_Tooltip>The fraction of the cerebrex core's max hit points that must be destroyed before a core-focused raid gives up and retreats. Lower values make raiders retreat sooner; higher values let them press the attack longer, up to the point of destroying the core outright.</CerebrexFlavourPack_Settings_CoreRetreatHpFraction_Tooltip>
     <CerebrexFlavourPack_Settings_StrategySelectionWeight_Tooltip>Multiplies how often the storyteller picks a raid strategy that targets the cerebrex core (core strike, sappers, or siege) instead of an ordinary raid. Set to 0 to disable these raid types entirely.</CerebrexFlavourPack_Settings_StrategySelectionWeight_Tooltip>
 
+    <CerebrexFlavourPack_Settings_DisablePollutionCloud>Hide pollution smog overlay</CerebrexFlavourPack_Settings_DisablePollutionCloud>
+    <CerebrexFlavourPack_Settings_DisablePollutionCloud_Tooltip>Hides the vanilla purple smog cloud that drifts above polluted tiles. The underlying pollution mechanic still works — only the visual overlay is suppressed. Applies immediately; safe to toggle mid-game.</CerebrexFlavourPack_Settings_DisablePollutionCloud_Tooltip>
+
     <CerebrexFlavourPack_Settings_LatticeEnabled>Enable cerebrex lattice spread</CerebrexFlavourPack_Settings_LatticeEnabled>
     <CerebrexFlavourPack_Settings_LatticeEnabled_Tooltip>Master switch for feeding the cerebrex core steel to spread mechanoid lattice terrain, and for the biome conversion and mood effects that follow from it. Requires Alpha Biomes; has no effect if that mod isn't loaded.</CerebrexFlavourPack_Settings_LatticeEnabled_Tooltip>
     <CerebrexFlavourPack_Settings_LatticeSteelPerCell>Lattice steel cost: {0} per cell</CerebrexFlavourPack_Settings_LatticeSteelPerCell>

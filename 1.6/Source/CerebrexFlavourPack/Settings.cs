@@ -53,6 +53,9 @@ public class Settings : ModSettings
     /// <summary>Multiplier on the mechanoid-terrain mood thought. 0 disables the thought entirely.</summary>
     public float moodBuffScale = 1f;
 
+    /// <summary>Hides the vanilla purple pollution cloud overlay drawn on polluted tiles.</summary>
+    public bool disablePollutionCloud = false;
+
     public void DoWindowContents(Rect wrect)
     {
         Listing_Standard options = new();
@@ -108,6 +111,11 @@ public class Settings : ModSettings
             "CerebrexFlavourPack_Settings_StrategySelectionWeight".Translate(strategySelectionWeight.ToString("0.##")),
             strategySelectionWeight, 0f, 5f,
             tooltip: "CerebrexFlavourPack_Settings_StrategySelectionWeight_Tooltip".Translate());
+        options.Gap();
+
+        options.CheckboxLabeled(
+            "CerebrexFlavourPack_Settings_DisablePollutionCloud".Translate(), ref disablePollutionCloud,
+            "CerebrexFlavourPack_Settings_DisablePollutionCloud_Tooltip".Translate());
         options.Gap();
 
         if (CerebrexLatticeDefs.Active)
@@ -181,5 +189,6 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref latticeRunnerChance, "latticeRunnerChance", 0.025f);
         Scribe_Values.Look(ref biomeFlipThreshold, "biomeFlipThreshold", 0.75f);
         Scribe_Values.Look(ref moodBuffScale, "moodBuffScale", 1f);
+        Scribe_Values.Look(ref disablePollutionCloud, "disablePollutionCloud", false);
     }
 }
