@@ -6,6 +6,7 @@ using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
+using Verse.Noise;
 
 namespace CerebrexFlavourPack;
 
@@ -61,6 +62,24 @@ public class MapComponent_CerebrexLattice : MapComponent
     private int ticksSinceReclassify;
     private int ticksSinceFlipCheck;
     private int ticksSinceSteelDraw;
+
+    // ---- terrain patch noise, rebuilt per-map on FinalizeInit; frequencies + thresholds
+    //      mirror AB_MechanoidIntrusion.terrainPatchMakers so a fed map looks the same as
+    //      a naturally-generated one. Seeds derive from map.uniqueID so re-loading the
+    //      same map picks the same patches - a converted cell asked "which lattice tier?"
+    //      must answer consistently across sessions or the retroactive re-roll would
+    //      reshuffle art every load. ----
+    private ModuleBase tierNoise;
+    private ModuleBase overlayNoise;
+    private const double TierFrequency = 0.015;
+    private const double OverlayFrequency = 0.027;
+    // Biome thresholds are on TerrainPatchMaker's normalized [0,1] output; matching them
+    // against straight Perlin (which is ~[-1,1]) requires the same (perlin+1)/2 shift.
+    private const double Tier2Min = 0.76;
+    private const double Tier3Min = 0.98;
+    private const double SoilOnCrackedMin = 0.32;
+    private const double SoilOnCrackedMax = 0.60;
+    private const double PipingMin = 0.60;
 
     public MapComponent_CerebrexLattice(Map map) : base(map)
     {
@@ -167,6 +186,8 @@ public class MapComponent_CerebrexLattice : MapComponent
 
         InitBlockGrid();
         RecomputeMaxR();
+        EnsureNoise();
+        RetroactivelyUpgradeExistingLattice();
         Reclassify();
 
         if (!flipped)
@@ -508,12 +529,13 @@ public class MapComponent_CerebrexLattice : MapComponent
 
         int idx = map.cellIndices.CellToIndex(c);
         TerrainDef current = map.terrainGrid.topGrid[idx];
-        if (current == CerebrexLatticeDefs.TargetTerrain || IsProtected(c, current))
+        if (CerebrexLatticeDefs.IsLatticeTerrain(current) || IsProtected(c, current))
         {
             return false;
         }
 
-        map.terrainGrid.SetTerrain(c, CerebrexLatticeDefs.TargetTerrain);
+        EnsureNoise();
+        map.terrainGrid.SetTerrain(c, PickLatticeTerrain(c));
         cellsConverted++;
         RegisterConverted(c, idx);
         return true;
@@ -543,7 +565,7 @@ public class MapComponent_CerebrexLattice : MapComponent
 
             int nIdx = map.cellIndices.CellToIndex(n);
             TerrainDef nt = map.terrainGrid.topGrid[nIdx];
-            if (nt == CerebrexLatticeDefs.TargetTerrain || IsProtected(n, nt))
+            if (CerebrexLatticeDefs.IsLatticeTerrain(nt) || IsProtected(n, nt))
             {
                 continue;
             }
@@ -557,7 +579,7 @@ public class MapComponent_CerebrexLattice : MapComponent
         foreach (IntVec3 offset in GenAdj.AdjacentCells)
         {
             IntVec3 n = c + offset;
-            if (n.InBounds(map) && map.terrainGrid.topGrid[map.cellIndices.CellToIndex(n)] == CerebrexLatticeDefs.TargetTerrain)
+            if (n.InBounds(map) && CerebrexLatticeDefs.IsLatticeTerrain(map.terrainGrid.topGrid[map.cellIndices.CellToIndex(n)]))
             {
                 return true;
             }
@@ -572,7 +594,7 @@ public class MapComponent_CerebrexLattice : MapComponent
         foreach (IntVec3 offset in GenAdj.CardinalDirections)
         {
             IntVec3 n = c + offset;
-            if (n.InBounds(map) && map.terrainGrid.topGrid[map.cellIndices.CellToIndex(n)] == CerebrexLatticeDefs.TargetTerrain)
+            if (n.InBounds(map) && CerebrexLatticeDefs.IsLatticeTerrain(map.terrainGrid.topGrid[map.cellIndices.CellToIndex(n)]))
             {
                 count++;
             }
@@ -660,6 +682,109 @@ public class MapComponent_CerebrexLattice : MapComponent
         blockConvertedCounts = new int[blocksX * blocksZ];
     }
 
+    /// <summary>
+    /// Lazy-init the tier/overlay Perlin fields. Seed is derived from <c>map.uniqueID</c>
+    /// so a save reload picks identical patches, which is what makes
+    /// <see cref="RetroactivelyUpgradeExistingLattice"/> a one-shot upgrade rather than
+    /// a fresh reshuffle every load.
+    /// </summary>
+    private void EnsureNoise()
+    {
+        if (tierNoise != null && overlayNoise != null)
+        {
+            return;
+        }
+
+        int baseSeed = Gen.HashCombineInt(map.uniqueID, 0x1C2E5B3D);
+        tierNoise = new Perlin(TierFrequency, 2.0, 0.5, 6, baseSeed, QualityMode.Medium);
+        overlayNoise = new Perlin(OverlayFrequency, 2.0, 0.5, 6, Gen.HashCombineInt(baseSeed, 1), QualityMode.Medium);
+    }
+
+    /// <summary>
+    /// Picks the terrain a given lattice cell should be, mirroring
+    /// AB_MechanoidIntrusion.terrainPatchMakers: a tier field (MetalFloor1/2/3) overlaid
+    /// by a soil-piping field. The overlay wins over the tier when both apply, matching
+    /// biome patchmaker order (later makers override earlier ones). Any def missing at
+    /// startup silently degrades to whichever tier below it still resolved, so a mod
+    /// update that drops one variant doesn't hard-break spread.
+    /// </summary>
+    private TerrainDef PickLatticeTerrain(IntVec3 c)
+    {
+        EnsureNoise();
+
+        double tier = SampleNormalized(tierNoise, c);
+        TerrainDef pick = CerebrexLatticeDefs.TargetTerrain;
+        if (tier >= Tier3Min && CerebrexLatticeDefs.TargetTerrain3 != null)
+        {
+            pick = CerebrexLatticeDefs.TargetTerrain3;
+        }
+        else if (tier >= Tier2Min && CerebrexLatticeDefs.TargetTerrain2 != null)
+        {
+            pick = CerebrexLatticeDefs.TargetTerrain2;
+        }
+
+        double overlay = SampleNormalized(overlayNoise, c);
+        if (overlay >= PipingMin && CerebrexLatticeDefs.Piping != null)
+        {
+            pick = CerebrexLatticeDefs.Piping;
+        }
+        else if (overlay >= SoilOnCrackedMin && overlay < SoilOnCrackedMax && CerebrexLatticeDefs.SoilOnCrackedMetal != null)
+        {
+            pick = CerebrexLatticeDefs.SoilOnCrackedMetal;
+        }
+
+        return pick;
+    }
+
+    private static double SampleNormalized(ModuleBase noise, IntVec3 c)
+    {
+        // Perlin's raw output is roughly [-1,1]; shift to [0,1] and clamp so wildly
+        // out-of-range samples (rare) don't push thresholds around.
+        double v = (noise.GetValue(c.x, 0.0, c.z) + 1.0) / 2.0;
+        if (v < 0.0) v = 0.0;
+        else if (v > 1.0) v = 1.0;
+        return v;
+    }
+
+    /// <summary>
+    /// One-shot upgrade pass for saves that started converting BEFORE this feature landed
+    /// (or before a new patch tier got added). Every lattice-terrain cell on the map gets
+    /// re-picked through <see cref="PickLatticeTerrain"/>; because the noise seed is
+    /// deterministic from map.uniqueID, subsequent loads produce the exact same picks and
+    /// the sweep becomes a no-op after the first time. Non-lattice cells are untouched.
+    /// </summary>
+    private void RetroactivelyUpgradeExistingLattice()
+    {
+        if (!CerebrexLatticeDefs.Active)
+        {
+            return;
+        }
+
+        TerrainDef[] top = map.terrainGrid.topGrid;
+        int upgraded = 0;
+        for (int idx = 0; idx < top.Length; idx++)
+        {
+            TerrainDef t = top[idx];
+            if (!CerebrexLatticeDefs.IsLatticeTerrain(t))
+            {
+                continue;
+            }
+
+            IntVec3 c = map.cellIndices.IndexToCell(idx);
+            TerrainDef desired = PickLatticeTerrain(c);
+            if (desired != null && desired != t)
+            {
+                map.terrainGrid.SetTerrain(c, desired);
+                upgraded++;
+            }
+        }
+
+        if (upgraded > 0)
+        {
+            ModLog.Log($"Cerebrex lattice: retroactive terrain upgrade on {map} - re-picked {upgraded} lattice cells across MetalFloor1/2/3, SoilOnCrackedMetal, Piping.");
+        }
+    }
+
     private int BlockIndex(int bx, int bz) => bz * blocksX + bx;
 
     private void IncrementBlockDensity(IntVec3 c)
@@ -691,7 +816,7 @@ public class MapComponent_CerebrexLattice : MapComponent
         {
             TerrainDef t = top[idx];
             IntVec3 c = map.cellIndices.IndexToCell(idx);
-            bool isTarget = t == CerebrexLatticeDefs.TargetTerrain;
+            bool isTarget = CerebrexLatticeDefs.IsLatticeTerrain(t);
             bool blocked = IsProtected(c, t);
 
             if (!blocked)
