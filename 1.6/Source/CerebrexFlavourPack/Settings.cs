@@ -56,6 +56,9 @@ public class Settings : ModSettings
     /// <summary>Hides the vanilla purple pollution cloud overlay drawn on polluted tiles.</summary>
     public bool disablePollutionCloud = false;
 
+    /// <summary>Base interval, in in-game days, between Cerebrex scanner resource discoveries (scaled down by lattice coverage).</summary>
+    public float scannerScanIntervalDays = 30f;
+
     public void DoWindowContents(Rect wrect)
     {
         Listing_Standard options = new();
@@ -116,6 +119,12 @@ public class Settings : ModSettings
         options.CheckboxLabeled(
             "CerebrexFlavourPack_Settings_DisablePollutionCloud".Translate(), ref disablePollutionCloud,
             "CerebrexFlavourPack_Settings_DisablePollutionCloud_Tooltip".Translate());
+        options.Gap();
+
+        scannerScanIntervalDays = options.SliderLabeled(
+            "CerebrexFlavourPack_Settings_ScannerScanIntervalDays".Translate(scannerScanIntervalDays.ToString("0.#")),
+            scannerScanIntervalDays, 1f, 120f,
+            tooltip: "CerebrexFlavourPack_Settings_ScannerScanIntervalDays_Tooltip".Translate());
         options.Gap();
 
         if (CerebrexLatticeDefs.Active)
@@ -190,5 +199,6 @@ public class Settings : ModSettings
         Scribe_Values.Look(ref biomeFlipThreshold, "biomeFlipThreshold", 0.75f);
         Scribe_Values.Look(ref moodBuffScale, "moodBuffScale", 1f);
         Scribe_Values.Look(ref disablePollutionCloud, "disablePollutionCloud", false);
+        Scribe_Values.Look(ref scannerScanIntervalDays, "scannerScanIntervalDays", 30f);
     }
 }

@@ -86,6 +86,12 @@
         <offsetY>-4</offsetY>
         <cooldownTicks>600000</cooldownTicks>
       </li>
+        <li Class="CerebrexFlavourPack.CompProperties_CerebrexScannerMinerals">
+            <scanSpeedStat>ResearchSpeed</scanSpeedStat>
+            <scanFindMtbDays>3</scanFindMtbDays>
+            <scanFindGuaranteedDays>6</scanFindGuaranteedDays>
+            <soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
+        </li>
     </comps>
   </ThingDef>
 

@@ -19,6 +19,9 @@
     <CerebrexFlavourPack_Settings_DisablePollutionCloud>Hide pollution smog overlay</CerebrexFlavourPack_Settings_DisablePollutionCloud>
     <CerebrexFlavourPack_Settings_DisablePollutionCloud_Tooltip>Hides the vanilla purple smog cloud that drifts above polluted tiles. The underlying pollution mechanic still works — only the visual overlay is suppressed. Applies immediately; safe to toggle mid-game.</CerebrexFlavourPack_Settings_DisablePollutionCloud_Tooltip>
 
+    <CerebrexFlavourPack_Settings_ScannerScanIntervalDays>Cerebrex scanner interval: {0} days</CerebrexFlavourPack_Settings_ScannerScanIntervalDays>
+    <CerebrexFlavourPack_Settings_ScannerScanIntervalDays_Tooltip>Base number of in-game days between resource discoveries by the Cerebrex Core scanner. Lattice coverage scales this down, so heavily lattice-fed maps still scan faster; this is the ceiling on the interval.</CerebrexFlavourPack_Settings_ScannerScanIntervalDays_Tooltip>
+
     <CerebrexFlavourPack_Settings_LatticeEnabled>Enable cerebrex lattice spread</CerebrexFlavourPack_Settings_LatticeEnabled>
     <CerebrexFlavourPack_Settings_LatticeEnabled_Tooltip>Master switch for feeding the cerebrex core steel to spread mechanoid lattice terrain, and for the biome conversion and mood effects that follow from it. Requires Alpha Biomes; has no effect if that mod isn't loaded.</CerebrexFlavourPack_Settings_LatticeEnabled_Tooltip>
     <CerebrexFlavourPack_Settings_LatticeSteelPerCell>Lattice steel cost: {0} per cell</CerebrexFlavourPack_Settings_LatticeSteelPerCell>
@@ -66,4 +69,6 @@ Caravans will also move more slowly across this tile.</CerebrexFlavourPack_Biome
     <LetterLabelFirstSummerWarning>Peak Drift</LetterLabelFirstSummerWarning>
     <FirstSummerWarning>The accretion disk is the brightest it can possibly be. Peak Drift has begun, but darker months are coming.\n\nOnce the remaining light fades, your crops will stop growing in the cold. Store enough food to last, or build a walk-in refrigerator to keep from spoiling.\n\nWhen Deep Dark arrives, you'll need parkas or you'll freeze the moment you step outside.</FirstSummerWarning>
 
+    <CFP_CerebrexScanner>Ticks until next resource: {0}</CFP_CerebrexScanner>
+    <CFP_LetterDeepScannerFoundLump>Cerebrex Core has found a lump of buried {0} using the ground-penetrating scanner!</CFP_LetterDeepScannerFoundLump>
 </LanguageData>
