@@ -71,4 +71,6 @@ Caravans will also move more slowly across this tile.</CerebrexFlavourPack_Biome
 
     <CFP_CerebrexScanner>Ticks until next resource: {0}</CFP_CerebrexScanner>
     <CFP_LetterDeepScannerFoundLump>Cerebrex Core has found a lump of buried {0} using the ground-penetrating scanner!</CFP_LetterDeepScannerFoundLump>
+
+    <MU_MechCarrier_Tooltip>How many steel mini-gestator has to create wer orchins.</MU_MechCarrier_Tooltip>
 </LanguageData>
