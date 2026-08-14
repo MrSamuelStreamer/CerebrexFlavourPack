@@ -17,5 +17,6 @@
 		<li IfModActive="iluvsilicon.basicmedicine2">Compatibility/iluvsilicon.basicmedicine2</li>
 		<li IfModActive="mlie.tastyhemo">Compatibility/mlie.tastyhemo</li>
 		<li IfModActive="sarg.alphabiomes">Compatibility/sarg.alphabiomes</li>
+    <li IfModActive="rebuild.cotr.doorsandcorners">Compatibility/rebuild.cotr.doorsandcorners</li>
 	</v1.6>
 </loadFolders>

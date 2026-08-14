@@ -19,26 +19,6 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace" MayRequire="ReBuild.COTR.DoorsAndCorners">
-        <xpath>Defs/ThingDef[defName="RB_OverwallArmor"]/label</xpath>
-        <value>
-            <label>worr armour</label>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace" MayRequire="GoGaTio.MechanoidUpgrades">
-        <xpath>Defs/ThingDef[defName="MU_UrchinSpawner"]/label</xpath>
-        <value>
-            <label>orchin mini-gestator</label>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace" MayRequire="GoGaTio.MechanoidUpgrades">
-        <xpath>Defs/ThingDef[defName="MU_UrchinSpawner"]/description</xpath>
-        <value>
-            <description>A mini-gestator unit which can create wer orchins. Require steel for gestation.</description>
-        </value>
-    </Operation>
-
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="ComponentIndustrial"]/label</xpath>
         <value>
