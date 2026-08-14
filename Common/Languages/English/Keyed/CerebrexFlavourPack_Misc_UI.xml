@@ -69,7 +69,7 @@ Caravans will also move more slowly across this tile.</CerebrexFlavourPack_Biome
     <LetterLabelFirstSummerWarning>Peak Drift</LetterLabelFirstSummerWarning>
     <FirstSummerWarning>The accretion disk is the brightest it can possibly be. Peak Drift has begun, but darker months are coming.\n\nOnce the remaining light fades, your crops will stop growing in the cold. Store enough food to last, or build a walk-in refrigerator to keep from spoiling.\n\nWhen Deep Dark arrives, you'll need parkas or you'll freeze the moment you step outside.</FirstSummerWarning>
 
-    <CFP_CerebrexScanner>Ticks until next resource: {0}</CFP_CerebrexScanner>
+    <CFP_CerebrexScanner>Next resource in: {0}</CFP_CerebrexScanner>
     <CFP_LetterDeepScannerFoundLump>Cerebrex Core has found a lump of buried {0} using the ground-penetrating scanner!</CFP_LetterDeepScannerFoundLump>
 
     <MU_MechCarrier_Tooltip>How many steel mini-gestator has to create wer orchins.</MU_MechCarrier_Tooltip>
