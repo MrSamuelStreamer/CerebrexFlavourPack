@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--
+      CompPowerPlant.CompTick() unconditionally calls sustainerProducingPower.Maintain()
+      every simulated tick when soundAmbientProducingPower is set. At high game speed this
+      dominates the tick budget once enough of these buildings exist (profiled: 70.8% of all
+      comp-tick time across a base with 78 such buildings, ~228 TPS at ultrafast after
+      removing it vs ~120 before). Drop the ambient sound to keep this comp cheap.
+      Both the crated and non-crated (NB) variants carry the same sustainer.
+    -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="WastepackPowerplant"]/comps/li[soundAmbientProducingPower]/soundAmbientProducingPower</xpath>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="WastepackPowerplantNB"]/comps/li[soundAmbientProducingPower]/soundAmbientProducingPower</xpath>
+    </Operation>
+</Patch>

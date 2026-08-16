@@ -36,7 +36,7 @@
         </comps>
     </ThingDef>
     <RecipeDef>
-        <defName>MSS_CF_MakeMechResurrector</defName>
+        <defName>MSS_CP_MakeMechResurrector</defName>
         <label>Make Sapient Mech Rebooter</label>
         <description>A portable variant of the Mech Gestators resurrection ability, with the personality reformatting functions disabled for use on Mechanoids upgraded with sapience subroutines.</description>
         <jobString>Synthesising mech reboot tools.</jobString>
@@ -82,7 +82,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <MSS_CF_MechResurrector>1</MSS_CF_MechResurrector>
+            <MSS_CP_MechResurrector>1</MSS_CP_MechResurrector>
         </products>
         <recipeUsers>
             <li>FabricationBench</li>

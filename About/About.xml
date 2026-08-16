@@ -45,6 +45,7 @@
         <li>iluvsilicon.basicmedicine2</li>
         <li>mlie.tastyhemo</li>
         <li>mss.flavourpack</li>
+        <li>sarg.alphabiomes</li>
         <!-- Optional: Compatibility/rokk.playwright only loads when both of these are active. -->
     </loadAfter>
 </ModMetaData>

@@ -19,26 +19,6 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace" MayRequire="ReBuild.COTR.DoorsAndCorners">
-        <xpath>Defs/ThingDef[defName="RB_OverwallArmor"]/label</xpath>
-        <value>
-            <label>worr armour</label>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ComponentIndustrial"]/label</xpath>
-        <value>
-            <label>"Advanced" component</label>
-        </value>
-    </Operation>
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="ComponentIndustrial"]/description</xpath>
-        <value>
-            <description>Miscellaneous gears, capacitors, circuit boards, tubes, wheels, sensors, wires, chips, processors, and other electronic and industrial parts. Necessary for assembling complex machines or electronics.\n\nA mad influencer said they were advanced components. They were wrong, as usual.</description>
-        </value>
-    </Operation>
-
     <!-- sun lamp -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="SunLamp"]/label</xpath>

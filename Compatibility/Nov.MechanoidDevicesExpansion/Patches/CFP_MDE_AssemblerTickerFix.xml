@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--
+      Mechanoid Devices Expansion's mech assemblers all inherit from BuildingBase without
+      overriding tickerType, so they resolve to Never. CompProperties_SpawnerPawn only
+      progresses via CompTick(), which the engine never calls when tickerType is Never -
+      none of these buildings can ever spawn a mech on their own. Setting Normal restores
+      the intended per-tick gestation countdown.
+    -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HML_LifterAssembler" or defName="HML_ConstructoidAssembler" or defName="HML_AgrihandAssembler" or defName="HML_CleansweeperAssembler" or defName="HML_MilitorAssembler" or defName="HML_ScytherAssembler" or defName="HML_TunnelerAssembler" or defName="HML_PermanentMilitorAssembler" or defName="HML_PermanentScytherAssembler"]</xpath>
+        <value>
+            <tickerType>Normal</tickerType>
+        </value>
+    </Operation>
+</Patch>
