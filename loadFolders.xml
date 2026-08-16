@@ -16,5 +16,6 @@
 		<li IfModActive="redmattis.betterprerequisites">Compatibility/redmattis.betterprerequisites</li>
 		<li IfModActive="iluvsilicon.basicmedicine2">Compatibility/iluvsilicon.basicmedicine2</li>
 		<li IfModActive="mlie.tastyhemo">Compatibility/mlie.tastyhemo</li>
+		<li IfModActiveAll="Orion.Hospitality,RedMattis.SapientAnimals">Compatibility/Orion.Hospitality</li>
 	</v1.6>
 </loadFolders>

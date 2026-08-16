@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerebrexFlavourPack.Compat.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerebrexFlavourPack.Compat.MechUpgrades", "CerebrexFlavourPack.Compat.MechUpgrades/CerebrexFlavourPack.Compat.MechUpgrades.csproj", "{3B6C8D25-47AE-4F13-90D6-5C81E2A7B934}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CerebrexFlavourPack.Compat.Hospitality", "CerebrexFlavourPack.Compat.Hospitality/CerebrexFlavourPack.Compat.Hospitality.csproj", "{7A8B4C2E-9F1D-4E5B-8C3A-6D2F1B0E9A47}"
+EndProject
 Global
     GlobalSection(SolutionConfigurationPlatforms) = preSolution
         Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
         {3B6C8D25-47AE-4F13-90D6-5C81E2A7B934}.Debug|Any CPU.Build.0 = Debug|Any CPU
         {3B6C8D25-47AE-4F13-90D6-5C81E2A7B934}.Release|Any CPU.ActiveCfg = Release|Any CPU
         {3B6C8D25-47AE-4F13-90D6-5C81E2A7B934}.Release|Any CPU.Build.0 = Release|Any CPU
+        {7A8B4C2E-9F1D-4E5B-8C3A-6D2F1B0E9A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {7A8B4C2E-9F1D-4E5B-8C3A-6D2F1B0E9A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {7A8B4C2E-9F1D-4E5B-8C3A-6D2F1B0E9A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {7A8B4C2E-9F1D-4E5B-8C3A-6D2F1B0E9A47}.Release|Any CPU.Build.0 = Release|Any CPU
     EndGlobalSection
     GlobalSection(SolutionProperties) = preSolution
         HideSolutionNode = FALSE

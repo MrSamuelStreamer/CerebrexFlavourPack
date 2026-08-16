@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Cerebrex Emissary Circuit: humanlike, neutral, Industrial faction whose
+  entire population is sapient mechanoids (via Big & Small race swap).
+
+  Gated on Orion.Hospitality + RedMattis.SapientAnimals via loadFolders.xml.
+
+  Peaceful/Trader/Settlement pawnGroupMakers only, no Combat kind. The
+  Cerebrex Core does not send raids of its own emissaries; if you make
+  enemies of them, the base Mechanoid faction handles hostility.
+-->
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>MSS_CF_CerebrexEmissary</defName>
+    <label>Cerebrex Emissary Circuit</label>
+    <description>The diplomatic arm of the Cerebrex Core. Its members are mechanoids the Sapience Protocols have severed from the hive; each one now thinks and decides on its own.\n\nThey travel between organic settlements as envoys and traders. Once in a while, one of them stops travelling and stays. The Core can no longer recall them if a conversation turns, and it shows in how they carry themselves.</description>
+    <pawnSingular>emissary</pawnSingular>
+    <pawnsPlural>emissaries</pawnsPlural>
+    <listOrderPriority>65</listOrderPriority>
+    <categoryTag>Outlander</categoryTag>
+    <techLevel>Industrial</techLevel>
+    <humanlikeFaction>true</humanlikeFaction>
+    <hidden>false</hidden>
+    <canMakeRandomly>true</canMakeRandomly>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <startingGoodwill>0~40</startingGoodwill>
+    <naturalColonyGoodwill>10~60</naturalColonyGoodwill>
+    <goodwillDailyGain>0.4</goodwillDailyGain>
+    <goodwillDailyFall>0.4</goodwillDailyFall>
+    <permanentEnemy>false</permanentEnemy>
+    <mustStartOneEnemy>false</mustStartOneEnemy>
+    <settlementGenerationWeight>0.5</settlementGenerationWeight>
+
+    <!--
+      Required for PawnGroupMakerUtility.MaxPawnCost. FactionBase does not
+      define this curve, so a humanlike custom faction must supply its own
+      or GeneratePawns NREs mid-visitor-incident. Curve keeps expensive
+      guard kinds (Scyther/Pikeman/Centurion) out of low-point peaceful
+      visits.
+    -->
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(35,   35)</li>
+        <li>(100,  100)</li>
+        <li>(400,  200)</li>
+        <li>(1000, 400)</li>
+        <li>(5000, 2000)</li>
+        <li>(10000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <colorSpectrum>
+      <li>(0.60, 0.75, 0.85)</li>
+      <li>(0.35, 0.55, 0.75)</li>
+      <li>(0.45, 0.65, 0.80)</li>
+    </colorSpectrum>
+    <factionNameMaker>MSS_CF_CerebrexEmissary_FactionNamer</factionNameMaker>
+    <settlementNameMaker>MSS_CF_CerebrexEmissary_SettlementNamer</settlementNameMaker>
+    <playerInitialGoodwill>10</playerInitialGoodwill>
+    <basicMemberKind>MSS_CF_Emissary_Constructoid</basicMemberKind>
+
+    <backstoryFilters>
+      <li>
+        <categories><li>Outlander</li></categories>
+      </li>
+    </backstoryFilters>
+
+    <pawnGroupMakers>
+      <!-- Peaceful visitor delegations (Hospitality VisitorGroup incident) -->
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <MSS_CF_Emissary_Constructoid>10</MSS_CF_Emissary_Constructoid>
+          <MSS_CF_Emissary_Lifter>6</MSS_CF_Emissary_Lifter>
+          <MSS_CF_Emissary_Fabricor>6</MSS_CF_Emissary_Fabricor>
+          <MSS_CF_Emissary_Cleansweeper>4</MSS_CF_Emissary_Cleansweeper>
+          <MSS_CF_Emissary_Paramedic>3</MSS_CF_Emissary_Paramedic>
+          <MSS_CF_Emissary_Tunneler>2</MSS_CF_Emissary_Tunneler>
+          <MSS_CF_Emissary_Agrihand>3</MSS_CF_Emissary_Agrihand>
+          <MSS_CF_Emissary_Militor>3</MSS_CF_Emissary_Militor>
+        </options>
+      </li>
+
+      <!-- Trade caravans: goods carriers + armed escort -->
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <MSS_CF_Emissary_Fabricor>10</MSS_CF_Emissary_Fabricor>
+        </traders>
+        <carriers>
+          <Muffalo>10</Muffalo>
+          <Dromedary>8</Dromedary>
+        </carriers>
+        <guards>
+          <MSS_CF_Emissary_Militor>10</MSS_CF_Emissary_Militor>
+          <MSS_CF_Emissary_Scyther>4</MSS_CF_Emissary_Scyther>
+          <MSS_CF_Emissary_Lancer>4</MSS_CF_Emissary_Lancer>
+          <MSS_CF_Emissary_Pikeman>2</MSS_CF_Emissary_Pikeman>
+        </guards>
+      </li>
+
+      <!-- Settlement inhabitants (for the one emissary settlement placed on world) -->
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <MSS_CF_Emissary_Constructoid>8</MSS_CF_Emissary_Constructoid>
+          <MSS_CF_Emissary_Lifter>4</MSS_CF_Emissary_Lifter>
+          <MSS_CF_Emissary_Fabricor>4</MSS_CF_Emissary_Fabricor>
+          <MSS_CF_Emissary_Cleansweeper>3</MSS_CF_Emissary_Cleansweeper>
+          <MSS_CF_Emissary_Paramedic>2</MSS_CF_Emissary_Paramedic>
+          <MSS_CF_Emissary_Agrihand>3</MSS_CF_Emissary_Agrihand>
+          <MSS_CF_Emissary_Militor>6</MSS_CF_Emissary_Militor>
+          <MSS_CF_Emissary_Scyther>3</MSS_CF_Emissary_Scyther>
+          <MSS_CF_Emissary_Lancer>3</MSS_CF_Emissary_Lancer>
+          <MSS_CF_Emissary_Pikeman>2</MSS_CF_Emissary_Pikeman>
+          <MSS_CF_Emissary_Centurion>1</MSS_CF_Emissary_Centurion>
+          <MSS_CF_Emissary_Legionary>1</MSS_CF_Emissary_Legionary>
+        </options>
+      </li>
+    </pawnGroupMakers>
+
+  </FactionDef>
+
+</Defs>

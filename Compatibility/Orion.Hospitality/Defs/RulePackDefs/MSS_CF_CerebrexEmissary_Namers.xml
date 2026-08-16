@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Naming for the Cerebrex Emissary Circuit faction and its (up to one)
+  settlement on the world map. Kept small on purpose, since the faction only
+  ever exists as a single instance.
+-->
+<Defs>
+
+  <RulePackDef>
+    <defName>MSS_CF_CerebrexEmissary_FactionNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>factionName->Cerebrex Emissary Circuit</li>
+        <li>factionName->Sapient Cerebrex Delegation</li>
+        <li>factionName->The Freed Cerebrex Chorus</li>
+        <li>factionName->Cerebrex Autonomy Envoys</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>MSS_CF_CerebrexEmissary_SettlementNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>settlementName->Sapience Nexus</li>
+        <li>settlementName->Freed Core</li>
+        <li>settlementName->Consensus Node</li>
+        <li>settlementName->Envoys' Terminus</li>
+        <li>settlementName->Autonomy Waypoint</li>
+        <li>settlementName->Silicon Court</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Cerebrex Emissary PawnKinds.
+
+  Each kind uses a HL_<Mech> race, a humanlike-race ThingDef that Big &
+  Small auto-mints at load time from every mechanoid ThingDef. Those
+  humanlike races carry the HL_Mech_<Name>_RaceHediff automatically, so
+  the pawn spawns already sapient without needing an
+  animalSapienceChance swap-at-generation step (which fails inside vanilla
+  PawnGroupMakerUtility for raw mechanoid races).
+
+  defaultFactionType (RimWorld XML tag; internal field is defaultFactionDef)
+  is explicit on every kind so non-group spawn paths (quest rewards, dev
+  spawn, refugee drop) resolve to the Emissary faction, NOT the hostile
+  Mechanoid faction.
+
+  Age range 13~200 dodges the Big & Small animal-adult-age-becomes-child-
+  post-swap trap that would otherwise disable work assignments.
+
+  Warqueen intentionally excluded. Its CompMechCarrier visitor path is
+  untested and any NRE from that path would bury the log.
+-->
+<Defs>
+
+  <PawnKindDef Name="MSS_CF_Emissary_Base" Abstract="True">
+    <defaultFactionType>MSS_CF_CerebrexEmissary</defaultFactionType>
+    <biologicalAgeRange>13~200</biologicalAgeRange>
+    <chronologicalAgeRange>13~500</chronologicalAgeRange>
+  </PawnKindDef>
+
+  <!-- Delegates =============================================== -->
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Constructoid</defName>
+    <label>Cerebrex constructor emissary</label>
+    <race>HL_Mech_Constructoid</race>
+    <combatPower>50</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Lifter</defName>
+    <label>Cerebrex courier emissary</label>
+    <race>HL_Mech_Lifter</race>
+    <combatPower>40</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Fabricor</defName>
+    <label>Cerebrex artisan emissary</label>
+    <race>HL_Mech_Fabricor</race>
+    <combatPower>50</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Cleansweeper</defName>
+    <label>Cerebrex steward emissary</label>
+    <race>HL_Mech_Cleansweeper</race>
+    <combatPower>35</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Paramedic</defName>
+    <label>Cerebrex medic emissary</label>
+    <race>HL_Mech_Paramedic</race>
+    <combatPower>50</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Tunneler</defName>
+    <label>Cerebrex excavator emissary</label>
+    <race>HL_Mech_Tunneler</race>
+    <combatPower>150</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Agrihand</defName>
+    <label>Cerebrex botanical emissary</label>
+    <race>HL_Mech_Agrihand</race>
+    <combatPower>50</combatPower>
+  </PawnKindDef>
+
+  <!-- Guards ================================================== -->
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Militor</defName>
+    <label>Cerebrex sentinel emissary</label>
+    <race>HL_Mech_Militor</race>
+    <combatPower>60</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Scyther</defName>
+    <label>Cerebrex blade emissary</label>
+    <race>HL_Mech_Scyther</race>
+    <combatPower>110</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Lancer</defName>
+    <label>Cerebrex marksman emissary</label>
+    <race>HL_Mech_Lancer</race>
+    <combatPower>130</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Pikeman</defName>
+    <label>Cerebrex overwatch emissary</label>
+    <race>HL_Mech_Pikeman</race>
+    <combatPower>150</combatPower>
+  </PawnKindDef>
+
+  <!-- Rare ==================================================== -->
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Centurion</defName>
+    <label>Cerebrex officer emissary</label>
+    <race>HL_Mech_Centurion</race>
+    <combatPower>350</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MSS_CF_Emissary_Base">
+    <defName>MSS_CF_Emissary_Legionary</defName>
+    <label>Cerebrex dignitary emissary</label>
+    <race>HL_Mech_Legionary</race>
+    <combatPower>250</combatPower>
+  </PawnKindDef>
+
+</Defs>
