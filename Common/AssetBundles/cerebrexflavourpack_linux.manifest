@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3874486945
+CRC: 4051129670
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ccd2120347b374b4b52c27cfd50c9877
+    Hash: 858168dd107ef548ff40ab19f35473e8
   TypeTreeHash:
     serializedVersion: 2
     Hash: b4f2efbdb85a500017afd875df75d980
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: ccd2120347b374b4b52c27cfd50c9877
+    Hash: 858168dd107ef548ff40ab19f35473e8
 HashAppended: 0
 ClassTypes:
 - Class: 28
@@ -18,6 +18,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Data/CerebrexFlavourPack/Textures/AccretionDisc.png
-- Assets/Data/CerebrexFlavourPack/Materials/BlackHoleRayMarch.shader
+- Assets/Data/MrSamuelStreamer.CerebrexFlavourPack/Textures/AccretionDisc.png
+- Assets/Data/MrSamuelStreamer.CerebrexFlavourPack/Materials/BlackHoleRayMarch.shader
 Dependencies: []
