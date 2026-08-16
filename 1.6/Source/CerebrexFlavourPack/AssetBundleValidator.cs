@@ -167,6 +167,22 @@ public static class AssetBundleValidator
                     "Fresh clone through git without LFS, or partial download.");
             }
         }
+
+        // Stray Unity master-manifest bundle. Unity emits a bundle named after
+        // the output directory ("AssetBundles") alongside the per-platform
+        // bundles, and it collides with same-named master bundles from other
+        // mods, preventing our platform bundles from loading. BuildAssetBundles
+        // deletes it post-build now; this warning catches shipped copies where
+        // that cleanup did not run.
+        string masterBundle = Path.Combine(bundleDir, "AssetBundles");
+        if (File.Exists(masterBundle))
+        {
+            warnings.Add(
+                "Stray master-manifest bundle present (Common/AssetBundles/AssetBundles). " +
+                "This collides with same-named bundles from other mods and can block platform " +
+                "bundles from loading. Delete AssetBundles and AssetBundles.manifest, or rebuild " +
+                "with the current BuildAssetBundles.cs (which now deletes them automatically).");
+        }
         return warnings;
     }
 
