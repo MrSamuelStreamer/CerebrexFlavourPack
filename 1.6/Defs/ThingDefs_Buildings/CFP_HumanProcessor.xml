@@ -4,7 +4,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>CFP_HumanProcessor</defName>
     <label>Mechanoid Integument Needle Graft Extraction System</label>
-    <description>PLACEHOLDER</description>
+    <description>An industrial processing unit. It strips skin and blood from a human occupant, ejecting them alive and in agony.\n\nThe resulting disfigurement is permanent, and a processed human cannot be processed again.</description>
 
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -43,7 +43,7 @@
     <costList>
       <Steel>200</Steel>
       <Plasteel>40</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <building>
       <isEdifice>false</isEdifice>
@@ -71,7 +71,7 @@
         <bloodFilthMultiplier>100</bloodFilthMultiplier>
         <products>
           <Leather_Human>35</Leather_Human>
-          <HemogenPack>10</HemogenPack>
+          <HemogenPack>8</HemogenPack>
           <Cloth>20</Cloth>
         </products>
       </li>
